@@ -1,0 +1,14 @@
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\bin\Debug\net8.0\01_Initial.exe
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\bin\Debug\net8.0\01_Initial.deps.json
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\bin\Debug\net8.0\01_Initial.runtimeconfig.json
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\bin\Debug\net8.0\01_Initial.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\bin\Debug\net8.0\01_Initial.pdb
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\01_Initial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\01_Initial.AssemblyInfoInputs.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\01_Initial.AssemblyInfo.cs
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\01_Initial.csproj.CoreCompileInputs.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\01_Initial.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\refint\01_Initial.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\01_Initial.pdb
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\01_Initial.genruntimeconfig.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\01_Initial\obj\Debug\net8.0\ref\01_Initial.dll
