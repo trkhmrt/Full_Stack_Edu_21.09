@@ -1,0 +1,14 @@
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\bin\Release\net8.0\02_Operators.exe
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\bin\Release\net8.0\02_Operators.deps.json
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\bin\Release\net8.0\02_Operators.runtimeconfig.json
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\bin\Release\net8.0\02_Operators.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\bin\Release\net8.0\02_Operators.pdb
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\02_Operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\02_Operators.AssemblyInfoInputs.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\02_Operators.AssemblyInfo.cs
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\02_Operators.csproj.CoreCompileInputs.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\02_Operators.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\refint\02_Operators.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\02_Operators.pdb
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\02_Operators.genruntimeconfig.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\02_Operators\obj\Release\net8.0\ref\02_Operators.dll
