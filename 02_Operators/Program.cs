@@ -207,15 +207,121 @@
             //Klavyeden okunana kullanıcı adı ve şifreyi tanımlamış olduğunuz(kullaniciadi ve sifre) değişkenlerleriyle karşılaştırın ve bu karşılaştırma sonucunu ekrana yazdırın.
 
 
-            string username = "trkhmrt";
-            string sifre = "123";
+            //string username = "trkhmrt";
+            //string sifre = "123";
 
-            Console.WriteLine("Kullanıcı adını giriniz:");
-            string uname=Console.ReadLine();
-            Console.WriteLine("Şifre giriniz:");
-            string sfr = Console.ReadLine();
+            //Console.WriteLine("Kullanıcı adını giriniz:");
+            //string uname=Console.ReadLine();
+            //Console.WriteLine("Şifre giriniz:");
+            //string sfr = Console.ReadLine();
 
-            Console.WriteLine(username==uname && sifre==sfr);
+            //Console.WriteLine(username==uname && sifre==sfr);
+
+
+
+            /*Console WriteLine ve Console Write Farkı*/
+
+            //Console.WriteLine("Merhaba Dünya");
+            //Console.WriteLine("Benim adım Tarık");
+
+            //Console.WriteLine("Yaş giriniz:");
+            //Console.ReadLine();
+
+            //Console.Write("Yaş giriniz:");
+            //Console.ReadLine();
+
+
+            /*Kaçış operatörleri 
+             * 
+             * 
+             * \n -> new line
+             * 
+             * \t  -> tab
+             * 
+             
+             */
+
+            // Console.WriteLine("Tarık\nHamarat");
+
+            //Console.Write("Tarık\n");
+            //Console.Write("Hamarat");
+
+
+            //Console.Write("Tarık");
+            //Console.Write("\nHamarat");
+
+
+
+            /* $ ile Console writeLine */
+
+            //int yas = 20;
+
+            //Console.WriteLine("Kişinin Yaşı\t"+yas);
+
+            //string isim = "Tarık";
+            //string soyisim = "Hamarat";
+            //string adres = "Dünyanın en güzel yeri";
+            //double tutar = 450.80;
+
+
+
+            //Console.WriteLine("Sayın:"+isim+" "+soyisim+" "+tutar+" tutarlı alışverişiniz "+adres+" adresinize gönderilecektir.");
+
+            // Console.WriteLine($"Sayın:{isim} {soyisim} {tutar} tutarlı alışverişiniz {adres} adresinize gönderilecektir.");
+
+            //Console.WriteLine(string.Format("Sayın:{0} {1} tutarlı alışverişiniz adresinize gönderilecektir.",isim,soyisim));
+
+
+            //NOT STRİNG ifadelerde + işareti metinleri  birleştirmek için kullanılır.
+
+
+
+
+
+            //ARTTIRMALI/AZALTMALI ATAMA OPERATÖRÜ
+
+
+            //int sayi = 20;
+
+            //Console.WriteLine(sayi);
+
+            //sayi = sayi + 10;
+
+            //Console.WriteLine(sayi);
+
+            //sayi = sayi - 10;
+
+            //Console.WriteLine(sayi);
+
+            //Kısa yolu
+
+            //int sayi2 = 40;
+
+            //sayi2 += 10;
+            //sayi2 -=10;
+            //Console.WriteLine(sayi2);
+
+
+            //Bir arttırma bir azaltma
+
+           // int sayi3 = 60;
+
+           // Console.WriteLine("Sayi3'ün ilk değeri" + sayi3);
+
+           // int test1 = sayi3++;
+
+           // Console.WriteLine("Test 1'in içerisine sayi3 atandı sonra sayi3 1 arttırıldı->"+test1);
+           // Console.WriteLine("Test 1'in o an ki değeri üzerine 4 eklendi->"+(test1+4));
+           // Console.WriteLine("Sayi3 önce test1 e atanıp sonra arttırıldı.Burada üzerine 4 Ekledik"+(sayi3+4));
+
+
+           //int test2 = ++sayi3;
+
+           // Console.WriteLine("BU işlemde sayi3 önce bir arttırıldı daha sonra test2 ye atandı->"+test2);
+
+
+         
+
 
 
         }
