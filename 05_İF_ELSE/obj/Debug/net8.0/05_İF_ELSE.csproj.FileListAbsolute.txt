@@ -1,0 +1,15 @@
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.AssemblyInfoInputs.cache
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.AssemblyInfo.cs
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.sourcelink.json
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\bin\Debug\net8.0\05_İF_ELSE.exe
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\bin\Debug\net8.0\05_İF_ELSE.deps.json
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\bin\Debug\net8.0\05_İF_ELSE.runtimeconfig.json
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\bin\Debug\net8.0\05_İF_ELSE.dll
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\bin\Debug\net8.0\05_İF_ELSE.pdb
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.dll
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\refint\05_İF_ELSE.dll
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.pdb
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\05_İF_ELSE.genruntimeconfig.cache
+C:\Users\Win10\Documents\GitHub\Full_Stack_Edu_21.09\05_İF_ELSE\obj\Debug\net8.0\ref\05_İF_ELSE.dll

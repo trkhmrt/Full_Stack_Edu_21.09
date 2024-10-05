@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\03_Practice\\03_Practice.csproj": {}
+    "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\03_Practice\\03_Practice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\03_Practice\\03_Practice.csproj": {
+    "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\03_Practice\\03_Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\03_Practice\\03_Practice.csproj",
+        "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\03_Practice\\03_Practice.csproj",
         "projectName": "03_Practice",
-        "projectPath": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\03_Practice\\03_Practice.csproj",
-        "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\03_Practice\\obj\\",
+        "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\03_Practice\\03_Practice.csproj",
+        "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\03_Practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

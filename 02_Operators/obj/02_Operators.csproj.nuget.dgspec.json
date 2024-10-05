@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\02_Operators\\02_Operators.csproj": {}
+    "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj": {}
   },
   "projects": {
-    "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\02_Operators\\02_Operators.csproj": {
+    "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\02_Operators\\02_Operators.csproj",
+        "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj",
         "projectName": "02_Operators",
-        "projectPath": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\02_Operators\\02_Operators.csproj",
-        "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\02_Operators\\obj\\",
+        "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj",
+        "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
