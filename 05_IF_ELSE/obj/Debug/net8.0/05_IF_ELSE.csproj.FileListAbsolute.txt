@@ -1,0 +1,14 @@
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\bin\Debug\net8.0\05_IF_ELSE.exe
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\bin\Debug\net8.0\05_IF_ELSE.deps.json
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\bin\Debug\net8.0\05_IF_ELSE.runtimeconfig.json
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\bin\Debug\net8.0\05_IF_ELSE.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\bin\Debug\net8.0\05_IF_ELSE.pdb
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\05_IF_ELSE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\05_IF_ELSE.AssemblyInfoInputs.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\05_IF_ELSE.AssemblyInfo.cs
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\05_IF_ELSE.csproj.CoreCompileInputs.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\05_IF_ELSE.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\refint\05_IF_ELSE.dll
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\05_IF_ELSE.pdb
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\05_IF_ELSE.genruntimeconfig.cache
+C:\Users\boyut\source\repos\21_09_24_Full_Stack\05_IF_ELSE\obj\Debug\net8.0\ref\05_IF_ELSE.dll
