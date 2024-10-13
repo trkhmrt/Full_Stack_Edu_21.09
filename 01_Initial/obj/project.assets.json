@@ -8,27 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\boyut\\.nuget\\packages\\": {}
+    "/Users/egitim/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\01_Initial\\01_Initial.csproj",
+      "projectUniqueName": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/01_Initial/01_Initial.csproj",
       "projectName": "01_Initial",
-      "projectPath": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\01_Initial\\01_Initial.csproj",
-      "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\boyut\\source\\repos\\21_09_24_Full_Stack\\01_Initial\\obj\\",
+      "projectPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/01_Initial/01_Initial.csproj",
+      "packagesPath": "/Users/egitim/.nuget/packages/",
+      "outputPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/01_Initial/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/egitim/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/egitim/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

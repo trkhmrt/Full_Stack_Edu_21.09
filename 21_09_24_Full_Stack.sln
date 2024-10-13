@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_IF_ELSE", "05_IF_ELSE\05
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IF_ELSE_PRACTICE", "IF_ELSE_PRACTICE\IF_ELSE_PRACTICE.csproj", "{871A021B-EF17-4DB9-8465-56208816A387}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_While_Loop", "07_While_Loop\07_While_Loop.csproj", "{8360ECA3-0515-484D-9640-133F88451BDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Arrays", "08_Arrays\08_Arrays.csproj", "{F00B08F4-3429-4F76-9208-FA9A6FF70E09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{871A021B-EF17-4DB9-8465-56208816A387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{871A021B-EF17-4DB9-8465-56208816A387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{871A021B-EF17-4DB9-8465-56208816A387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8360ECA3-0515-484D-9640-133F88451BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8360ECA3-0515-484D-9640-133F88451BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8360ECA3-0515-484D-9640-133F88451BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8360ECA3-0515-484D-9640-133F88451BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00B08F4-3429-4F76-9208-FA9A6FF70E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00B08F4-3429-4F76-9208-FA9A6FF70E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00B08F4-3429-4F76-9208-FA9A6FF70E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00B08F4-3429-4F76-9208-FA9A6FF70E09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
