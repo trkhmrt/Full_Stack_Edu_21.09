@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/bin/Debug/net8.0/10_List
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/bin/Debug/net8.0/10_List.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/bin/Debug/net8.0/10_List.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/bin/Debug/net8.0/10_List.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/bin/Debug/net8.0/10_List.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/refint/10_List.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/10_List.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/10_List/obj/Debug/net8.0/ref/10_List.dll

@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/bin/Debug/net8.0/09_Function
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/bin/Debug/net8.0/09_Function.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/bin/Debug/net8.0/09_Function.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/bin/Debug/net8.0/09_Function.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/bin/Debug/net8.0/09_Function.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/refint/09_Function.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/09_Function.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/Debug/net8.0/ref/09_Function.dll

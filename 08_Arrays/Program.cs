@@ -288,10 +288,7 @@ class Program
         // }
         //
         // Console.WriteLine("Uygulama sonlandı.");
-        Console.WriteLine("New");
-        Console.WriteLine("New");
-        Console.WriteLine("New");
-        
+      
 
 
 

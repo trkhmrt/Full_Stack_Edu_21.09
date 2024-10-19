@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("07_While_Loop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77471356f845e58f2efd3a850452348fda05a59a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+380e39c56cd8a2331c755095f5cbd087ae2d5f6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("07_While_Loop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("07_While_Loop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
