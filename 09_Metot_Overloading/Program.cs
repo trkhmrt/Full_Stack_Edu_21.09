@@ -19,7 +19,7 @@ class Program
          
          */
 
-       EkranaYaz("Merhaba Dünya"); 
+       EkranaYaz("Merhaba Dünya Bu mesaj ekrana yazılacak"); 
        EkranaYaz(10.2);
        EkranaYaz(10);
        EkranaYaz(10, 20);
