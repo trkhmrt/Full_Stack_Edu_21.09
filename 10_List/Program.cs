@@ -165,8 +165,27 @@ class Program
        // {
        //     Console.WriteLine(name);
        // }
+       
+       
+       //Max liste içerisindeki en büyük değeri yazdırır.
+       // List<int> en_buyuk= new List<int>(){10,40,25,80};
+       //
+       // Console.WriteLine(en_buyuk.Max());
+      
+       //Min liste içerisindeki en küçük değeri yazdırır.
+       // List<int> en_kucuk= new List<int>(){10,40,25,80};
+       //
+       // Console.WriteLine(en_kucuk.Min());
 
-
+       //Average listenin ortalamasını verir.
+       // List<int> ortalama= new List<int>(){10,20};
+       // Console.WriteLine(ortalama.Average());
+        
+       
+        
+       
+       
+       
 
 
 

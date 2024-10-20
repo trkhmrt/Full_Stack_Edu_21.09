@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/bin/Debug/net8.0/09_Metot_Overloading
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/bin/Debug/net8.0/09_Metot_Overloading.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/bin/Debug/net8.0/09_Metot_Overloading.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/bin/Debug/net8.0/09_Metot_Overloading.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/bin/Debug/net8.0/09_Metot_Overloading.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/refint/09_Metot_Overloading.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Metot_Overloading/obj/Debug/net8.0/ref/09_Metot_Overloading.dll
