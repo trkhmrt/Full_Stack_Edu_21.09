@@ -11,13 +11,48 @@
     <projectFile>09_Function/09_Function.csproj</projectFile>
     <projectFile>09_Function_Best_Practice/09_Function_Best_Practice.csproj</projectFile>
     <projectFile>10_List/10_List.csproj</projectFile>
+    <projectFile>13_Class/13_Class.csproj</projectFile>
+    <projectFile>13_Class_Practice/13_Class_Practice.csproj</projectFile>
     <projectFile>IF_ELSE_PRACTICE/IF_ELSE_PRACTICE.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3514ddf6-e4a2-41b4-8595-79eef9271c12" name="Changes" comment="" />
+    <list default="true" id="3514ddf6-e4a2-41b4-8595-79eef9271c12" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/13_Class/Class1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_Class/Otomobil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_Class_Practice/Models/Ogrenci.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_Class_Practice/Services/OgrenciService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.21_09_24_Full_Stack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.21_09_24_Full_Stack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21_09_24_Full_Stack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/21_09_24_Full_Stack.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfoInputs.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,9 +61,33 @@
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "trkhmrt"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/trkhmrt/Full_Stack_Edu_21.09.git",
+    "accountId": "1f13899a-00e9-4dc5-b417-13c9b8ca8bd5"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ccd2056ec55b7b67558d52e32a887ed5ac7e346fc429b218c188d0a99cb5be/Console.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2nxoR8eyFDY8h47CDvHYJ7gkRUW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -37,10 +96,18 @@
     ".NET Project.10_List.executor": "Run",
     ".NET Project.11_Best_Practice.executor": "Run",
     ".NET Project.12_Dictionary.executor": "Debug",
-    "node.js.selected.package.tslint": "(autodetect)"
+    ".NET Project.13_Class.executor": "Run",
+    ".NET Project.13_Class_Practice.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.09_Metot_Overloading">
+  <component name="RunManager" selected=".NET Project.13_Class_Practice">
     <configuration name="08_Arrays" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -167,7 +234,45 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="13_Class" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/13_Class/13_Class.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="13_Class_Practice" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/13_Class_Practice/13_Class_Practice.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue=".NET Project.13_Class" />
+      <item itemvalue=".NET Project.13_Class_Practice" />
       <item itemvalue=".NET Project.11_Best_Practice" />
       <item itemvalue=".NET Project.08_Arrays" />
       <item itemvalue=".NET Project.09_Function" />
@@ -183,8 +288,20 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3514ddf6-e4a2-41b4-8595-79eef9271c12" name="Changes" comment="" />
+      <created>1729924078017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729924078017</updated>
+      <workItem from="1729924079552" duration="11849000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
     <option name="coveragePercentColumnWidth" value="75" />
@@ -197,6 +314,9 @@
     </coverage-tree-state>
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
       <pinned-members>

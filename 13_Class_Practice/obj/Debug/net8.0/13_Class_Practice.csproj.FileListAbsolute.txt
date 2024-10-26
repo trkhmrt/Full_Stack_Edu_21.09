@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/bin/Debug/net8.0/13_Class_Practice
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/bin/Debug/net8.0/13_Class_Practice.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/bin/Debug/net8.0/13_Class_Practice.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/bin/Debug/net8.0/13_Class_Practice.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/bin/Debug/net8.0/13_Class_Practice.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/refint/13_Class_Practice.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/Debug/net8.0/ref/13_Class_Practice.dll
