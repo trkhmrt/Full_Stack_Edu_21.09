@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         OgrenciService ogrenciService = new OgrenciService();
-
+        
         for (int i = 0; i < 3; i++)
         {
             Ogrenci ogrenci = new Ogrenci();

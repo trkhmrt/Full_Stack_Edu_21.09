@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/bin/Debug/net8.0/14_Linq_Query
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/bin/Debug/net8.0/14_Linq_Query.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/bin/Debug/net8.0/14_Linq_Query.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/bin/Debug/net8.0/14_Linq_Query.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/bin/Debug/net8.0/14_Linq_Query.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/refint/14_Linq_Query.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/14_Linq_Query/obj/Debug/net8.0/ref/14_Linq_Query.dll

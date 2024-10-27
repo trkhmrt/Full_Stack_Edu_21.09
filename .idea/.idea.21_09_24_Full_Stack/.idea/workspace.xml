@@ -13,6 +13,7 @@
     <projectFile>10_List/10_List.csproj</projectFile>
     <projectFile>13_Class/13_Class.csproj</projectFile>
     <projectFile>13_Class_Practice/13_Class_Practice.csproj</projectFile>
+    <projectFile>14_Linq_Sorguları/14_Linq_Sorguları.csproj</projectFile>
     <projectFile>IF_ELSE_PRACTICE/IF_ELSE_PRACTICE.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
@@ -20,38 +21,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3514ddf6-e4a2-41b4-8595-79eef9271c12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/13_Class/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Class/Otomobil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Class_Practice/Models/Ogrenci.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_Class_Practice/Services/OgrenciService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_Linq_Query/Ogrenci.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.21_09_24_Full_Stack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.21_09_24_Full_Stack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class_Practice/Models/Ogrenci.cs" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class_Practice/Models/Ogrenci.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class_Practice/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class_Practice/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/21_09_24_Full_Stack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/21_09_24_Full_Stack.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IF_ELSE_PRACTICE/obj/Debug/net8.0/IF_ELSE_PRACTICE.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +73,7 @@
     ".NET Project.12_Dictionary.executor": "Debug",
     ".NET Project.13_Class.executor": "Run",
     ".NET Project.13_Class_Practice.executor": "Debug",
+    ".NET Project.14_Linq_Query.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -107,7 +83,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.13_Class_Practice">
+  <component name="RunManager" selected=".NET Project.14_Linq_Query">
     <configuration name="08_Arrays" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -270,19 +246,58 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="14_Linq_Query" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/14_Linq_Query/bin/Debug/net8.0/14_Linq_Query" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/14_Linq_Query/bin/Debug/net8.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/14_Linq_Query/14_Linq_Query.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net8.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="14_Linq_Sorguları" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/14_Linq_Sorguları/14_Linq_Sorguları.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue=".NET Project.13_Class" />
       <item itemvalue=".NET Project.13_Class_Practice" />
+      <item itemvalue=".NET Project.14_Linq_Sorguları" />
       <item itemvalue=".NET Project.11_Best_Practice" />
       <item itemvalue=".NET Project.08_Arrays" />
       <item itemvalue=".NET Project.09_Function" />
       <item itemvalue=".NET Project.09_Function_Best_Practice" />
       <item itemvalue=".NET Project.10_List" />
+      <item itemvalue=".NET Project.14_Linq_Query" />
       <item itemvalue=".NET Project.09_Metot_Overloading" />
       <item itemvalue=".NET Project.12_Dictionary" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Project.14_Linq_Query" />
         <item itemvalue=".NET Project.09_Metot_Overloading" />
         <item itemvalue=".NET Project.12_Dictionary" />
       </list>
@@ -296,7 +311,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729924078017</updated>
-      <workItem from="1729924079552" duration="11849000" />
+      <workItem from="1729924079552" duration="25859000" />
     </task>
     <servers />
   </component>
@@ -318,6 +333,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/14_Linq_Query/Program.cs</url>
+          <line>207</line>
+          <properties documentPath="$PROJECT_DIR$/14_Linq_Query/Program.cs" containingFunctionPresentation="Method 'Main'">
+            <startOffsets>
+              <option value="6722" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6844" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#_08_Arrays.Program.Main" memberName="isimler2" />

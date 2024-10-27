@@ -71,7 +71,7 @@ class Program
         // Console.WriteLine(otomobil.marka +" "+otomobil.renk);
         // Console.WriteLine(otomobil2.marka +" "+otomobil2.renk);
         // Console.WriteLine(otomobil3.marka +" "+otomobil3.renk);
-        
+
         List<Otomobil> otomobiller = new List<Otomobil>()
         {
             new Otomobil()
@@ -85,8 +85,13 @@ class Program
                 id = 2,
                 marka = "Mercedes",
                 renk = "Mavi"
+            },
+            new Otomobil()
+            {
+                id=3,
+                marka="Mazda",
+                renk="yeşil"
             }
-
         };
         
         // for (int i = 0; i < 2; i++)
@@ -117,6 +122,7 @@ class Program
             if (item.id == id)
             {
                 item.renk = "Sarı";
+                
             }
         }
 
@@ -143,22 +149,14 @@ class Program
             Console.WriteLine(item.id + " " + item.marka + " " + item.renk);
         }
         
-        
         /*
-         Belirlediğiniz herhangi bir senaryo ,
-         
+         Belirlediğiniz herhangi bir senaryo ,   
          Bu senaryoya bağlı olarak  Liste , Metot  ve Class yapılarını kullandığınız CRUD operasyonlarını içeren bir uygulama yazın.
          C -> Create 
          R -> Read
          U -> Update
-         D -> Delete
-        
+         D -> Delete Soft delete / Hard delete Kalıcı olarak silmek 
          */
-        
-        
-         
-    
-        
         
     }
 }
