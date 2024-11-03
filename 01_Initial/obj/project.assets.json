@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\01_Initial\\01_Initial.csproj",
+      "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\01_Initial\\01_Initial.csproj",
       "projectName": "01_Initial",
-      "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\01_Initial\\01_Initial.csproj",
+      "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\01_Initial\\01_Initial.csproj",
       "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\01_Initial\\obj\\",
+      "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\01_Initial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Win10\\AppData\\Roaming\\NuGet\\NuGet.Config",

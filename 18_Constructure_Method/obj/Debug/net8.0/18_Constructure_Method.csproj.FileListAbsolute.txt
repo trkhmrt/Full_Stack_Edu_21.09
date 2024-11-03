@@ -1,0 +1,15 @@
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.AssemblyInfoInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.AssemblyInfo.cs
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.sourcelink.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\bin\Debug\net8.0\18_Constructure_Method.exe
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\bin\Debug\net8.0\18_Constructure_Method.deps.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\bin\Debug\net8.0\18_Constructure_Method.runtimeconfig.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\bin\Debug\net8.0\18_Constructure_Method.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\bin\Debug\net8.0\18_Constructure_Method.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\refint\18_Constructure_Method.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\18_Constructure_Method.genruntimeconfig.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\18_Constructure_Method\obj\Debug\net8.0\ref\18_Constructure_Method.dll

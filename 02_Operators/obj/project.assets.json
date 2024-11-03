@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj",
+      "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj",
       "projectName": "02_Operators",
-      "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj",
+      "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\02_Operators\\02_Operators.csproj",
       "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\02_Operators\\obj\\",
+      "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\02_Operators\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Win10\\AppData\\Roaming\\NuGet\\NuGet.Config",

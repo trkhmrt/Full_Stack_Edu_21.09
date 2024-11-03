@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/bin/Debug/net8.0/11_Best_Practice_Func_List
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/bin/Debug/net8.0/11_Best_Practice_Func_List.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/bin/Debug/net8.0/11_Best_Practice_Func_List.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/bin/Debug/net8.0/11_Best_Practice_Func_List.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/bin/Debug/net8.0/11_Best_Practice_Func_List.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/refint/11_Best_Practice_Func_List.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/11_Best_Practice_Func_List/obj/Debug/net8.0/ref/11_Best_Practice_Func_List.dll

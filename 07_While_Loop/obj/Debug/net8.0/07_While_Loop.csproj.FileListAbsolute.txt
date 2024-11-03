@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/bin/Debug/net8.0/07_While_Loop
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/bin/Debug/net8.0/07_While_Loop.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/bin/Debug/net8.0/07_While_Loop.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/bin/Debug/net8.0/07_While_Loop.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/bin/Debug/net8.0/07_While_Loop.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/refint/07_While_Loop.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/07_While_Loop.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/07_While_Loop/obj/Debug/net8.0/ref/07_While_Loop.dll

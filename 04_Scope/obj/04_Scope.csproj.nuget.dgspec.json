@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj": {}
+    "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj": {
+    "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj",
+        "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj",
         "projectName": "04_Scope",
-        "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj",
+        "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\04_Scope\\04_Scope.csproj",
         "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\Full_Stack_Edu_21.09\\04_Scope\\obj\\",
+        "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\04_Scope\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Win10\\AppData\\Roaming\\NuGet\\NuGet.Config",

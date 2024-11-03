@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/bin/Debug/net8.0/12_Dictionary
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/bin/Debug/net8.0/12_Dictionary.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/bin/Debug/net8.0/12_Dictionary.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/bin/Debug/net8.0/12_Dictionary.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/bin/Debug/net8.0/12_Dictionary.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/refint/12_Dictionary.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/12_Dictionary.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/Debug/net8.0/ref/12_Dictionary.dll

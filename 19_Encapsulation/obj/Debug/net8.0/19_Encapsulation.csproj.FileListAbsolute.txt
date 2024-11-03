@@ -1,0 +1,15 @@
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\bin\Debug\net8.0\19_Encapsulation.exe
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\bin\Debug\net8.0\19_Encapsulation.deps.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\bin\Debug\net8.0\19_Encapsulation.runtimeconfig.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\bin\Debug\net8.0\19_Encapsulation.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\bin\Debug\net8.0\19_Encapsulation.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.AssemblyInfoInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.AssemblyInfo.cs
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.sourcelink.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\refint\19_Encapsulation.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\19_Encapsulation.genruntimeconfig.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation\obj\Debug\net8.0\ref\19_Encapsulation.dll
