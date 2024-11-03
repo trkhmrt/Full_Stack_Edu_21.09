@@ -87,7 +87,7 @@ class Program
         //     Console.WriteLine( isim + " " + soyisim);
         // }
         
-        
+        //Yorum Satırı
         
         
         
