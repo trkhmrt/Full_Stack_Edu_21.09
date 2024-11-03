@@ -1,0 +1,15 @@
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.AssemblyInfoInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.AssemblyInfo.cs
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.sourcelink.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\bin\Debug\net8.0\My_Practice_Home.exe
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\bin\Debug\net8.0\My_Practice_Home.deps.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\bin\Debug\net8.0\My_Practice_Home.runtimeconfig.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\bin\Debug\net8.0\My_Practice_Home.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\bin\Debug\net8.0\My_Practice_Home.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\refint\My_Practice_Home.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\My_Practice_Home.genruntimeconfig.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\My_Practice_Home\obj\Debug\net8.0\ref\My_Practice_Home.dll

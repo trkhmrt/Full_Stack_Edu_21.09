@@ -8,24 +8,27 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/egitim/.nuget/packages/": {}
+    "C:\\Users\\Win10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/09_Function.csproj",
+      "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\09_Function\\09_Function.csproj",
       "projectName": "09_Function",
-      "projectPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/09_Function.csproj",
-      "packagesPath": "/Users/egitim/.nuget/packages/",
-      "outputPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/09_Function/obj/",
+      "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\09_Function\\09_Function.csproj",
+      "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\09_Function\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/egitim/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/egitim/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

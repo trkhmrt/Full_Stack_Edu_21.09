@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/13_Class_Practice.csproj": {}
+    "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\13_Class_Practice\\13_Class_Practice.csproj": {}
   },
   "projects": {
-    "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/13_Class_Practice.csproj": {
+    "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\13_Class_Practice\\13_Class_Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/13_Class_Practice.csproj",
+        "projectUniqueName": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\13_Class_Practice\\13_Class_Practice.csproj",
         "projectName": "13_Class_Practice",
-        "projectPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/13_Class_Practice.csproj",
-        "packagesPath": "/Users/egitim/.nuget/packages/",
-        "outputPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/13_Class_Practice/obj/",
+        "projectPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\13_Class_Practice\\13_Class_Practice.csproj",
+        "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win10\\Documents\\GitHub\\GİTHUB-YENİ\\Full_Stack_Edu_21.09\\13_Class_Practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/egitim/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/egitim/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,15 @@
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\bin\Debug\net8.0\14_Linq_Query.exe
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\bin\Debug\net8.0\14_Linq_Query.deps.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\bin\Debug\net8.0\14_Linq_Query.runtimeconfig.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\bin\Debug\net8.0\14_Linq_Query.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\bin\Debug\net8.0\14_Linq_Query.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.AssemblyInfoInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.AssemblyInfo.cs
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.sourcelink.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\refint\14_Linq_Query.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\14_Linq_Query.genruntimeconfig.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\14_Linq_Sorguları\obj\Debug\net8.0\ref\14_Linq_Query.dll

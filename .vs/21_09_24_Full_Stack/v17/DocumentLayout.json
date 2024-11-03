@@ -1,0 +1,233 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03085C97-DF84-4D84-AFD8-EB9459C22A90}|19_Encapsulation_Exercise\\19_Encapsulation_Exercise.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\19_encapsulation_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03085C97-DF84-4D84-AFD8-EB9459C22A90}|19_Encapsulation_Exercise\\19_Encapsulation_Exercise.csproj|solutionrelative:19_encapsulation_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6117E4B-3116-4821-BB74-4CBFC33D2581}|19_Encapsulation\\19_Encapsulation.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\19_encapsulation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6117E4B-3116-4821-BB74-4CBFC33D2581}|19_Encapsulation\\19_Encapsulation.csproj|solutionrelative:19_encapsulation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD8D887E-E061-497C-B603-54079DC229F5}|18_Constructure_Method\\18_Constructure_Method.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\18_constructure_method\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD8D887E-E061-497C-B603-54079DC229F5}|18_Constructure_Method\\18_Constructure_Method.csproj|solutionrelative:18_constructure_method\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B00D83-DF80-43DE-B741-BF5F2753996F}|17_Metod_Overloading\\17_Metod_Override.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\17_metod_overloading\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B00D83-DF80-43DE-B741-BF5F2753996F}|17_Metod_Overloading\\17_Metod_Override.csproj|solutionrelative:17_metod_overloading\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84ECDE09-4C05-4BE2-A4FB-835120E8FAD4}|16_\u0130nheritance\\16_\u0130nheritance.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\16_\u0130nheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84ECDE09-4C05-4BE2-A4FB-835120E8FAD4}|16_\u0130nheritance\\16_\u0130nheritance.csproj|solutionrelative:16_\u0130nheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57C8434-3B05-4764-B1EE-A8E5B8CE4ACC}|15_OOP\\15_OOP.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\15_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57C8434-3B05-4764-B1EE-A8E5B8CE4ACC}|15_OOP\\15_OOP.csproj|solutionrelative:15_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72110A4-055B-4A1A-BEF3-74BDAD41920A}|14_Linq_Sorgular\u0131\\14_Linq_Query.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\14_linq_sorgular\u0131\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72110A4-055B-4A1A-BEF3-74BDAD41920A}|14_Linq_Sorgular\u0131\\14_Linq_Query.csproj|solutionrelative:14_linq_sorgular\u0131\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72110A4-055B-4A1A-BEF3-74BDAD41920A}|14_Linq_Sorgular\u0131\\14_Linq_Query.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\14_linq_sorgular\u0131\\ogrenci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72110A4-055B-4A1A-BEF3-74BDAD41920A}|14_Linq_Sorgular\u0131\\14_Linq_Query.csproj|solutionrelative:14_linq_sorgular\u0131\\ogrenci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C00C4376-14BF-4876-9101-411F68466A5B}|14_ling_practice-2\\14_ling_practice-2.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\14_ling_practice-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C00C4376-14BF-4876-9101-411F68466A5B}|14_ling_practice-2\\14_ling_practice-2.csproj|solutionrelative:14_ling_practice-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C00C4376-14BF-4876-9101-411F68466A5B}|14_ling_practice-2\\14_ling_practice-2.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\14_ling_practice-2\\talebe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C00C4376-14BF-4876-9101-411F68466A5B}|14_ling_practice-2\\14_ling_practice-2.csproj|solutionrelative:14_ling_practice-2\\talebe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{384C2F03-8852-4F65-BE8B-280CC6CCDB95}|MY_PRACTICE-CLASS\\MY_PRACTICE-CLASS.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\my_practice-class\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{384C2F03-8852-4F65-BE8B-280CC6CCDB95}|MY_PRACTICE-CLASS\\MY_PRACTICE-CLASS.csproj|solutionrelative:my_practice-class\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{384C2F03-8852-4F65-BE8B-280CC6CCDB95}|MY_PRACTICE-CLASS\\MY_PRACTICE-CLASS.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\my_practice-class\\services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{384C2F03-8852-4F65-BE8B-280CC6CCDB95}|MY_PRACTICE-CLASS\\MY_PRACTICE-CLASS.csproj|solutionrelative:my_practice-class\\services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{384C2F03-8852-4F65-BE8B-280CC6CCDB95}|MY_PRACTICE-CLASS\\MY_PRACTICE-CLASS.csproj|c:\\users\\win10\\documents\\github\\g\u0130thub-yen\u0130\\full_stack_edu_21.09\\my_practice-class\\models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{384C2F03-8852-4F65-BE8B-280CC6CCDB95}|MY_PRACTICE-CLASS\\MY_PRACTICE-CLASS.csproj|solutionrelative:my_practice-class\\models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\19_Encapsulation_Exercise\\Program.cs",
+              "RelativeDocumentMoniker": "19_Encapsulation_Exercise\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\19_Encapsulation_Exercise\\Program.cs",
+              "RelativeToolTip": "19_Encapsulation_Exercise\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T08:47:33.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\19_Encapsulation\\Program.cs",
+              "RelativeDocumentMoniker": "19_Encapsulation\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\19_Encapsulation\\Program.cs",
+              "RelativeToolTip": "19_Encapsulation\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T08:13:42.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\18_Constructure_Method\\Program.cs",
+              "RelativeDocumentMoniker": "18_Constructure_Method\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\18_Constructure_Method\\Program.cs",
+              "RelativeToolTip": "18_Constructure_Method\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T06:25:22.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\17_Metod_Overloading\\Program.cs",
+              "RelativeDocumentMoniker": "17_Metod_Overloading\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\17_Metod_Overloading\\Program.cs",
+              "RelativeToolTip": "17_Metod_Overloading\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:52:03.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\16_\u0130nheritance\\Program.cs",
+              "RelativeDocumentMoniker": "16_\u0130nheritance\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\16_\u0130nheritance\\Program.cs",
+              "RelativeToolTip": "16_\u0130nheritance\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T06:58:02.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\15_OOP\\Program.cs",
+              "RelativeDocumentMoniker": "15_OOP\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\15_OOP\\Program.cs",
+              "RelativeToolTip": "15_OOP\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T06:20:25.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "talebe.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_ling_practice-2\\talebe.cs",
+              "RelativeDocumentMoniker": "14_ling_practice-2\\talebe.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_ling_practice-2\\talebe.cs",
+              "RelativeToolTip": "14_ling_practice-2\\talebe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T09:14:23.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_ling_practice-2\\Program.cs",
+              "RelativeDocumentMoniker": "14_ling_practice-2\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_ling_practice-2\\Program.cs",
+              "RelativeToolTip": "14_ling_practice-2\\Program.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAEsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T09:13:15.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ogrenci.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_Linq_Sorgular\u0131\\Ogrenci.cs",
+              "RelativeDocumentMoniker": "14_Linq_Sorgular\u0131\\Ogrenci.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_Linq_Sorgular\u0131\\Ogrenci.cs",
+              "RelativeToolTip": "14_Linq_Sorgular\u0131\\Ogrenci.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T07:18:37.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_Linq_Sorgular\u0131\\Program.cs",
+              "RelativeDocumentMoniker": "14_Linq_Sorgular\u0131\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\14_Linq_Sorgular\u0131\\Program.cs",
+              "RelativeToolTip": "14_Linq_Sorgular\u0131\\Program.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAHMAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T07:08:56.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\MY_PRACTICE-CLASS\\Services\\Class1.cs",
+              "RelativeDocumentMoniker": "MY_PRACTICE-CLASS\\Services\\Class1.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\MY_PRACTICE-CLASS\\Services\\Class1.cs",
+              "RelativeToolTip": "MY_PRACTICE-CLASS\\Services\\Class1.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAABhwA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T19:22:10.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\MY_PRACTICE-CLASS\\Models\\Class1.cs",
+              "RelativeDocumentMoniker": "MY_PRACTICE-CLASS\\Models\\Class1.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\MY_PRACTICE-CLASS\\Models\\Class1.cs",
+              "RelativeToolTip": "MY_PRACTICE-CLASS\\Models\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T19:19:33.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\MY_PRACTICE-CLASS\\Program.cs",
+              "RelativeDocumentMoniker": "MY_PRACTICE-CLASS\\Program.cs",
+              "ToolTip": "C:\\Users\\Win10\\Documents\\GitHub\\G\u0130THUB-YEN\u0130\\Full_Stack_Edu_21.09\\MY_PRACTICE-CLASS\\Program.cs",
+              "RelativeToolTip": "MY_PRACTICE-CLASS\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T19:18:10.084Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

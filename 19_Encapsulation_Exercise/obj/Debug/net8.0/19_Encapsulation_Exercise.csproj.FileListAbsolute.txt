@@ -1,0 +1,15 @@
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\bin\Debug\net8.0\19_Encapsulation_Exercise.exe
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\bin\Debug\net8.0\19_Encapsulation_Exercise.deps.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\bin\Debug\net8.0\19_Encapsulation_Exercise.runtimeconfig.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\bin\Debug\net8.0\19_Encapsulation_Exercise.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\bin\Debug\net8.0\19_Encapsulation_Exercise.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.AssemblyInfoInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.AssemblyInfo.cs
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.sourcelink.json
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\refint\19_Encapsulation_Exercise.dll
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.pdb
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\19_Encapsulation_Exercise.genruntimeconfig.cache
+C:\Users\Win10\Documents\GitHub\GİTHUB-YENİ\Full_Stack_Edu_21.09\19_Encapsulation_Exercise\obj\Debug\net8.0\ref\19_Encapsulation_Exercise.dll
