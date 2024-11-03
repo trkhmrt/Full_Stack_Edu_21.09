@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/bin/Debug/net8.0/18_Constructor_Method
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/bin/Debug/net8.0/18_Constructor_Method.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/bin/Debug/net8.0/18_Constructor_Method.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/bin/Debug/net8.0/18_Constructor_Method.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/bin/Debug/net8.0/18_Constructor_Method.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/refint/18_Constructor_Method.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/18_Constructor_Method/obj/Debug/net8.0/ref/18_Constructor_Method.dll

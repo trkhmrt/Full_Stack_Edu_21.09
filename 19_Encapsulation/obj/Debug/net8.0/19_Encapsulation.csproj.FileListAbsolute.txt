@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/bin/Debug/net8.0/19_Encapsulation
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/bin/Debug/net8.0/19_Encapsulation.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/bin/Debug/net8.0/19_Encapsulation.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/bin/Debug/net8.0/19_Encapsulation.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/bin/Debug/net8.0/19_Encapsulation.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/refint/19_Encapsulation.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/19_Encapsulation/obj/Debug/net8.0/ref/19_Encapsulation.dll

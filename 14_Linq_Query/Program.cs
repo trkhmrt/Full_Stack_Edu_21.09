@@ -200,7 +200,7 @@ class Program
             .Where(ogrenci => ogrenci.name.StartsWith("T"));
         
         //Önce şart sağlayanları getir ardından bunlar arasında sıralama yap.
-        var sonuc3 = ogrenciler.Where(ogrenci => ogrenci.name.StartsWith("T")) .OrderByDescending(ogrenci => ogrenci.puan1);
+        var sonuc3 = ogrenciler.Where(ogrenci => ogrenci.name.StartsWith("T")).OrderByDescending(ogrenci => ogrenci.puan1);
        
             
         //Yaşı 18'e eşit ve küçük olan öğrencilerin bilgisini nesne olarak ve sadece isim propertysiyle getirin.
