@@ -1,0 +1,61 @@
+YOL HARİTASI
+
+10.11.24
+OOP-> DEVAM 
+
+16.11.24 - 17.11.24
+-DERS OLMAYABİLİR.PROJE VERİLEBİLİR.
+
+DERS OLURSA
+-MSSQL DERSİ(SQL VERİTABANI DERSİ)
+
+23.11.24 - 24.11.24
+
+-Dependency Injectıon
+-ENTITY FRAMEWORK CORE(ORM)
+
+
+30.11.24 - 01.12.24
+
+-API'lere giriş 
+-Postmande Test
+-Dto ve Mapping 
+
+07.12.24 - 08.12.24
+
+-JWT(jason web token)
+-GlobalExceptionHandler
+-Middleware
+
+14.12.24 - 15.12.24
+-Identity
+
+
+21.12.24 - 22.12.24
+-sbadhsahdhshshashkads
+eğer hata meydana gelirse bunu nlogla loga bas
+-NLOG
+-FLuent Validation(Regex kullanılır.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
