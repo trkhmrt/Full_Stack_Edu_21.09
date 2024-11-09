@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/bin/Debug/net8.0/20_Abstract
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/bin/Debug/net8.0/20_Abstract.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/bin/Debug/net8.0/20_Abstract.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/bin/Debug/net8.0/20_Abstract.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/bin/Debug/net8.0/20_Abstract.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/refint/20_Abstract.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/20_Abstract.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/20_Abstract/obj/Debug/net8.0/ref/20_Abstract.dll
