@@ -21,13 +21,126 @@
     <projectFile>17_Method_Override/17_Method_Override.csproj</projectFile>
     <projectFile>18_Constructor_Method/18_Constructor_Method.csproj</projectFile>
     <projectFile>19_Encapsulation/19_Encapsulation.csproj</projectFile>
+    <projectFile>20_Abstract/20_Abstract.csproj</projectFile>
+    <projectFile>21_Interface/21_Interface.csproj</projectFile>
+    <projectFile>22_OOP_PRACTICE/22_OOP_PRACTICE.csproj</projectFile>
     <projectFile>IF_ELSE_PRACTICE/IF_ELSE_PRACTICE.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3514ddf6-e4a2-41b4-8595-79eef9271c12" name="Changes" comment="" />
+    <list default="true" id="3514ddf6-e4a2-41b4-8595-79eef9271c12" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/Context/DersAdi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/Context/DersDB.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/Context/Ders_Isimleri.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/Context/OgrenciDB.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/DTO's/Request/OgrenciDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/DTO's/Response/OgrenciResponseDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/Project_Details.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/entities/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/entities/Ders.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/entities/Ogrenci.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/entities/Ogretmen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/repositories/IOgrenciRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/22_OOP_PRACTICE/services/OgrenciService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.21_09_24_Full_Stack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.21_09_24_Full_Stack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/Debug/net8.0/01_Initial.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Initial/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Initial/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/01_Initial/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/Debug/net8.0/02_Operators.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Operators/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Operators/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/02_Operators/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/Debug/net8.0/03_Practice.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Practice/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Practice/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/03_Practice/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/Debug/net8.0/04_Scope.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Scope/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Scope/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/04_Scope/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/Debug/net8.0/05_IF_ELSE.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_IF_ELSE/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/05_IF_ELSE/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/Debug/net8.0/06_IF_ELSE_PRACTISE.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/Debug/net8.0/06_IF_ELSE_PRACTISE.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/Debug/net8.0/06_IF_ELSE_PRACTISE.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/Debug/net8.0/06_IF_ELSE_PRACTISE.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/06_IF_ELSE_PRACTISE/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/Debug/net8.0/07_While_Loop.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_While_Loop/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/07_While_Loop/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/Debug/net8.0/08_Arrays.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Arrays/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/08_Arrays/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/Debug/net8.0/09_Function.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Function/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Function/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/09_Function/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/Debug/net8.0/09_Metot_Overloading.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Metot_Overloading/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/09_Metot_Overloading/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/Debug/net8.0/10_List.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_List/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_List/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/10_List/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/Debug/net8.0/11_Best_Practice_Func_List.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/11_Best_Practice_Func_List/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/Debug/net8.0/12_Dictionary.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Dictionary/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/12_Dictionary/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class/obj/Debug/net8.0/13_Class.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class/obj/Debug/net8.0/13_Class.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class/obj/Debug/net8.0/13_Class.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class/obj/Debug/net8.0/13_Class.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class_Practice/obj/Debug/net8.0/13_Class_Practice.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class_Practice/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class_Practice/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_Class_Practice/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/13_Class_Practice/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/14_Linq_Query/obj/Debug/net8.0/14_Linq_Query.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Linq_Query/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/14_Linq_Query/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Linq_Query/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/14_Linq_Query/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_OOP/obj/Debug/net8.0/15_OOP.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/15_OOP/obj/Debug/net8.0/15_OOP.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_OOP/obj/Debug/net8.0/15_OOP.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/15_OOP/obj/Debug/net8.0/15_OOP.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_OOP/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/15_OOP/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_OOP/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/15_OOP/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16_Inheritance/obj/Debug/net8.0/16_Inheritance.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/16_Inheritance/obj/Debug/net8.0/16_Inheritance.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16_Inheritance/obj/Debug/net8.0/16_Inheritance.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/16_Inheritance/obj/Debug/net8.0/16_Inheritance.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16_Inheritance/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/16_Inheritance/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16_Inheritance/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/16_Inheritance/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Method_Override/obj/Debug/net8.0/17_Method_Override.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/17_Method_Override/obj/Debug/net8.0/17_Method_Override.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Method_Override/obj/Debug/net8.0/17_Method_Override.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/17_Method_Override/obj/Debug/net8.0/17_Method_Override.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Method_Override/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/17_Method_Override/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Method_Override/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/17_Method_Override/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18_Constructor_Method/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/18_Constructor_Method/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/18_Constructor_Method/obj/Debug/net8.0/18_Constructor_Method.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18_Constructor_Method/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/18_Constructor_Method/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18_Constructor_Method/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/18_Constructor_Method/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/19_Encapsulation/obj/Debug/net8.0/19_Encapsulation.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19_Encapsulation/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/19_Encapsulation/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19_Encapsulation/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/19_Encapsulation/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20_Abstract/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/20_Abstract/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20_Abstract/obj/Debug/net8.0/20_Abstract.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/20_Abstract/obj/Debug/net8.0/20_Abstract.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20_Abstract/obj/Debug/net8.0/20_Abstract.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/20_Abstract/obj/Debug/net8.0/20_Abstract.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20_Abstract/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/20_Abstract/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21_09_24_Full_Stack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/21_09_24_Full_Stack.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21_09_24_Full_Stack.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/21_09_24_Full_Stack.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21_Interface/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/21_Interface/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21_Interface/obj/Debug/net8.0/21_Interface.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/21_Interface/obj/Debug/net8.0/21_Interface.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21_Interface/obj/Debug/net8.0/21_Interface.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/21_Interface/obj/Debug/net8.0/21_Interface.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21_Interface/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/21_Interface/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +170,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ccd2056ec55b7b67558d52e32a887ed5ac7e346fc429b218c188d0a99cb5be/Console.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3bd4df5aff92cabbc4d630be64227073db1b8539b3a1e47786b4b189d7cdb7/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/89c4224f79e6b275db5cce1623a97eec6e1bbd4755a617dd36d073d2347236a5/String.Manipulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f91a3655c2e83926bece90abd3d6b228e5b9b95e7802b0efb93aabe321f/DateTimeParse.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -67,30 +181,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.09_Function.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.09_Metot_Overloading.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.10_List.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.11_Best_Practice.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.12_Dictionary.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.13_Class.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.13_Class_Practice.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.14_Linq_Query.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.16_Inheritance.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.17_Method_Overloading.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.18_Constructor_Method.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.19_Encapsulation.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.09_Function.executor": "Debug",
+    ".NET Project.09_Metot_Overloading.executor": "Run",
+    ".NET Project.10_List.executor": "Run",
+    ".NET Project.11_Best_Practice.executor": "Run",
+    ".NET Project.12_Dictionary.executor": "Debug",
+    ".NET Project.13_Class.executor": "Run",
+    ".NET Project.13_Class_Practice.executor": "Debug",
+    ".NET Project.14_Linq_Query.executor": "Debug",
+    ".NET Project.16_Inheritance.executor": "Debug",
+    ".NET Project.17_Method_Overloading.executor": "Run",
+    ".NET Project.18_Constructor_Method.executor": "Debug",
+    ".NET Project.19_Encapsulation.executor": "Run",
+    ".NET Project.22_OOP_PRACTICE.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Project.19_Encapsulation">
+}]]></component>
+  <component name="RunManager" selected=".NET Project.22_OOP_PRACTICE">
     <configuration name="06_IF_ELSE_PRACTISE" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -415,7 +530,64 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="20_Abstract" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/20_Abstract/20_Abstract.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="21_Interface" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/21_Interface/21_Interface.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="22_OOP_PRACTICE" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/22_OOP_PRACTICE/22_OOP_PRACTICE.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue=".NET Project.20_Abstract" />
+      <item itemvalue=".NET Project.21_Interface" />
+      <item itemvalue=".NET Project.22_OOP_PRACTICE" />
       <item itemvalue=".NET Project.06_IF_ELSE_PRACTISE" />
       <item itemvalue=".NET Project.17_Method_Override" />
       <item itemvalue=".NET Project.18_Constructor_Method" />
@@ -454,6 +626,7 @@
       <workItem from="1729924079552" duration="25859000" />
       <workItem from="1730527599652" duration="18306000" />
       <workItem from="1730614298882" duration="12236000" />
+      <workItem from="1731219392372" duration="14554000" />
     </task>
     <servers />
   </component>

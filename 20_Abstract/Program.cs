@@ -44,12 +44,6 @@ class Program
         string mesaj =  ApiMesaj.mesaj;
         Console.WriteLine(mesaj);
         
-        //11:10 MOLA BİTİŞ
-
-
-
-
-
     }
     
     public abstract class AracService

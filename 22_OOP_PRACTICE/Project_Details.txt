@@ -1,0 +1,39 @@
+--------
+Entities
+
+Öğrenci , Öğretmen , Dersler , Sınıflar
+
+Öğrenci 
+
+-Adı , Soyadı , DoğumTarihi , OkulNumarası , Dersler
+
+Öğretmen
+
+-Adı , Soyadı , DoğumTarihi , Alan , Dersler 
+
+Dersler
+
+- DersAdi , Alan , DersSaati , GeçmeNotu , Dersi_Alan_öğrenci_sayısı
+
+
+-Sınıflar
+
+-Sınıf numarası , Sınıf kodu , Sınıf kapasitesi. 
+
+
+-----------------------------------------------------
+
+Service 
+
+Öğrenci  Create , Delete , Update , Read
+
+
+
+
+---SİZDEN İSTENENLER--
+
+-ÖĞRENCİYE AYNI DERS BİRDEN FAZLA KEZ ATANMAMALI.
+
+-Öğrenciyi okul no ile getirmeyi ve silme işlemi sizde.
+
+

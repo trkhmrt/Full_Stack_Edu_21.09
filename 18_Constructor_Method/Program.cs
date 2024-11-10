@@ -26,8 +26,6 @@ class Program
          }
          
          */
-
-
         Ogrenci ogrenci = new Ogrenci("192.168.1.1");
         
         ogrenci.OgrenciEkle();
@@ -37,9 +35,6 @@ class Program
         //Ogrenci ogrenci1 = new Ogrenci("192.168.2.1");
         // Ogrenci ogrenci2 = new Ogrenci("Tarık");
         // Ogrenci ogrenci3 = new Ogrenci("Tarık","Hamarat");
-        //
-        
-       
         
     }
 
@@ -86,13 +81,6 @@ class Program
         // {
         //     Console.WriteLine( isim + " " + soyisim);
         // }
-        
-        //Yorum Satırı
-        
-        
-        
-        
-        
         
     }
     

@@ -36,7 +36,7 @@ class Program
         void Delete2();
         void Update2();
         void GetAll2();
-
+        
     }
     
     class Sedan:AracMetotlari,AracMetotlari2
