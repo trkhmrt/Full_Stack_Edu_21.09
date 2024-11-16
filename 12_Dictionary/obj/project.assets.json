@@ -8,24 +8,27 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/egitim/.nuget/packages/": {}
+    "C:\\Users\\boyut\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/12_Dictionary.csproj",
+      "projectUniqueName": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\12_Dictionary\\12_Dictionary.csproj",
       "projectName": "12_Dictionary",
-      "projectPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/12_Dictionary.csproj",
-      "packagesPath": "/Users/egitim/.nuget/packages/",
-      "outputPath": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/12_Dictionary/obj/",
+      "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\12_Dictionary\\12_Dictionary.csproj",
+      "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\12_Dictionary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/egitim/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/egitim/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
