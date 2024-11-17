@@ -126,8 +126,8 @@ select * from Students where StudentID > 3
 select * from Students
 
 update Students set 
-Name='Tarýk'
-where StudentID = 10
+Name='Yusuf'
+where StudentID = 5
 
 --Koþul belirtilmeden güncelleme yapýlýrsa tablodaki bütün verileri etkiler.
 update Students set 
@@ -138,7 +138,82 @@ select * from Students
 delete from Students where StudentID = 6
 
 
+--------------------------------------------------------------------------------
+
+CREATE TABLE Musteriler (
+    MusteriID INT PRIMARY KEY,
+    Ad NVARCHAR(50),
+    Telefon NVARCHAR(15),
+    SysStartTime DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+    SysEndTime DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
+    PERIOD FOR SYSTEM_TIME (SysStartTime, SysEndTime)
+)
+WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.MusterilerHistory));
+
+insert into Musteriler (MusteriID,Ad,Telefon)  values  (2,'Yusuf','6666')
+
+select * from dbo.MusterilerHistory
+
+SELECT *
+FROM Musteriler 
+---------------------------------------------------------------------------------
+use fullstackORNEKDB
+
+SELECT *
+FROM fn_dblog(NULL, NULL);
+
+DBCC LOG (fullstackORNEKDB, 1);
+
+--------------------------------------------------------------------------------------
+select * from Musteriler
+
+BEGIN TRANSACTION;
+
+UPDATE Musteriler
+SET Telefon = '1111'
+WHERE MusteriID = 1;
+
+-- Yanlýþ bir iþlem yaptýysanýz:
+ROLLBACK; -- Ýþlem geri alýnýr.
+
+-- Eðer doðru olduðuna karar verirseniz:
+COMMIT; -- Deðiþiklikler kaydedilir.
+
+-----------------------------------------------------------------------------------------
+
+--DROP 
+--DROP ifadesi ile birlikte veri tabanýndan tablonun kaldýrýlmasýný saðlarýz
+create Table Deneme(
+  MusteriID INT PRIMARY KEY,
+    Ad NVARCHAR(50),
+    Telefon NVARCHAR(15),
+)
+DROP TABLE Deneme
 
 
+
+--ALTER
+
+
+alter table Musteriler set (System_Versioning = off)
+
+DROP TABLE Musteriler
+DROP TABLE MusterilerHistory
+
+
+--Sütun veri tipi ve null özellii güncellenebilir
+alter table Students ALTER COLUMN DENEME Nvarchar(50) NOT NULL
+
+--UNIQUE DURUMU EKLEMEK
+alter table Students ADD CONSTRAINT UQ_Email UNIQUE (Email)
+alter table Students DROP CONSTRAINT UQ_Email
+
+
+--ADD ILE SÜTUN EKLEMEK
+
+alter table Students ADD Adres nvarchar(100),Phone nvarchar(20)
+
+--Sütun isimlerini deðiþtirme.
+exec sp_rename 'Students.TCCC','TCKN' , 'COLUMN' 
 
 
