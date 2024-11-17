@@ -44,3 +44,12 @@ select ProductID,COUNT(*) as 'SATIÞ ADEDÝ',SUM(UnitPrice*Quantity) as 'SATIÞ TOP
 
 select ProductID,COUNT(*) as 'SATIÞ ADEDÝ',SUM(UnitPrice*Quantity) as 'SATIÞ TOPLAM TUTARI' from [Order Details] group by ProductID order by 'SATIÞ TOPLAM TUTARI' desc
 
+
+
+--SUBQUERY ÝLE GROUP BY 
+
+select (Select ProductName from Products where ProductID = od.ProductID),Sum(od.Quantity*od.UnitPrice) from [Order Details] od group by od.ProductID
+
+--DISTINCT ÝLE TABLO ÝÇERÝSÝNDE TEKRAR EDEN DEÐERLERÝ TEKE DÜÞÜRÜR
+
+select DISTINCT OrderID from [Order Details]
