@@ -98,7 +98,12 @@ select distinct s.CompanyName from Shippers s join Orders o  on o.ShipVia = s.Sh
 
 
 --Kargo maliyeti en yüksek olan sipariþi taþýyan kargo firmasýnýn adý(--Freight kargo maliyeti)
-SELECT     s.CompanyName,o.FreightFROM     Orders oJOIN     Shippers s ON o.ShipVia = s.ShipperID order by o.Freight desc
+SELECT 
+    s.CompanyName,o.Freight
+FROM 
+    Orders o
+JOIN 
+    Shippers s ON o.ShipVia = s.ShipperID order by o.Freight desc
 
 --Kargo isimlerine göre gruplandýrma yaparak toplam tutarda en yüksek kargo maliyetine sahip olan firma adýný getirmek.
 select s.CompanyName,SUM(o.Freight) from 
@@ -118,11 +123,21 @@ order by [Toplam Sipariþ Adedi] DESC
 
 --Her bir kategori için o kategoriye ait ürünlerin kategori ortalama fiyatýný bulun.Ortalama fiyatý 50 den fazla olan kategorileri listeleyin.(Kategori isimlerini alfabetik olarak sýralayýn.)
 
+SELECT CategoryName, avg(p.UnitPrice) as [Ortalama Fiyat] FROM Categories c join Products p on c.CategoryID=p.CategoryID group by CategoryNamehaving avg(p.UnitPrice)>30order by CategoryName
+
 
 --Her bir müþterinin toplam sipariþ tutarýný hesaplayalým en yüksek tutarý gösterelim.Toplam sipariþ tutarý 1000 den az olanlarý dýþlayalým.
 
+select c.CustomerID,SUM(od.UnitPrice * od.Quantity) as 'Ortalama Satýþ Tutarý' from Orders o join Customers c on o.CustomerID=c.CustomerIDjoin [Order Details] od on o.OrderID=od.OrderIDgroup by c.CustomerIDhaving SUM(od.UnitPrice * od.Quantity)>10000order by CustomerID
+
+
+select * from Orders
+select * from [Order Details]
 
 
 
+--LEFT JOÝN
+select * from Customers
+select * from Orders
 
-
+SELECT CompanyName,OrderID FROM Customers Left JOIN OrdersON Customers.CustomerID=Orders.CustomerIDwhere Orders.OrderID is null--RIGHT JOINSELECT CompanyName,OrderID FROM Customers RIGHT JOIN OrdersON Customers.CustomerID=Orders.CustomerIDselect * from Suppliersselect * from Region
