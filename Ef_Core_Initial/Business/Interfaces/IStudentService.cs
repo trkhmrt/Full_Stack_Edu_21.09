@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ef_Core_Initial.Data.Entities;
+using Microsoft.Data.SqlClient;
 
 namespace Ef_Core_Initial.Business.Interfaces
 {
     internal interface IStudentService
     {
+        
         void AddStudent(Student student);
 
         void UpdateStudent(Student student);
@@ -18,6 +20,6 @@ namespace Ef_Core_Initial.Business.Interfaces
         List<Student> GetAllStudents();
 
 
-
+       
     }
 }

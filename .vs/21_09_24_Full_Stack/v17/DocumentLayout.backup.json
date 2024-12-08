@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\business\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\business\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\data\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\data\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\business\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\business\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\migrations\\20241207080927_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\migrations\\20241207080927_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\data\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\data\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\data\\entities\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\data\\entities\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\data\\entities\\studentlesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\data\\entities\\studentlesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\data\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\data\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\ef_core_initial.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\ef_core_initial.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\migrations\\20241207080927_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\migrations\\20241207080927_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\business\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\business\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|c:\\users\\boyut\\documents\\github\\full_stack_edu_21.09\\ef_core_initial\\business\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E98C84-BF65-49AC-A95A-1545A2B94574}|Ef_Core_Initial\\Ef_Core_Initial.csproj|solutionrelative:ef_core_initial\\business\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +54,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Identity.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Identity.cs",
+              "RelativeDocumentMoniker": "Ef_Core_Initial\\Data\\Entities\\Identity.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Identity.cs*",
+              "RelativeToolTip": "Ef_Core_Initial\\Data\\Entities\\Identity.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:35:22.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Lesson.cs",
+              "RelativeDocumentMoniker": "Ef_Core_Initial\\Data\\Entities\\Lesson.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Lesson.cs",
+              "RelativeToolTip": "Ef_Core_Initial\\Data\\Entities\\Lesson.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T10:24:41.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "Ef_Core_Initial\\Business\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Services\\StudentService.cs",
+              "RelativeToolTip": "Ef_Core_Initial\\Business\\Services\\StudentService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T09:12:53.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T09:10:15.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "Ef_Core_Initial\\Data\\Entities\\Student.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Student.cs*",
+              "RelativeToolTip": "Ef_Core_Initial\\Data\\Entities\\Student.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwBUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T07:31:33.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "20241207080927_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Migrations\\20241207080927_InitialMigration.cs",
               "RelativeDocumentMoniker": "Ef_Core_Initial\\Migrations\\20241207080927_InitialMigration.cs",
@@ -55,47 +136,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "Ef_Core_Initial\\Business\\Services\\StudentService.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Services\\StudentService.cs*",
-              "RelativeToolTip": "Ef_Core_Initial\\Business\\Services\\StudentService.cs*",
-              "ViewState": "AgIAADIAAAAAAAAAAAAowD8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:12:53.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
-              "RelativeDocumentMoniker": "Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
-              "RelativeToolTip": "Ef_Core_Initial\\Business\\Interfaces\\IStudentService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:10:15.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Student.cs",
-              "RelativeDocumentMoniker": "Ef_Core_Initial\\Data\\Entities\\Student.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\Student.cs",
-              "RelativeToolTip": "Ef_Core_Initial\\Data\\Entities\\Student.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T07:31:33.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Ef_Core_Initial",
+              "Title": "Ef_Core_Initial.csproj",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Ef_Core_Initial.csproj",
               "RelativeDocumentMoniker": "Ef_Core_Initial\\Ef_Core_Initial.csproj",
               "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Ef_Core_Initial.csproj",
@@ -107,28 +149,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Context.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Context.cs",
               "RelativeDocumentMoniker": "Ef_Core_Initial\\Data\\Context.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Context.cs",
-              "RelativeToolTip": "Ef_Core_Initial\\Data\\Context.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBUAAAAmAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Context.cs*",
+              "RelativeToolTip": "Ef_Core_Initial\\Data\\Context.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwC4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T07:07:50.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Program.cs",
               "RelativeDocumentMoniker": "Ef_Core_Initial\\Program.cs",
               "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Program.cs",
               "RelativeToolTip": "Ef_Core_Initial\\Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAD4v04AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T06:35:53.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentLesson.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\StudentLesson.cs",
+              "RelativeDocumentMoniker": "Ef_Core_Initial\\Data\\Entities\\StudentLesson.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Data\\Entities\\StudentLesson.cs",
+              "RelativeToolTip": "Ef_Core_Initial\\Data\\Entities\\StudentLesson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:38:41.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Readme.txt",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Readme.txt",
+              "RelativeDocumentMoniker": "Ef_Core_Initial\\Readme.txt",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\Full_Stack_Edu_21.09\\Ef_Core_Initial\\Readme.txt",
+              "RelativeToolTip": "Ef_Core_Initial\\Readme.txt",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-08T11:31:35.139Z",
               "EditorCaption": ""
             }
           ]

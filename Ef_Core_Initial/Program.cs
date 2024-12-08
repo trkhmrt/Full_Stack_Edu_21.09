@@ -9,6 +9,7 @@ namespace Ef_Core_Initial
     {
         static void Main(string[] args)
         {
+            Context context = new Context();
 
             var optionsBuilder = new DbContextOptionsBuilder<Context>();
 
@@ -53,25 +54,59 @@ namespace Ef_Core_Initial
 
             //LİSTELEME 
 
-            studentService.GetAllStudents().ForEach(student => {
+            //studentService.GetAllStudents().ForEach(student => {
 
-            Console.WriteLine(student.Name + student.Surname);
-            
-            });
+            //Console.WriteLine(student.Name + student.Surname);
+
+            //});
 
 
             //UPDATE
 
 
-            Student student2 = new Student
+            //Student student2 = new Student
+            //{
+            //    StudentId = 3,
+            //    Name = "Ömer",
+            //    Surname = "Kartal",
+            //    Birthdate = DateTime.Now,
+            //};
+
+            //studentService.UpdateStudent(student2);
+
+
+            /*
+             N tier architecture(N katmanlı mimarisi
+             
+             */
+
+
+
+            //YENİ BİR ÖĞRENCİ KAYDI AL VE BU ÖĞRENCİYE SINIF TANIMLAMASI YAP
+
+            Student student = new Student
             {
-                StudentId = 3,
-                Name = "Ömer",
-                Surname = "Kartal",
-                Birthdate = DateTime.Now,
+                Name = "Hakan",
+                Surname = "er",
             };
 
-            studentService.UpdateStudent(student2);
+
+
+            var founded_lesson = context.Lessons.FirstOrDefault(l => l.LessonId == 2);
+
+            StudentLesson studentLesson = new StudentLesson();
+
+           
+            studentLesson.Student = student;
+            studentLesson.Lesson = founded_lesson;
+            
+
+            context.StudentLessons.Add(studentLesson);
+            context.SaveChanges();
+
+
+
+
 
 
 

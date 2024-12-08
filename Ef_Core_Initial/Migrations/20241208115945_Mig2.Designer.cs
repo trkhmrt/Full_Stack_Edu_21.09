@@ -4,6 +4,7 @@ using Ef_Core_Initial.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ef_Core_Initial.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20241208115945_Mig2")]
+    partial class Mig2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,29 +24,6 @@ namespace Ef_Core_Initial.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Identity", b =>
-                {
-                    b.Property<int>("IdentityId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdentityId"));
-
-                    b.Property<string>("CardNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdentityId");
-
-                    b.HasIndex("StudentId")
-                        .IsUnique();
-
-                    b.ToTable("Identities");
-                });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Lesson", b =>
                 {
@@ -53,7 +33,7 @@ namespace Ef_Core_Initial.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LessonId"));
 
-                    b.Property<DateTime?>("LessonCreateDate")
+                    b.Property<DateTime>("LessonCreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LessonName")
@@ -104,17 +84,6 @@ namespace Ef_Core_Initial.Migrations
                     b.ToTable("StudentLessons");
                 });
 
-            modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Identity", b =>
-                {
-                    b.HasOne("Ef_Core_Initial.Data.Entities.Student", "Student")
-                        .WithOne("Identity")
-                        .HasForeignKey("Ef_Core_Initial.Data.Entities.Identity", "StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Student");
-                });
-
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.StudentLesson", b =>
                 {
                     b.HasOne("Ef_Core_Initial.Data.Entities.Lesson", "Lesson")
@@ -141,9 +110,6 @@ namespace Ef_Core_Initial.Migrations
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Student", b =>
                 {
-                    b.Navigation("Identity")
-                        .IsRequired();
-
                     b.Navigation("StudentLessons");
                 });
 #pragma warning restore 612, 618
