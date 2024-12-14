@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ef_Core_Initial.Data.Entities
 {
-    public  class Identity
+    public  class Identity:BaseEntity
     {
         public int IdentityId { get; set; }
 

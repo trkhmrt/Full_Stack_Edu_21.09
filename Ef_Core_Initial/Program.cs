@@ -2,6 +2,7 @@
 using Ef_Core_Initial.Data;
 using Ef_Core_Initial.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 
 namespace Ef_Core_Initial
 {
@@ -9,10 +10,10 @@ namespace Ef_Core_Initial
     {
         static void Main(string[] args)
         {
-            Context context = new Context();
-
+            
             var optionsBuilder = new DbContextOptionsBuilder<Context>();
 
+            Context context = new Context();
 
 
             StudentService studentService = new StudentService();
@@ -20,9 +21,8 @@ namespace Ef_Core_Initial
 
             //Student student = new Student
             //{
-            //    Name = "TarIk",
+            //    Name = "Tarık",
             //    Surname = "Hamarat",
-            //    Birthdate = DateTime.Now,
             //};
 
             //Student student2 = new Student
@@ -64,15 +64,14 @@ namespace Ef_Core_Initial
             //UPDATE
 
 
-            //Student student2 = new Student
-            //{
-            //    StudentId = 3,
-            //    Name = "Ömer",
-            //    Surname = "Kartal",
-            //    Birthdate = DateTime.Now,
-            //};
+            Student student2 = new Student
+            {
+                StudentId = 1,
+                Name = "Tarık",
+                Surname = "TESTTT",
+            };
 
-            //studentService.UpdateStudent(student2);
+            studentService.UpdateStudent(student2);
 
 
             /*
@@ -84,27 +83,41 @@ namespace Ef_Core_Initial
 
             //YENİ BİR ÖĞRENCİ KAYDI AL VE BU ÖĞRENCİYE SINIF TANIMLAMASI YAP
 
-            Student student = new Student
-            {
-                Name = "Hakan",
-                Surname = "er",
-            };
+            //Student student = new Student
+            //{
+            //    Name = "Hakan",
+            //    Surname = "er",
+            //};
 
 
 
-            var founded_lesson = context.Lessons.FirstOrDefault(l => l.LessonId == 2);
+            //var founded_lesson = context.Lessons.FirstOrDefault(l => l.LessonId == 2);
 
-            StudentLesson studentLesson = new StudentLesson();
-
-           
-            studentLesson.Student = student;
-            studentLesson.Lesson = founded_lesson;
-            
-
-            context.StudentLessons.Add(studentLesson);
-            context.SaveChanges();
+            //StudentLesson studentLesson = new StudentLesson();
 
 
+            //studentLesson.Student = student;
+            //studentLesson.Lesson = founded_lesson;
+
+
+            //context.StudentLessons.Add(studentLesson);
+            //context.SaveChanges();
+
+
+            //CLUB EKLEMEK VE CLUBE ÖĞRENCİ KAYDETMEK
+
+            //Club club = new Club
+            //{
+            //    ClubName = "yazılım",
+            //    ClubDescription = "biz burada tembelleri sevmeyiz."
+            //};
+            //context.Clubs.Add(club);
+
+
+
+            //var founded_student = context.Students.FirstOrDefault(s => s.StudentId == 2);
+            //founded_student.Clubs.Add(club);
+            //context.SaveChanges();
 
 
 

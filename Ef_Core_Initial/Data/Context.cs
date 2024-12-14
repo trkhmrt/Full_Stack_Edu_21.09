@@ -1,4 +1,5 @@
-﻿using Ef_Core_Initial.Data.Entities;
+﻿using Ef_Core_Initial.Configuration;
+using Ef_Core_Initial.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,10 @@ namespace Ef_Core_Initial.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfiguration(new StudentConfiguration());
+
+
 
             modelBuilder.Entity<StudentLesson>().HasKey(x => new { x.StudentId, x.LessonId });
 
@@ -31,12 +35,17 @@ namespace Ef_Core_Initial.Data
 
 
 
+
+
+
+
+
             modelBuilder.Entity<Student>()
                 .HasOne(s => s.Identity)
                 .WithOne(identity => identity.Student)
                 .HasForeignKey<Identity>(fk => fk.StudentId);
 
-
+            base.OnModelCreating(modelBuilder);
 
 
         }
@@ -48,7 +57,7 @@ namespace Ef_Core_Initial.Data
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<StudentLesson> StudentLessons { get; set; }
 
-
+        public DbSet<Club> Clubs { get; set; }
 
 
 

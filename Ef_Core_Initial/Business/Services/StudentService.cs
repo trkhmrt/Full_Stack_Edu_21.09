@@ -18,6 +18,7 @@ namespace Ef_Core_Initial.Business.Services
         {
             Context context = new Context();
 
+       
             context.Students.Add(student);
  
             context.SaveChanges();
@@ -56,23 +57,23 @@ namespace Ef_Core_Initial.Business.Services
         public void UpdateStudent(Student student)
         {
             Context context = new Context();
+
             var id = student.StudentId;
 
-            var result_id = context.Students.Select(s => s.StudentId == id);
+            var result = context.Students.FirstOrDefault(s => s.StudentId == id);
 
-            if (result_id != null)
-            {
-                context.Students.Update(student);
-
-                context.SaveChanges();
-
+            if (result != null) {
+            
+                result.Surname = student.Surname;
+                result.Name = student.Name;
+                result.UpdateDate = DateTime.Now;
+                context.Students.Update(result);
+                context.SaveChanges() ;
             }
 
-            else
-            {
-                Console.WriteLine("Güncellenecek kişi bulunamadı ");
-            }
 
+
+          
           
 
 

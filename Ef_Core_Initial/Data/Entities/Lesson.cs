@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ef_Core_Initial.Data.Entities
 {
-    public class Lesson
+    public class Lesson:BaseEntity
     {
 
         [Key] //Aşağısındaki ifadenin Bu tabloda primary key olduğunu belirtiyoruz.

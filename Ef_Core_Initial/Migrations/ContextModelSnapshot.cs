@@ -22,6 +22,48 @@ namespace Ef_Core_Initial.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ClubStudent", b =>
+                {
+                    b.Property<int>("ClubsClubId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentsStudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ClubsClubId", "StudentsStudentId");
+
+                    b.HasIndex("StudentsStudentId");
+
+                    b.ToTable("ClubStudent");
+                });
+
+            modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Club", b =>
+                {
+                    b.Property<int>("ClubId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClubId"));
+
+                    b.Property<string>("ClubDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClubName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ClubId");
+
+                    b.ToTable("Clubs");
+                });
+
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Identity", b =>
                 {
                     b.Property<int>("IdentityId")
@@ -34,8 +76,14 @@ namespace Ef_Core_Initial.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("IdentityId");
 
@@ -53,12 +101,18 @@ namespace Ef_Core_Initial.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LessonId"));
 
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime?>("LessonCreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LessonName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("LessonId");
 
@@ -74,19 +128,33 @@ namespace Ef_Core_Initial.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentId"));
 
                     b.Property<DateTime>("Birthdate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<DateTime>("CreateDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Surname")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("Soyisim");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .ValueGeneratedOnUpdate()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.HasKey("StudentId");
 
-                    b.ToTable("Students");
+                    b.ToTable("MyStudents", (string)null);
                 });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.StudentLesson", b =>
@@ -97,11 +165,32 @@ namespace Ef_Core_Initial.Migrations
                     b.Property<int>("LessonId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("StudentId", "LessonId");
 
                     b.HasIndex("LessonId");
 
                     b.ToTable("StudentLessons");
+                });
+
+            modelBuilder.Entity("ClubStudent", b =>
+                {
+                    b.HasOne("Ef_Core_Initial.Data.Entities.Club", null)
+                        .WithMany()
+                        .HasForeignKey("ClubsClubId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Ef_Core_Initial.Data.Entities.Student", null)
+                        .WithMany()
+                        .HasForeignKey("StudentsStudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Identity", b =>

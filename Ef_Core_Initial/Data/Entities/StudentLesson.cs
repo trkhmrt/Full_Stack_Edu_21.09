@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ef_Core_Initial.Data.Entities
 {
-    public class StudentLesson
+    public class StudentLesson:BaseEntity
     {
-
+        
         public int StudentId { get; set; }
         public Student Student { get; set; }
 
