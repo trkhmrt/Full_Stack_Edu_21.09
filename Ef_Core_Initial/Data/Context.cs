@@ -1,5 +1,6 @@
 ﻿using Ef_Core_Initial.Configuration;
 using Ef_Core_Initial.Data.Entities;
+using Ef_Core_Initial.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -33,17 +34,15 @@ namespace Ef_Core_Initial.Data
             modelBuilder.Entity<StudentLesson>().HasOne(sl => sl.Lesson).WithMany(s => s.StudentLessons).HasForeignKey(sl => sl.LessonId);
 
 
-
-
-
-
-
-
-
             modelBuilder.Entity<Student>()
                 .HasOne(s => s.Identity)
                 .WithOne(identity => identity.Student)
                 .HasForeignKey<Identity>(fk => fk.StudentId);
+
+
+
+            modelBuilder.SeedDataCreate();
+
 
             base.OnModelCreating(modelBuilder);
 
@@ -58,6 +57,8 @@ namespace Ef_Core_Initial.Data
         public DbSet<StudentLesson> StudentLessons { get; set; }
 
         public DbSet<Club> Clubs { get; set; }
+
+        public DbSet<Field> Fields { get; set; }
 
 
 

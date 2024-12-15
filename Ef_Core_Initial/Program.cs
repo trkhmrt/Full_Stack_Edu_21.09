@@ -64,14 +64,14 @@ namespace Ef_Core_Initial
             //UPDATE
 
 
-            Student student2 = new Student
-            {
-                StudentId = 1,
-                Name = "Tarık",
-                Surname = "TESTTT",
-            };
+            //Student student2 = new Student
+            //{
+            //    StudentId = 1,
+            //    Name = "Tarık",
+            //    Surname = "TESTTT",
+            //};
 
-            studentService.UpdateStudent(student2);
+            //studentService.UpdateStudent(student2);
 
 
             /*

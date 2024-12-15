@@ -10,7 +10,7 @@ namespace Ef_Core_Initial.Data.Entities
     public class Lesson:BaseEntity
     {
 
-        [Key] //Aşağısındaki ifadenin Bu tabloda primary key olduğunu belirtiyoruz.
+    
         public int LessonId { get; set; }
 
         public string LessonName { get; set; }

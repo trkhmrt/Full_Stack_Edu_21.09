@@ -30,7 +30,7 @@ namespace Ef_Core_Initial.Configuration
 
             builder.Property(p => p.UpdateDate).ValueGeneratedOnUpdate().HasDefaultValueSql("GETDATE()");
 
-
+            
 
 
 

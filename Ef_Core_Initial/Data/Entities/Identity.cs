@@ -8,6 +8,7 @@ namespace Ef_Core_Initial.Data.Entities
 {
     public  class Identity:BaseEntity
     {
+        //-- ID -> 120    StudentID -> 200  
         public int IdentityId { get; set; }
 
         public string CardNumber { get; set; }

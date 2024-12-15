@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,15 +18,13 @@ namespace Ef_Core_Initial.Data.Entities
         public string Surname { get; set; }
         public DateTime Birthdate { get; set; }
 
-
-
         public List<Club> Clubs { get; set; } = new List<Club>();
-        public List<StudentLesson> StudentLessons { get; set; } 
+        public List<StudentLesson> StudentLessons { get; set; }
+
+
+        public int FieldId { get; set; }
+        public Field Field { get; set; }
 
         public Identity Identity { get; set; }
-
-
-
-
     }
 }

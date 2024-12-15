@@ -62,6 +62,58 @@ namespace Ef_Core_Initial.Migrations
                     b.HasKey("ClubId");
 
                     b.ToTable("Clubs");
+
+                    b.HasData(
+                        new
+                        {
+                            ClubId = 1,
+                            ClubDescription = "Yazılım çok keyifli",
+                            ClubName = "Yazılım",
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6174),
+                            UpdateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6189)
+                        },
+                        new
+                        {
+                            ClubId = 2,
+                            ClubDescription = "Kitap okumak çok keyifli",
+                            ClubName = "Kitap",
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6191),
+                            UpdateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6193)
+                        });
+                });
+
+            modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Field", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Fields");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Sayısal"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Eşit Ağırlık"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Sözel"
+                        });
                 });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Identity", b =>
@@ -91,6 +143,32 @@ namespace Ef_Core_Initial.Migrations
                         .IsUnique();
 
                     b.ToTable("Identities");
+
+                    b.HasData(
+                        new
+                        {
+                            IdentityId = 1,
+                            CardNumber = "e18341fa-d83e-4411-88a2-35b1710deaa1",
+                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StudentId = 1,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            IdentityId = 2,
+                            CardNumber = "f9ab06e2-ea2c-4197-9d73-964ea63dfb0b",
+                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StudentId = 2,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            IdentityId = 3,
+                            CardNumber = "b3af48c2-58af-45d4-8e76-feb592bebc29",
+                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StudentId = 3,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Lesson", b =>
@@ -117,6 +195,16 @@ namespace Ef_Core_Initial.Migrations
                     b.HasKey("LessonId");
 
                     b.ToTable("Lessons");
+
+                    b.HasData(
+                        new
+                        {
+                            LessonId = 1,
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6516),
+                            LessonCreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6512),
+                            LessonName = "Matematik",
+                            UpdateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6515)
+                        });
                 });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Student", b =>
@@ -137,6 +225,9 @@ namespace Ef_Core_Initial.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
 
+                    b.Property<int>("FieldId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -154,7 +245,51 @@ namespace Ef_Core_Initial.Migrations
 
                     b.HasKey("StudentId");
 
+                    b.HasIndex("FieldId");
+
                     b.ToTable("MyStudents", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            StudentId = 1,
+                            Birthdate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6459),
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6460),
+                            FieldId = 1,
+                            Name = "Tarık",
+                            Surname = "Hamarat",
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            StudentId = 2,
+                            Birthdate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6463),
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6464),
+                            FieldId = 2,
+                            Name = "Ömer",
+                            Surname = "Şahin",
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            StudentId = 3,
+                            Birthdate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6466),
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6468),
+                            FieldId = 3,
+                            Name = "Yusuf",
+                            Surname = "Ergin",
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            StudentId = 4,
+                            Birthdate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6470),
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6471),
+                            FieldId = 1,
+                            Name = "Duhan",
+                            Surname = "Göksal",
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.StudentLesson", b =>
@@ -176,6 +311,15 @@ namespace Ef_Core_Initial.Migrations
                     b.HasIndex("LessonId");
 
                     b.ToTable("StudentLessons");
+
+                    b.HasData(
+                        new
+                        {
+                            StudentId = 1,
+                            LessonId = 1,
+                            CreateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6554),
+                            UpdateDate = new DateTime(2024, 12, 15, 13, 0, 15, 861, DateTimeKind.Local).AddTicks(6553)
+                        });
                 });
 
             modelBuilder.Entity("ClubStudent", b =>
@@ -204,6 +348,17 @@ namespace Ef_Core_Initial.Migrations
                     b.Navigation("Student");
                 });
 
+            modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Student", b =>
+                {
+                    b.HasOne("Ef_Core_Initial.Data.Entities.Field", "Field")
+                        .WithMany("Students")
+                        .HasForeignKey("FieldId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Field");
+                });
+
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.StudentLesson", b =>
                 {
                     b.HasOne("Ef_Core_Initial.Data.Entities.Lesson", "Lesson")
@@ -221,6 +376,11 @@ namespace Ef_Core_Initial.Migrations
                     b.Navigation("Lesson");
 
                     b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Field", b =>
+                {
+                    b.Navigation("Students");
                 });
 
             modelBuilder.Entity("Ef_Core_Initial.Data.Entities.Lesson", b =>

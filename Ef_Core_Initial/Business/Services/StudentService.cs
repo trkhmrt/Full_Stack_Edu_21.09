@@ -71,12 +71,6 @@ namespace Ef_Core_Initial.Business.Services
                 context.SaveChanges() ;
             }
 
-
-
-          
-          
-
-
         }
 
 
