@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ef_Core_Initial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eeb29455f36a4a1cdaf98ad74a03b35875a169ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9669536ab2864efad34883fb8b74a63b9f3037d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ef_Core_Initial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ef_Core_Initial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

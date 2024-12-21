@@ -1,4 +1,5 @@
-﻿using Ef_Core_Initial.Business.Services;
+﻿using Ef_Core_Initial.Business.Interfaces;
+using Ef_Core_Initial.Business.Services;
 using Ef_Core_Initial.Data;
 using Ef_Core_Initial.Data.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +17,7 @@ namespace Ef_Core_Initial
             Context context = new Context();
 
 
-            StudentService studentService = new StudentService();
+            // StudentService studentService = new StudentService();
 
 
             //Student student = new Student
@@ -120,9 +121,13 @@ namespace Ef_Core_Initial
             //context.SaveChanges();
 
 
+          
 
+            UI ui = new UI(new StudentService());
 
+            ui.OgrenciEkle();
 
+            
 
         }
     }

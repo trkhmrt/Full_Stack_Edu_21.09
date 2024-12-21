@@ -8,7 +8,7 @@ using Microsoft.Data.SqlClient;
 
 namespace Ef_Core_Initial.Business.Interfaces
 {
-    internal interface IStudentService
+    public interface IStudentService
     {
         
         void AddStudent(Student student);

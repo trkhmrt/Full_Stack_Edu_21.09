@@ -12,7 +12,7 @@ namespace Ef_Core_Initial.Business.Services
     internal class StudentService : IStudentService
     {
         
-
+        //Abstract -> Concrete
 
         public void AddStudent(Student student)
         {
