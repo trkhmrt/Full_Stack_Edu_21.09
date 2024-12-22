@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .fullstack{
+      color:orangered;
+      font-family: Arial;
+      font-size: 100px
+    }
+    #fullstack_egitim4{
+        color:indigo;
+    }
+    h1{
+
+      color: yellow;
+    }
+    th,td{
+        border:1px solid black;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    .parent{
+        background-color: #F0C1E1;
+        width: 100%;
+        height:200px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+
+    }
+    .child{
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+    }
+    #c1{
+        background-color: bisque;
+        width:100%;
+        height: 100%;
+    }
+    #c2{
+        background-color: #78B3CE;
+        width:100%;
+        height: 50%;
+    }
+    #c3{
+      background-color: #F96E2A;
+        width:100%
+    }
+    #c4{
+      background-color: #41B3A2;
+        width:50%
+    }
+
+  </style>
+</head>
+
+<Body>
+<!--
+YORUM SATIRI bırakabilirsiniz
+-->
+
+<!-- Html'de sayfa içerisindeki elementlerin tanımlanması taglar aracalığı ile olur. -->
+<!-- <> </> şeklinde yada sadece closing tag'i olmayanlar <img/> <br/>  şeklinde görülebilir.-->
+<!--Klasik backend yazılım mantığı burada yoktur.-->
+<!--Html yapısı içerisindeki kullanılan Taglara(Açma ve kapama tagları dahil) "element" denir-->
+<!--Element arasındaki içeriğe ise "Content" denir-->
+
+<!--Başlık Etiketi-->
+<h1>Merhaba</h1>
+<h2>Merhaba</h2>
+<h3>Merhaba</h3>
+<h4>Merhaba</h4>
+<h5>Merhaba</h5>
+<h6>Merhaba</h6>
+
+
+<!--Paragraf Etiketi-->
+<p> Merhaba Dünya! </p>
+<P>Html case sensitive değildir</P>
+
+<!--Tagların sahip olduğu niteliklere attribute denir-->
+<a href="https://www.google.com/" target="_blank">Google'a git</a>
+
+
+<p style="color:red" >Bu yazı kırmızı</p>
+<p style="color:#4B5945" >Bu yazı kırmızı</p>
+
+<!--Paragrafta vurgu-->
+<p>Merhaba bu <em>kelimeler</em> çok <strong>Önemli</strong></p>
+
+<p> O<sub>2</sub>H<sup>3</sup> </p>
+
+
+<!--Img-->
+
+<img  src="https://sitechecker.pro/wp-content/uploads/2023/10/comparison-absolute-url-relative-url.png"
+alt="absolut vs relative url"
+/>
+
+<!--ID ve CLASS YAPISI-->
+<!--
+CLASS -> Belirli bir gruba tasarım aktarımı olacaksa kullanılır.
+.fullstack{
+
+}
+
+ID ->  belirli grup içerisinde hem class'dan gelen hemde ayrıca bir özelliği olmasını istediğimiz taglar için kullanılırız.
+
+#fullstack_egitim4{
+   ID le tasarım alan bir element eğer classlada tasarım alıyorsa hemm class'ı hemde id'den geleni uygular.Özellikler çakışmadığı sürece.
+}
+-->
+
+<p class="fullstack" >FullStack Eğitim 1</p>
+
+<p class="fullstack" >FullStack Eğitim 2</p>
+
+<p class="fullstack" >FullStack Eğitim 3</p>
+
+<p class="fullstack" id="fullstack_egitim4" style="color: chocolate">FullStack Eğitim 4</p>
+
+
+<!--TASARIMDA ÖNCELİK
+
+   STYLE'le(Tanımlanan özellik) > ID > CLASS
+
+-->
+
+
+<!--TABLO-->
+<!--
+th -> Table head -> tablonun başlığı
+tr -> Table row -> Tablonun satırı
+td -> Table data ->Tablonun verisi
+
+NOT!:Bunların tasarımları head içinde(en yukarıda) tanımlandı.
+-->
+<table>
+    <caption>TABLO BAŞLIĞI</caption>
+    <thead>
+    <tr>
+        <th>İsim</th>
+        <th>soy isim</th>
+        <th>Ülke</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Tarık</td>
+        <td>Hamarat</td>
+        <td>Türkiye</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--Liste
+
+ul -> un ordered list
+
+ol -> ordered list
+
+li -> list item
+-->
+
+<ul>
+    <li>Elma</li>
+    <li>Armut</li>
+    <li>Ayva</li>
+</ul>
+
+
+<ol>
+    <li>Elma</li>
+    <li>Armut</li>
+    <li>Ayva</li>
+    <li>Muz</li>
+</ol>
+
+
+<!-- Bracket Etiketi-->
+
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br/> Ad alias, aperiam assumenda aut dolore doloremque, enim excepturi facere iste iure magni non porro possimus quasi ratione tempore tenetur velit veritatis?</span><span>Architecto atque perspiciatis quaerat ratione. Architecto asperiores, deserunt expedita fugit incidunt quisquam quod reiciendis sit voluptates voluptatum. A dignissimos eveniet fugiat laborum libero, magni qui quo suscipit ut vel voluptas?</span><span>Accusamus accusantium assumenda aut consequatur culpa deserunt, dicta dolore explicabo facilis illum inventore itaque laboriosam libero magni necessitatibus nemo numquam omnis perspiciatis porro provident quisquam quod rerum sapiente sint unde.</span></p>
+
+
+<!--BUTON YAPISI-->
+
+<button>TIKLA</button>
+
+
+<!--DİV
+Canvas gibi düşünebilirsiniz.Div içine çizilen elementler bir bütün gibi hareket ederler.
+Elementlerin gruplaması için kullanılabilir.
+-->
+
+<div style="border:1px solid black;background-color: aquamarine;width:max-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+</div>
+
+
+
+<div style="border:1px solid black;background-color: aquamarine;width:50%">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+</div>
+
+<div style="border:1px solid black;background-color: aquamarine;width:300px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+</div>
+
+
+    <p style="margin-left:100px">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p style="margin-left:100px">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p style="margin-left:100px">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+
+
+<div style="border:1px solid black;background-color: aquamarine;width:100%;display: flex;flex-direction: column;align-items:start">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+</div>
+
+
+
+<!--LAYOUT-->
+<!--
+display:flex -> div içinde esnek hizalama.Default olarak row şeklinde sıralanır.
+
+flex-direction -> column ise align-items x ekseninde hizalar row ise justfiy-content x ekseninde hizalama yapar.
+
+
+-->
+
+<div class="parent">
+    <div class="child" id="c1"></div>
+    <div class="child" id="c2"></div>
+    <div class="child" id="c3"></div>
+    <div class="child" id="c4"></div>
+</div>
+
+
+<!--MARGIN-PADDING-->
+<div style="width:100%;height:300px;background-color:blue;color:white;display: flex;padding-top: 10px">
+    <div style="width:100px;background-color:yellow;margin-right:20px;margin-left:20px;">
+
+    </div>
+    <div style="width: 100px;background-color:red">
+
+    </div>
+</div>
+
+
+</Body>
+
+</html>
