@@ -4,60 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <style>
-    .fullstack{
-      color:orangered;
-      font-family: Arial;
-      font-size: 100px
-    }
-    #fullstack_egitim4{
-        color:indigo;
-    }
-    h1{
-
-      color: yellow;
-    }
-    th,td{
-        border:1px solid black;
-    }
-    table{
-        border-collapse: collapse;
-    }
-    .parent{
-        background-color: #F0C1E1;
-        width: 100%;
-        height:200px;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-
-
-    }
-    .child{
-        background-color: blue;
-        width: 50px;
-        height: 50px;
-    }
-    #c1{
-        background-color: bisque;
-        width:100%;
-        height: 100%;
-    }
-    #c2{
-        background-color: #78B3CE;
-        width:100%;
-        height: 50%;
-    }
-    #c3{
-      background-color: #F96E2A;
-        width:100%
-    }
-    #c4{
-      background-color: #41B3A2;
-        width:50%
-    }
-
-  </style>
+   <link href="01_giris.css" rel="stylesheet" >
 </head>
 
 <Body>
@@ -235,6 +182,7 @@ Elementlerin gruplaması için kullanılabilir.
 
 <!--LAYOUT-->
 <!--
+
 display:flex -> div içinde esnek hizalama.Default olarak row şeklinde sıralanır.
 
 flex-direction -> column ise align-items x ekseninde hizalar row ise justfiy-content x ekseninde hizalama yapar.
@@ -255,12 +203,41 @@ flex-direction -> column ise align-items x ekseninde hizalar row ise justfiy-con
     <div style="width:100px;background-color:yellow;margin-right:20px;margin-left:20px;">
 
     </div>
-    <div style="width: 100px;background-color:red">
 
+    <div style="width: 100px;background-color:red">
+        
     </div>
 </div>
 
+<!--
+
+CSS DOSYASINI DIŞ KAYNAKTAN VERME
+
+<link href="01_giris.css" rel="stylesheet" >
+
+href ile dosyanın yolu belirtilir.Aynı klasör içerisindeyseler direkt olarak  .css uzantılı dosyanın adını verebilirsiniz.
+
+rel = "stylesheet" ifadesi ise tarayıcıya bu dosyanın bir tasarım kodu içerdiğini söylemiş oluruz.
+
+-->
+
+
+
+<!--
+INPUT YAPILARI
+
+-->
+
+
+<input type="text">
+
+
+
+
+
+
+
+
 
 </Body>
-
 </html>
