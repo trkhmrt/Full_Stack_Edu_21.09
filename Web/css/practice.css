@@ -122,7 +122,7 @@ body{
 .aboutus{
     height: 50vh;
     width: 100%;
-    background-color: yellow;
+    background-color: #e6e6e6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,7 +132,7 @@ body{
         padding: 0;
         margin: 0;
         text-align: center;
-        background-color: red;
+        
     }
     .aboutus-content{
         text-align: center;
@@ -142,7 +142,7 @@ body{
 .service{
     height: 70vh;
     width: 100%;
-    background-color: gainsboro;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,17 +153,72 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: red;
+       
+   
         .card1,.card2,.card3{
+            display: flex;
+            flex-direction: column;
             width: 300px;
-            height: 300px;
-            border: 2px solid white;
+            height: fit-content;
+            
             border-radius: 20px;
-            background-color: aquamarine;
+            box-shadow: 0px 3px 10px 2px #ebebeb;
+            transition: transform 0.5s ;
+            .card-image{
+                width: 100%;
+                border-top-left-radius: 18px;
+                border-top-right-radius: 18px;
+            }
+            .card-content{
+                background-color: #F8FAFC;
+              
+                    border-bottom-left-radius: 18px;
+                    border-bottom-right-radius: 18px;
+                    height:100%;
+                    width: 100%;
+                    padding: 10px;
+                    
+            }
+            .btn-container{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
         }
+        .card1:hover{
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+        .card2:hover{
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+        .card3:hover{
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+
+
+      
        
      
      
     }
 }
-
+.profile-card {
+    position: relative;
+    width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+.circle {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+    z-index: -1; /* Arka planda tut */
+  }
