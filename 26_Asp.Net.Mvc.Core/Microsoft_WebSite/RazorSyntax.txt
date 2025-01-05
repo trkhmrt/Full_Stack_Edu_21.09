@@ -1,0 +1,50 @@
+@{
+    var isim = "Tarık";
+
+    List<string> isimler = new List<string>()
+    {
+        "Tarık",
+        "Yusuf",
+        "Alper",
+        "Tuna"
+    };
+
+    
+    
+@functions
+{
+    string EkranaYaz(string isim)
+    {
+        return $"Merhaba {isim}";
+    }
+}
+    
+    var saat = DateTime.Now.Hour;
+
+    var renk = saat > 13 ? "green" : "red";
+    var mesaj =  saat > 13 ? "Müsait" : "Müsait Değil";
+    
+    
+  
+}
+
+<h1>BURASI ANASAYFA</h1>
+
+@{
+    foreach (var i in isimler)
+    {
+        if (i == "Tarık")
+        {
+            <p>@i Hoca</p>
+        }
+        else
+        {
+            <p>@i Öğrenci</p>
+        }
+    }
+}
+
+@EkranaYaz("Yusuf")
+
+<p style="background-color:@renk">@mesaj</p>
+
