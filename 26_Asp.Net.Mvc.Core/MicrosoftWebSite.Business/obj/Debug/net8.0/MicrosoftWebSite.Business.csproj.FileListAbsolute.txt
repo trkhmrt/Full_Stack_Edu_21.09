@@ -1,0 +1,16 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/bin/Debug/net8.0/MicrosoftWebSite.Business.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/bin/Debug/net8.0/MicrosoftWebSite.Business.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/bin/Debug/net8.0/MicrosoftWebSite.Business.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/refint/MicrosoftWebSite.Business.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/ref/MicrosoftWebSite.Business.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/bin/Debug/net8.0/Microsoft_WebSite.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/bin/Debug/net8.0/Microsoft_WebSite.DataAccess.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/MicrosoftWebSite.Business.csproj.AssemblyReference.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/MicrosoftWebSite.Business/obj/Debug/net8.0/Microsof.A1519924.Up2Date

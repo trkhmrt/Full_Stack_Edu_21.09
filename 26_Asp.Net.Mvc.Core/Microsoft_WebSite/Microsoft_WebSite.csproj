@@ -10,4 +10,9 @@
       <_ContentIncludedByDefault Remove="Views\AboutUs\Index.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MicrosoftWebSite.Business\MicrosoftWebSite.Business.csproj" />
+      <ProjectReference Include="..\Microsoft_WebSite.DataAccess\Microsoft_WebSite.DataAccess.csproj" />
+    </ItemGroup>
+
 </Project>

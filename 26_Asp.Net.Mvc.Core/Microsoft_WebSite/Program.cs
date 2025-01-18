@@ -1,3 +1,6 @@
+using Microsoft_WebSite.DataAccess;
+using Microsoft_WebSite.InFrustracture.Extensions;
+
 namespace Microsoft_WebSite;
 
 public class Program
@@ -8,6 +11,8 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+        builder.Services.AddDbContext<Microsoft_Website_Context>();
+        builder.Services.AddServices();
 
         var app = builder.Build();
 

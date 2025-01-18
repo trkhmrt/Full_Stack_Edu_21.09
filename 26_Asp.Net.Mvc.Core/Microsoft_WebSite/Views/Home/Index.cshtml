@@ -1,4 +1,6 @@
-  <!--HERO-START-->
+ @using Microsoft_WebSite.DataAccess.Entities
+ @model AboutUs
+<!--HERO-START-->
     <div class="hero">
         <div class="img-container">
             <img width="100%" height="100%" style="object-fit:cover;border-radius: 20px;" src="https://www.networkworld.com/wp-content/uploads/2024/10/3570747-0-71772400-1729523754-shutterstock_2320104951.jpg?resize=2048%2C1152&quality=50&strip=all" />
@@ -22,44 +24,12 @@
     </div>
     
     <!--HERO-END-->
-     <!--ABOUT-US-START-->
-     <div class="aboutus">
-       <h1 class="title">HAKKIMIZDA</h1>
-        <p class="aboutus-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloremque vel quam minima assumenda excepturi ratione neque aut, voluptates nobis nam molestias? Eligendi accusantium quasi natus, necessitatibus numquam soluta minus.
-        Aliquid alias unde quod, quia natus veritatis enim ratione quo beatae deserunt aliquam. Commodi aperiam dolores quas accusantium vitae consequatur corporis asperiores illo voluptatem, ducimus aspernatur dolor tempore quos quia.
-        Fugit, natus vitae ipsa quia dolorem nam est libero, quis beatae ex, reprehenderit fugiat. Obcaecati ea, aspernatur natus reiciendis, minus molestias aperiam maiores fuga corrupti quibusdam explicabo quos culpa eveniet.</p>
-     </div>
+    <!--ABOUT-US-START-->
+    @await Html.PartialAsync("_AboutUs",Model)
+    
     <!--ABOUT-US-END-->
      <!--SERVİCES-START-->
-     <div class="service">
-        <h1>Hizmetlerimiz</h1>
-        <div class="service-cards">
-            <div class="card1">
-              <img class="card-image" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Game-Pass-Update-September-2024?wid=380&hei=213&fit=crop" />
-              <div class="card-content">
-                <h2>Xbox Oyunları Çok Eğlenceli</h2>
-                <div>Oyun içeriklerine daha detaylı göz atmak için aşağıdaki butona tıklayabilirsiniz.</div>
-                <div class="btn-container"><button class="btn btn-outline-primary">Detayları İncele</button></div>
-              </div>
-            </div>
-            <div class="card2">
-              <img class="card-image" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Visual-Studio-Icon?wid=380&hei=213&fit=crop" />
-              <div class="card-content">
-                <h2>Xbox Oyunları Çok Eğlenceli</h2>
-                <div>Oyun içeriklerine daha detaylı göz atmak için aşağıdaki butona tıklayabilirsiniz.</div>
-                <div class="btn-container"><button class="btn btn-outline-primary">Detayları İncele</button></div>
-              </div>
-            </div>
-            <div class="card3">
-              <img class="card-image" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop" />
-              <div class="card-content">
-                <h2>Xbox Oyunları Çok Eğlenceli</h2>
-                <div>Oyun içeriklerine daha detaylı göz atmak için aşağıdaki butona tıklayabilirsiniz.</div>
-                <div class="btn-container"><button class="btn btn-outline-primary">Detayları İncele</button></div>
-              </div>
-            </div>
-        </div>
-     </div>
+    @await Component.InvokeAsync("Service")
     <!--SERVİCES-END-->
     <!--PRICING-START-->
     <div class="container py-3">

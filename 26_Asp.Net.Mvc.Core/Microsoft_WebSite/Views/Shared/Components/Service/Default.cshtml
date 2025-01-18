@@ -1,0 +1,20 @@
+@using Microsoft_WebSite.DataAccess.Entities
+@model List<Service>
+<div class="service">
+    <h1>Hizmetlerimiz</h1>
+    <div class="service-cards">
+        @foreach (var service in Model)
+        {
+            <div class="OurCard">
+                <img class="card-image" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Game-Pass-Update-September-2024?wid=380&hei=213&fit=crop"/>
+                <div class="card-content">
+                    <h2>@service.ServiceTitle</h2>
+                    <div>@service.ServiceContent</div>
+                    <div class="btn-container"><button class="btn btn-outline-primary">Detayları İncele</button></div>
+                </div>
+            </div>
+        }
+        
+
+    </div>
+</div>

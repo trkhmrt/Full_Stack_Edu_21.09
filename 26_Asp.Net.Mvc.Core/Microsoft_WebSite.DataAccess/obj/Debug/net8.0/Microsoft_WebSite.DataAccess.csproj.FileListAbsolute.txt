@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/bin/Debug/net8.0/Microsoft_WebSite.DataAccess.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/bin/Debug/net8.0/Microsoft_WebSite.DataAccess.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/bin/Debug/net8.0/Microsoft_WebSite.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/bin/Debug/net8.0/Microsoft_WebSite.DataAccess.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.csproj.AssemblyReference.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/refint/Microsoft_WebSite.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/Microsoft_WebSite.DataAccess.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite.DataAccess/obj/Debug/net8.0/ref/Microsoft_WebSite.DataAccess.dll
