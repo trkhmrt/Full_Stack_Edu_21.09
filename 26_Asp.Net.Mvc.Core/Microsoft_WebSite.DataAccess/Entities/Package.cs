@@ -7,10 +7,10 @@ public class Package
     public string PackageTitle { get; set; }
     
     public string PackageContent { get; set; }
-
-    public List<PackageProductUnit> PackageProductUnits { get; set; }
     
-    public List<PackageFeature> PackageFeatures { get; set; }
+    public virtual List<PackageProductUnit> PackageProductUnits { get; set; }
+    
+    public virtual List<PackageFeature> PackageFeatures { get; set; }
     
     
 }

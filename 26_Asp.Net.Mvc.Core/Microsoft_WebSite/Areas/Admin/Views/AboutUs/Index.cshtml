@@ -1,0 +1,28 @@
+@using Microsoft_WebSite.DataAccess.Entities
+@model AboutUs
+@{
+    Layout = "_AdminLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div class="container">
+    <h1>BURASI ABOUT US SAYFASI</h1>
+    <form action="/admin/AboutUs/updateAboutUs" method="post" >
+        
+        <div class="input-group" style="gap:10px">
+            <input name="AboutUsID" value="1"  />
+            <input name="AboutUsTitle" value="Deneme Başlığı" />
+            <span class="input-group-text">With textarea</span>
+            <textarea class="form-control" aria-label="With textarea" name="AboutUsContent" >@Model.AboutUsContent</textarea>
+            <button type="submit" class="btn btn-success">Success</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

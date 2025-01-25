@@ -10,7 +10,7 @@ public class PackageProductUnit
     
     public string PackageProductUnitPrice { get; set; }
     
-    public List<Package> Packages { get; set; }
+    public virtual List<Package> Packages { get; set; }
     
     
     

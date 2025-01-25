@@ -9,6 +9,7 @@ public class Microsoft_Website_Context:DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         //optionsBuilder.UseSqlServer("");
+        
         optionsBuilder.UseNpgsql(@"Host=localhost;Database=Microsoft_WebsiteDB;Username=postgres;Password=123456;Search Path=public");
     }
     

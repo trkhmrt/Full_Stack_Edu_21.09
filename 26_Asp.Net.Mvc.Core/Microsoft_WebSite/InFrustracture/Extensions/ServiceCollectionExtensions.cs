@@ -9,6 +9,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddScoped<IAboutUsService,AboutUsService>();
         services.AddScoped<IOurServiceService,OurServiceService>();
+        services.AddScoped<IHomeService,HomeService>();
 
         return services;
     }
