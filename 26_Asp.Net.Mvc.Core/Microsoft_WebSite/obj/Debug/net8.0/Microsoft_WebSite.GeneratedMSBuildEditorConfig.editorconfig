@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2VydmljZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Services/ServiceDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2VydmljZXMvU2VydmljZURldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +64,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Shared/_AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Shared/_Features.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19GZWF0dXJlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Shared/_Hero.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19IZXJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Shared/_ValidationScriptsPartial.cshtml]

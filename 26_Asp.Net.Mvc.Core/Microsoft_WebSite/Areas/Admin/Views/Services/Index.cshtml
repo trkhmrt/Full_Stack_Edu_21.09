@@ -1,3 +1,5 @@
+@using Microsoft_WebSite.DataAccess.Entities
+@model List<Service>
 @{
     Layout = "_AdminLayout";
 }
@@ -11,6 +13,33 @@
 <body>
 <div>
     <h1>BURASI SERVICES SAYFASI</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Service Title</th>
+            <th>Service Content</th>
+            <th>Service ImagePath</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+            @foreach (var item in Model)
+            {
+                <tr>
+                <td>@item.ServiceId</td>
+                <td>@item.ServiceTitle</td>
+                <td>@item.ServiceContent</td>
+                <td>@item.ServiceImagePath</td>
+                <td><a class="btn btn-warning" href="/admin/services/ServiceDetail/@item.ServiceId">Update</a></td>
+                <td><a class="btn btn-danger">Delete</a></td>
+                </tr>
+            }
+        
+        </tbody>
+    </table>
 </div>
 </body>
 </html>

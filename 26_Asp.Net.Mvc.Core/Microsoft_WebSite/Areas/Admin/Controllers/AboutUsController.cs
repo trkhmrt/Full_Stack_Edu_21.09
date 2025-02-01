@@ -1,4 +1,5 @@
 using Microsoft_WebSite.DataAccess.Entities;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MicrosoftWebSite.Business.Interfaces;
 
@@ -27,11 +28,12 @@ public class AboutUsController : Controller
     [HttpPost]
     public IActionResult updateAboutUs(AboutUs aboutUs)
     {
-        //Burada bir sorun var burayı çöz.
+        
         if (_aboutUsService.updateAboutus(aboutUs))
         {
             return RedirectToAction("Index");
         }
+
         return BadRequest();
     }
     

@@ -16,8 +16,8 @@
     <form action="/admin/AboutUs/updateAboutUs" method="post" >
         
         <div class="input-group" style="gap:10px">
-            <input name="AboutUsID" value="1"  />
-            <input name="AboutUsTitle" value="Deneme Başlığı" />
+            <input name="AboutUsID" value=@Model.AboutUsID  />
+            <input name="AboutUsTitle" value="@Model.AboutUsTitle" />
             <span class="input-group-text">With textarea</span>
             <textarea class="form-control" aria-label="With textarea" name="AboutUsContent" >@Model.AboutUsContent</textarea>
             <button type="submit" class="btn btn-success">Success</button>

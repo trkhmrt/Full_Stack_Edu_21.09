@@ -1,0 +1,42 @@
+@using Microsoft_WebSite.DataAccess.Entities
+@model Service
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <form action="/admin/services/ServiceDetailUpdate" method="post">
+    <div class="container">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">ID</label>
+            <input type="text" class="form-control" name="ServiceId" value=@Model.ServiceId>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Service Title</label>
+            <input type="text" class="form-control" name="ServiceTitle" value=@Model.ServiceTitle>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Service Content</label>
+            <input type="text" class="form-control" name="ServiceContent" value="@Model.ServiceContent">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Service ImagePath</label>
+            <input type="text" class="form-control" name="ServiceImagePath" value="@Model.ServiceImagePath">
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-warning">GÜNCELLE</button>
+        </div>
+    </div>
+    </form>
+</head>
+<body>
+<div>
+      
+</div>
+</body>
+</html>

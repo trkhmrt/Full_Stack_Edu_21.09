@@ -1,13 +1,39 @@
+using Microsoft_WebSite.DataAccess.Entities;
 using Microsoft.AspNetCore.Mvc;
+using MicrosoftWebSite.Business.Interfaces;
+
 
 namespace Microsoft_WebSite.Areas.Admin.Controllers;
 
 [Area("Admin")]
 public class ServicesController : Controller
 {
-    // GET
+    
+    IOurServiceService _services;
+    
+    public ServicesController(IOurServiceService services)
+    {
+        _services = services;
+    }
+
     public IActionResult Index()
     {
-        return View();
+        var services = _services.getServices();
+        return View(services);
+    }
+    
+    [HttpGet]
+    public IActionResult ServiceDetail(int id)
+    {
+        var service = _services.getServiceById(id);
+        return View(service);
+    }
+    
+    [HttpPost]
+    public IActionResult ServiceDetailUpdate(Service service)
+    {
+        _services.updateService(service);
+        return RedirectToAction("Index");
+    
     }
 }

@@ -1,3 +1,4 @@
+@using System.Drawing
 @using Microsoft_WebSite.DataAccess.Entities
 @model MicrosoftWebSite.Business.Dtos.HomeDto
 @{
@@ -20,29 +21,15 @@
   }
   }
 <!--HERO-START-->
-    <div class="hero">
-        <div class="img-container">
-            <img width="100%" height="100%" style="object-fit:cover;border-radius: 20px;" src="https://www.networkworld.com/wp-content/uploads/2024/10/3570747-0-71772400-1729523754-shutterstock_2320104951.jpg?resize=2048%2C1152&quality=50&strip=all" />
-          
-        </div>
-        <div class="icon-container">
-          <figure>
-            <img id="icon1" width="70px" height="70px" style="object-fit:cover;border-radius: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Xbox_Logo.svg/239px-Xbox_Logo.svg.png" />
-            <figcaption>
-                <p class="fig-content">XBOX</p> 
-              </figcaption>  
-        </figure>
-        <figure>
-            <img id="icon2" width="70px" height="70px" style="object-fit:cover;border-radius: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Windows_logo_-_2021_%28Black%29.svg/240px-Windows_logo_-_2021_%28Black%29.svg.png" />
-            <figcaption>
-                <p class="fig-content">Windows</p> 
-              </figcaption>  
-        </figure>
-         
-        </div>
-    </div>
-    
-    <!--HERO-END-->
+
+  <div id="hero">
+    @await Html.PartialAsync("_Hero")
+  </div>
+
+<!--HERO-END-->
+<!--Features START-->
+@await Html.PartialAsync("_Features")
+<!--Features END-->
     <!--ABOUT-US-START-->
     @await Html.PartialAsync("_AboutUs",Model.aboutUs)
     
