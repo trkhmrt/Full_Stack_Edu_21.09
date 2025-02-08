@@ -5,12 +5,8 @@
     Layout = "_AdminLayout";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
     <form action="/admin/services/ServiceDetailUpdate" method="post">
-    <div class="container">
+    
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">ID</label>
             <input type="text" class="form-control" name="ServiceId" value=@Model.ServiceId>
@@ -31,12 +27,5 @@
         <div class="mb-3">
             <button type="submit" class="btn btn-warning">GÜNCELLE</button>
         </div>
-    </div>
+    
     </form>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>

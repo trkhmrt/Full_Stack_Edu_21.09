@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Microsoft_WebSite.bundle.scp.css"
     },
     {
+      "Id": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/wwwroot/css/SignUp.css",
+      "PackagePath": "staticwebassets/css/SignUp.css"
+    },
+    {
       "Id": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/wwwroot/css/practice.css",
       "PackagePath": "staticwebassets/css/practice.css"
     },

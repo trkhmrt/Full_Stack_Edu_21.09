@@ -16,7 +16,8 @@ public static class SeedDataCreator
                 UserID = 1,
                 UserUsername = "trkhamarat",
                 UserEmail = "trkhamarat@gmail.com",
-                UserPassword = "123456"
+                UserPassword = "123456",
+                userRole = "Admin"
             }
         );
 

@@ -251,6 +251,10 @@ namespace Microsoft_WebSite.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("userRole")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
@@ -261,7 +265,8 @@ namespace Microsoft_WebSite.DataAccess.Migrations
                             UserID = 1,
                             UserEmail = "trkhamarat@gmail.com",
                             UserPassword = "123456",
-                            UserUsername = "trkhamarat"
+                            UserUsername = "trkhamarat",
+                            userRole = "Admin"
                         });
                 });
 

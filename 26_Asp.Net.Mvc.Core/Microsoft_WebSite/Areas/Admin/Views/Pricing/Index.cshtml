@@ -1,6 +1,45 @@
-@model TModel
+
 
 @{
     Layout = "_AdminLayout";
 }
 
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Product Title</th>
+        <th scope="col">Detail</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <th scope="row">users included</th>
+        <td><a href=@Url.Action("PricingDetails","Pricing",new {area="Admin",productTitle="users included"}) class="btn btn-warning">Detail</a></td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <th scope="row">GB of storage</th>
+        <td><a href=@Url.Action("PricingDetails","Pricing",new {area="Admin",productTitle="GB of storage"}) class="btn btn-warning">Detail</a></td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <th scope="row">sms</th>
+        <td><a href=@Url.Action("PricingDetails","Pricing",new {area="Admin",productTitle="sms"}) class="btn btn-warning">Detail</a></td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <th scope="row">Web Site Design</th>
+        <td><a href=@Url.Action("PricingDetails","Pricing",new {area="Admin",productTitle="Web Site Design"}) class="btn btn-warning">Detail</a></td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <th scope="row">Email</th>
+        <td><a href=@Url.Action("PricingDetails","Pricing",new {area="Admin",productTitle="Email"}) class="btn btn-warning">Detail</a></td>
+    </tr>
+
+
+    </tbody>
+</table>

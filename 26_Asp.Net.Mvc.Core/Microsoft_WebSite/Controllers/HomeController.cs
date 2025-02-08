@@ -23,7 +23,13 @@ public class HomeController : Controller
     return View(homeData);
   }
   
-  
+  public IActionResult Error()
+  {
+    
+    return View();
+  }
+
+
   
   
 }

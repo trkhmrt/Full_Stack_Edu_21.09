@@ -10,6 +10,8 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IAboutUsService,AboutUsService>();
         services.AddScoped<IOurServiceService,OurServiceService>();
         services.AddScoped<IHomeService,HomeService>();
+        services.AddScoped<IPricingService,PricingService>();
+        services.AddScoped<IAuthService,AuthService>();
 
         return services;
     }

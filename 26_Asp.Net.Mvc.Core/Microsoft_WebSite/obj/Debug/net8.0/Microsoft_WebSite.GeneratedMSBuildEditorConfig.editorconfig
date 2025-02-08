@@ -30,8 +30,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWJvdXRVcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Auth/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQXV0aC9BY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Auth/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQXV0aC9TaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Auth/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQXV0aC9TaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Pricing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJpY2luZy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Pricing/PricingDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJpY2luZy9QcmljaW5nRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Areas/Admin/Views/Services/Index.cshtml]
@@ -48,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Error/ErrorPages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXJyb3IvRXJyb3JQYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/Views/Home/Index.cshtml]

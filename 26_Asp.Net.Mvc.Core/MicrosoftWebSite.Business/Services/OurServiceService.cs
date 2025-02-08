@@ -21,7 +21,7 @@ public class OurServiceService : IOurServiceService
 
     public List<Service> getServices()
     {
-        return _context.Services.ToList();
+        return _context.Services.OrderBy(o=>o.ServiceId).ToList();
     }
 
     public void updateService(Service service)

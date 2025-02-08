@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qC1vT9R+iN5OnwApXcLVY7TcKAeZOuBCpCI/Wr6HgYA=",
+  "Hash": "AU/DtTIPDRvtXCV+7mt4Z7/7VNr+fBb2T3EMEPNu0Tc=",
   "Source": "Microsoft_WebSite",
   "BasePath": "_content/Microsoft_WebSite",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/practice.css"
+    },
+    {
+      "Identity": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/wwwroot/css/SignUp.css",
+      "SourceId": "Microsoft_WebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/wwwroot/",
+      "BasePath": "_content/Microsoft_WebSite",
+      "RelativePath": "css/SignUp.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/SignUp.css"
     },
     {
       "Identity": "/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/26_Asp.Net.Mvc.Core/Microsoft_WebSite/wwwroot/css/site.css",

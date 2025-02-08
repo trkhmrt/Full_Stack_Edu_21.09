@@ -1,0 +1,53 @@
+@using Microsoft_WebSite.DataAccess.Entities
+@model List<PackageProductUnit>
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">@ViewBag.PackageProductUnitTitle</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">@ViewBag.AreaName</a></li>
+                        <li class="breadcrumb-item"><a href="#">@ViewBag.ControllerName</a></li>
+                        <li class="breadcrumb-item active">@ViewBag.ActionName</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Content</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Save</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <form action="/admin/pricing/PrcingDetailsUpdate" method="post">
+                <input name="PackageProductUnitTitle" value="@item.PackageProductUnitTitle" hidden/>
+                <tr>
+                    <th scope="row">
+                        @item.PackageProductUnitID
+                        <input name="PackageProductUnitID" value="@item.PackageProductUnitID" hidden/>
+                    </th>
+                    <td><input type="text" class="form-control" name="PackageProductUnitContent" value="@item.PackageProductUnitContent"></td>
+                    <td> <input type="text" class="form-control" name="PackageProductUnitPrice" value="@item.PackageProductUnitPrice"></td>
+                    <td> <button class="btn btn-success">Save</button></td>
+                </tr>
+            </form>
+
+        }
+
+        </tbody>
+    </table>
+</div>

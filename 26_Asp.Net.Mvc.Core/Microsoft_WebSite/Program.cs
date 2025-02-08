@@ -1,5 +1,6 @@
 using Microsoft_WebSite.DataAccess;
 using Microsoft_WebSite.InFrustracture.Extensions;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Microsoft_WebSite;
 
@@ -10,12 +11,21 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+        builder.Services.AddSession();
         builder.Services.AddControllersWithViews();
         builder.Services.AddDbContext<Microsoft_Website_Context>();
         builder.Services.AddServices();
-
+        builder.Services.AddHttpContextAccessor();
+        builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
+        {
+            option.LoginPath = "/Admin/Auth/SignIn";
+            option.AccessDeniedPath = "/Admin/Auth/AccessDenied";
+        });
+       
         var app = builder.Build();
 
+        app.UseStatusCodePagesWithReExecute("/Error/ErrorPages/{0}");
+        app.UseSession();
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
         {
@@ -28,7 +38,7 @@ public class Program
         app.UseStaticFiles();
 
         app.UseRouting();
-
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.MapControllerRoute(

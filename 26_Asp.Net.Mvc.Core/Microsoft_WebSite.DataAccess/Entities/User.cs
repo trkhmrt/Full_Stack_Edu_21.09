@@ -9,6 +9,7 @@ public class User
     public string UserPassword { get; set; }
 
     public string UserEmail { get; set; }
-    
+
+    public string userRole { get; set; }
     
 }
