@@ -23,9 +23,10 @@ public class HomeController : Controller
     return View(homeData);
   }
   
-  public IActionResult Error()
+  public IActionResult Error(int code)
   {
-    
+    ViewBag.Code = code;
+    ViewBag.Message = "404 Hatası alınmıştır.Aradığınız sayfa bulunamadı.";
     return View();
   }
 

@@ -24,7 +24,8 @@ public class Program
        
         var app = builder.Build();
 
-        app.UseStatusCodePagesWithReExecute("/Error/ErrorPages/{0}");
+        //app.UseStatusCodePagesWithReExecute("/Home/Error","?code={0}");
+        app.UseStatusCodePagesWithRedirects("/Home/Error?code={0}");
         app.UseSession();
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())

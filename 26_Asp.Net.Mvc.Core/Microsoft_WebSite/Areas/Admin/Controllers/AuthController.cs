@@ -44,7 +44,7 @@ public class AuthController : Controller
                     var authProp = new AuthenticationProperties
                     {
                          IsPersistent = true,
-                         ExpiresUtc = DateTime.UtcNow.AddMinutes(1),
+                         ExpiresUtc = DateTime.UtcNow.AddMinutes(10),
                     };
 
                     HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProp);
@@ -65,13 +65,28 @@ public class AuthController : Controller
         return null;
     }
     
+    
     public IActionResult SignOut()
     {
-        return null;
+       HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+       return Redirect($"/Home/Index");
     }
     
-    public IActionResult SignUp()
+    
+    public IActionResult SignUp(SignUpDto signUpDto)
     {
+        if (Request.Method == "GET")
+        {
+            return View();
+        }
+        else
+        {
+            if (signUpDto != null)
+            {
+                _authService.SignUp(signUpDto);
+               
+            }
+        }
         return View();
     }
 

@@ -6,4 +6,5 @@ namespace MicrosoftWebSite.Business.Interfaces;
 public interface IAuthService
 {
     User SignIn(LoginDto loginDto);
+    void SignUp(SignUpDto signUpDto);
 }

@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Views\AboutUs\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Error\ErrorPages.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

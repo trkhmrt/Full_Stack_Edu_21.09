@@ -26,4 +26,21 @@ public class AuthService : IAuthService
         
         
     }
+
+    public void SignUp(SignUpDto signUpDto)
+    {
+        User new_user = new User()
+        {
+            UserUsername = signUpDto.userName,
+            UserPassword = signUpDto.userPassword,
+            UserEmail = signUpDto.userEmail,
+            userRole = "Admin"
+        };
+        
+        _context.Users.Add(new_user);
+        _context.SaveChanges();
+
+
+
+    }
 }
