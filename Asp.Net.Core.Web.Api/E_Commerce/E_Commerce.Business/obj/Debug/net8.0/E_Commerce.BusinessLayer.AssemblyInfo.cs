@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("00_Web_Api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("E_Commerce.BusinessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cbb608653d45271b697b0506fac158ee92a3606")]
-[assembly: System.Reflection.AssemblyProductAttribute("00_Web_Api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("00_Web_Api")]
+[assembly: System.Reflection.AssemblyProductAttribute("E_Commerce.BusinessLayer")]
+[assembly: System.Reflection.AssemblyTitleAttribute("E_Commerce.BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
