@@ -1,0 +1,16 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/bin/Debug/net8.0/E_Commerce.Business.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/bin/Debug/net8.0/E_Commerce.Business.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/bin/Debug/net8.0/E_Commerce.Business.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/bin/Debug/net8.0/E_Commerce.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/bin/Debug/net8.0/E_Commerce.DataAccess.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.csproj.AssemblyReference.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commer.8E54BA83.Up2Date
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/refint/E_Commerce.Business.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/E_Commerce.Business.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.Business/obj/Debug/net8.0/ref/E_Commerce.Business.dll

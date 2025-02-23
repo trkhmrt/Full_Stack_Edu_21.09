@@ -12,7 +12,7 @@ public class CategoryConfiguration :IEntityTypeConfiguration<Category>
         
         builder.HasMany(c=>c.subCategories)
             .WithOne(sc=>sc.Category)
-            .HasForeignKey(sc=>sc.categogryId)
+            .HasForeignKey(sc=>sc.categoryId)
             .OnDelete(DeleteBehavior.Cascade);
         
         

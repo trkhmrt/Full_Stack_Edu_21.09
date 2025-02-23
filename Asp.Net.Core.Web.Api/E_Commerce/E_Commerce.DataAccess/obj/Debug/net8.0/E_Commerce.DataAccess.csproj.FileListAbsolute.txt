@@ -1,0 +1,15 @@
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/bin/Debug/net8.0/E_Commerce.DataAccess.deps.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/bin/Debug/net8.0/E_Commerce.DataAccess.runtimeconfig.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/bin/Debug/net8.0/E_Commerce.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/bin/Debug/net8.0/E_Commerce.DataAccess.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.csproj.AssemblyReference.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.AssemblyInfoInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.AssemblyInfo.cs
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.csproj.CoreCompileInputs.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.sourcelink.json
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/refint/E_Commerce.DataAccess.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.pdb
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/E_Commerce.DataAccess.genruntimeconfig.cache
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce.DataAccess/obj/Debug/net8.0/ref/E_Commerce.DataAccess.dll

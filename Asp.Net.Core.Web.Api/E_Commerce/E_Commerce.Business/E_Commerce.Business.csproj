@@ -7,11 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Dto\" />
-      <Folder Include="Interface\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\E_Commerce.DataAccess\E_Commerce.DataAccess.csproj" />
     </ItemGroup>
 

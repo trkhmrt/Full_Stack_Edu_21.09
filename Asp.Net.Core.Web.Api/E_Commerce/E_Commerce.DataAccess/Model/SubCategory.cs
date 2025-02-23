@@ -8,7 +8,7 @@ public class SubCategory
     
     public string subCategoryDescription { get; set; }
     
-    public int categogryId { get; set; }
+    public int categoryId { get; set; }
     
     public Category Category { get; set; }
 

@@ -12,9 +12,13 @@ public class Order
 
     public int totalAmount { get; set; }
 
+    public int basketId { get; set; }
+    public Basket Basket { get; set; }
     
     public ICollection<OrderDetail> OrderDetails { get; set; }
     
+    
+   
    
     
 }

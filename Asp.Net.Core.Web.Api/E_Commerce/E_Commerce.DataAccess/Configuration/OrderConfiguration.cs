@@ -13,8 +13,12 @@ public class OrderConfiguration:IEntityTypeConfiguration<Order>
         builder.HasOne(o => o.User)
             .WithMany(u => u.orders)
             .HasForeignKey(o => o.userId)
-            .OnDelete(DeleteBehavior.Cascade);
-
+            .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasOne(o=>o.Basket)
+            .WithOne(b=>b.Order)
+            .HasForeignKey<Order>(o=>o.basketId)
+            .OnDelete(DeleteBehavior.Restrict);
 
     }
 }
