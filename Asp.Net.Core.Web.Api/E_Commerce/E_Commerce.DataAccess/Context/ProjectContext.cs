@@ -24,7 +24,7 @@ public class ProjectContext:DbContext
         modelBuilder.ApplyConfiguration(new SubCategoryConfiguration());
         modelBuilder.ApplyConfiguration(new UserConfiguration());
         modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
-        //modelBuilder.SeedDataCreate();
+        modelBuilder.SeedDataCreate();
         //SeedDataCreator.SeedDataCreate(modelBuilder);
         base.OnModelCreating(modelBuilder);
     }
@@ -39,5 +39,7 @@ public class ProjectContext:DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<SubCategory> SubCategories { get; set; }
     public DbSet<UserRole> UserRoles { get; set; }
+    public DbSet<BasketStatus> BasketStatuses { get; set; }
+    public DbSet<OrderStatus> OrderStatuses { get; set; }
     
 }

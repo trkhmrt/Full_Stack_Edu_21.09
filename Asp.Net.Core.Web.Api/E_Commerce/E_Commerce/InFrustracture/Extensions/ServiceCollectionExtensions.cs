@@ -9,6 +9,8 @@ public static class ServiceCollectionExtensions
     {
         serviceCollection.AddScoped<IUserService, UserService>();
         serviceCollection.AddScoped<IProductService, ProductService>();
+        serviceCollection.AddScoped<IProductService, ProductService>();
+        serviceCollection.AddScoped<IBasketService, BasketService>();
 
 
 

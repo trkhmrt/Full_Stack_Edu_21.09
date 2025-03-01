@@ -20,5 +20,10 @@ public class OrderConfiguration:IEntityTypeConfiguration<Order>
             .HasForeignKey<Order>(o=>o.basketId)
             .OnDelete(DeleteBehavior.Restrict);
 
+        builder.HasOne(o => o.OrderStatus)
+            .WithMany(o=>o.orders)
+            .HasForeignKey(o => o.orderStatusId)
+            .OnDelete(DeleteBehavior.Restrict);
+
     }
 }

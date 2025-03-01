@@ -9,4 +9,7 @@ public class ProductDto
     public string subcategoryName { get; set; }
     public int categoryId { get; set; }
     public string categoryName { get; set; }
+    public int productUnitPrice { get; set; }
+    
+    public bool isProductActive { get; set; }
 }

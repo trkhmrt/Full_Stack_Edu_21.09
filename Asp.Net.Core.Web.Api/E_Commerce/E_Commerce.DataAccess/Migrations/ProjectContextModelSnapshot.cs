@@ -30,10 +30,15 @@ namespace E_Commerce.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("basketId"));
 
+                    b.Property<int>("basketStatusId")
+                        .HasColumnType("int");
+
                     b.Property<int>("userId")
                         .HasColumnType("int");
 
                     b.HasKey("basketId");
+
+                    b.HasIndex("basketStatusId");
 
                     b.HasIndex("userId");
 
@@ -43,11 +48,19 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             basketId = 1,
-                            userId = 2
+                            basketStatusId = 1,
+                            userId = 1
                         },
                         new
                         {
                             basketId = 2,
+                            basketStatusId = 3,
+                            userId = 2
+                        },
+                        new
+                        {
+                            basketId = 3,
+                            basketStatusId = 3,
                             userId = 4
                         });
                 });
@@ -108,6 +121,40 @@ namespace E_Commerce.DataAccess.Migrations
                         });
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.BasketStatus", b =>
+                {
+                    b.Property<int>("basketStatusId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("basketStatusId"));
+
+                    b.Property<string>("basketStatusName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("basketStatusId");
+
+                    b.ToTable("BasketStatuses");
+
+                    b.HasData(
+                        new
+                        {
+                            basketStatusId = 1,
+                            basketStatusName = "Sepet Aktif"
+                        },
+                        new
+                        {
+                            basketStatusId = 2,
+                            basketStatusName = "Sepet İptal"
+                        },
+                        new
+                        {
+                            basketStatusId = 3,
+                            basketStatusName = "Sepet Siparişe İletildi"
+                        });
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Category", b =>
                 {
                     b.Property<int>("categoryId")
@@ -163,6 +210,9 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<DateTime>("orderDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("orderStatusId")
+                        .HasColumnType("int");
+
                     b.Property<int>("totalAmount")
                         .HasColumnType("int");
 
@@ -174,9 +224,31 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasIndex("basketId")
                         .IsUnique();
 
+                    b.HasIndex("orderStatusId");
+
                     b.HasIndex("userId");
 
                     b.ToTable("Orders");
+
+                    b.HasData(
+                        new
+                        {
+                            orderId = 1,
+                            basketId = 1,
+                            orderDate = new DateTime(2025, 3, 1, 12, 22, 31, 426, DateTimeKind.Local).AddTicks(7920),
+                            orderStatusId = 3,
+                            totalAmount = 400,
+                            userId = 2
+                        },
+                        new
+                        {
+                            orderId = 2,
+                            basketId = 2,
+                            orderDate = new DateTime(2025, 3, 1, 12, 22, 31, 426, DateTimeKind.Local).AddTicks(7960),
+                            orderStatusId = 3,
+                            totalAmount = 850,
+                            userId = 4
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.OrderDetail", b =>
@@ -206,6 +278,74 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasIndex("productId");
 
                     b.ToTable("OrderDetails");
+
+                    b.HasData(
+                        new
+                        {
+                            orderDetailId = 1,
+                            orderId = 1,
+                            order_product_quantity = 2,
+                            order_product_totalPrice = 400,
+                            productId = 1
+                        },
+                        new
+                        {
+                            orderDetailId = 2,
+                            orderId = 1,
+                            order_product_quantity = 1,
+                            order_product_totalPrice = 150,
+                            productId = 3
+                        },
+                        new
+                        {
+                            orderDetailId = 3,
+                            orderId = 2,
+                            order_product_quantity = 1,
+                            order_product_totalPrice = 350,
+                            productId = 4
+                        },
+                        new
+                        {
+                            orderDetailId = 4,
+                            orderId = 2,
+                            order_product_quantity = 1,
+                            order_product_totalPrice = 650,
+                            productId = 5
+                        });
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.OrderStatus", b =>
+                {
+                    b.Property<int>("orderStatusId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("orderStatusId"));
+
+                    b.Property<string>("orderStatusName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("orderStatusId");
+
+                    b.ToTable("OrderStatuses");
+
+                    b.HasData(
+                        new
+                        {
+                            orderStatusId = 1,
+                            orderStatusName = "Sipariş Aktif"
+                        },
+                        new
+                        {
+                            orderStatusId = 2,
+                            orderStatusName = "Sipariş İptal"
+                        },
+                        new
+                        {
+                            orderStatusId = 3,
+                            orderStatusName = "Sipariş Tamamlandı"
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Product", b =>
@@ -215,6 +355,9 @@ namespace E_Commerce.DataAccess.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("productId"));
+
+                    b.Property<bool>("isProductActive")
+                        .HasColumnType("bit");
 
                     b.Property<string>("productDescription")
                         .IsRequired()
@@ -240,6 +383,7 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             productId = 1,
+                            isProductActive = true,
                             productDescription = "Ps5 Oyun Konsolu",
                             productName = "Playstation 5",
                             productUnitPrice = 10000,
@@ -248,6 +392,7 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             productId = 2,
+                            isProductActive = true,
                             productDescription = "Xbox Oyun Konsolu",
                             productName = "Xbox",
                             productUnitPrice = 12000,
@@ -256,6 +401,7 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             productId = 3,
+                            isProductActive = true,
                             productDescription = "Kışlık Su Geçirmez Bot",
                             productName = "Bot",
                             productUnitPrice = 2000,
@@ -264,6 +410,7 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             productId = 4,
+                            isProductActive = true,
                             productDescription = "Suya dayanıklı Çizme",
                             productName = "Çizme",
                             productUnitPrice = 4500,
@@ -272,6 +419,7 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             productId = 5,
+                            isProductActive = true,
                             productDescription = "Ekoseli Gömlek",
                             productName = "Gömlek",
                             productUnitPrice = 600,
@@ -280,6 +428,7 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             productId = 6,
+                            isProductActive = true,
                             productDescription = "Boğazlı Kazak",
                             productName = "Kazak",
                             productUnitPrice = 670,
@@ -493,11 +642,19 @@ namespace E_Commerce.DataAccess.Migrations
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Basket", b =>
                 {
+                    b.HasOne("E_Commerce.DataAccess.Model.BasketStatus", "BasketStatus")
+                        .WithMany("baskets")
+                        .HasForeignKey("basketStatusId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("E_Commerce.DataAccess.Model.User", "User")
                         .WithMany("baskets")
                         .HasForeignKey("userId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("BasketStatus");
 
                     b.Navigation("User");
                 });
@@ -529,6 +686,12 @@ namespace E_Commerce.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("E_Commerce.DataAccess.Model.OrderStatus", "OrderStatus")
+                        .WithMany("orders")
+                        .HasForeignKey("orderStatusId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("E_Commerce.DataAccess.Model.User", "User")
                         .WithMany("orders")
                         .HasForeignKey("userId")
@@ -536,6 +699,8 @@ namespace E_Commerce.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Basket");
+
+                    b.Navigation("OrderStatus");
 
                     b.Navigation("User");
                 });
@@ -608,6 +773,11 @@ namespace E_Commerce.DataAccess.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.BasketStatus", b =>
+                {
+                    b.Navigation("baskets");
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Category", b =>
                 {
                     b.Navigation("subCategories");
@@ -616,6 +786,11 @@ namespace E_Commerce.DataAccess.Migrations
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Order", b =>
                 {
                     b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.OrderStatus", b =>
+                {
+                    b.Navigation("orders");
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Product", b =>

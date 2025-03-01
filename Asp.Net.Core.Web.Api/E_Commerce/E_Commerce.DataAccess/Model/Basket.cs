@@ -7,6 +7,10 @@ public class Basket
     public int userId { get; set; }
     
     public User User { get; set; }
+
+    public int basketStatusId { get; set; }
+    
+    public BasketStatus BasketStatus { get; set; }
     
     public Order Order { get; set; }
     public ICollection<BasketDetail> BasketDetails { get; set; }

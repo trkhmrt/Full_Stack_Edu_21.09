@@ -14,6 +14,11 @@ public class Order
 
     public int basketId { get; set; }
     public Basket Basket { get; set; }
+
+    public int orderStatusId { get; set; }
+    
+    public OrderStatus OrderStatus { get; set; }
+   
     
     public ICollection<OrderDetail> OrderDetails { get; set; }
     

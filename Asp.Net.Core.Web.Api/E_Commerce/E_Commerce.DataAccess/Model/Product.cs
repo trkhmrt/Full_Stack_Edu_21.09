@@ -9,8 +9,8 @@ public class Product
     public string productDescription { get; set; }
     
     public int productUnitPrice { get; set; }
-    
-    
+
+    public bool isProductActive { get; set; }
     public int subCategoryId { get; set; }
     
     public SubCategory SubCategory { get; set; }

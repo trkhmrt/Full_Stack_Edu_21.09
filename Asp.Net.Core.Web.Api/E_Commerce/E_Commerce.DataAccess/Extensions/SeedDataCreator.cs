@@ -98,12 +98,20 @@ public static class SeedDataCreator
             new Basket
             {
                 basketId = 1,
-                userId = 2,
+                userId = 1,
+                basketStatusId = 1
             },
             new Basket
             {
                 basketId = 2,
+                userId = 2,
+                basketStatusId = 3
+            },
+            new Basket
+            {
+                basketId = 3,
                 userId = 4,
+                basketStatusId = 3
             }
         );
         #endregion
@@ -141,6 +149,27 @@ public static class SeedDataCreator
                 productId = 4
             }
         );
+        #endregion
+
+        #region BasketStatus
+        modelBuilder.Entity<BasketStatus>().HasData(
+            new BasketStatus
+            {
+                basketStatusId = 1,
+                basketStatusName = "Sepet Aktif"
+            },
+            new BasketStatus
+            {
+                basketStatusId = 2,
+                basketStatusName = "Sepet İptal"
+            },
+            new BasketStatus
+            {
+                basketStatusId = 3,
+                basketStatusName = "Sepet Siparişe İletildi"
+            }
+        );
+        
         #endregion
 
         #region Category
@@ -217,10 +246,88 @@ public static class SeedDataCreator
 
         #region Order
 
+        modelBuilder.Entity<Order>().HasData(
+            new Order
+            {
+                orderId = 1,
+                userId = 2,
+                basketId = 1,
+                orderDate = DateTime.Now,
+                totalAmount = 400,
+                orderStatusId = 3
+            },
+            new Order
+            {
+                orderId = 2,
+                userId = 4,
+                basketId = 2,
+                orderDate = DateTime.Now,
+                totalAmount = 850,
+                orderStatusId = 3
+            }
+        );
         #endregion
 
         #region OrderDetail
 
+        modelBuilder.Entity<OrderDetail>().HasData(
+            new OrderDetail
+            {
+                orderId = 1,
+                orderDetailId = 1,
+                productId = 1,
+                order_product_quantity = 2,
+                order_product_totalPrice = 400
+            },
+            new OrderDetail
+            {
+                orderId = 1,
+                orderDetailId = 2,
+                productId = 3,
+                order_product_quantity = 1,
+                order_product_totalPrice = 150
+
+            },
+            new OrderDetail
+            {
+                orderId = 2,
+                orderDetailId = 3,
+                productId = 4,
+                order_product_quantity = 1,
+                order_product_totalPrice = 350
+
+            },
+            new OrderDetail
+            {
+                orderId = 2,
+                orderDetailId = 4,
+                productId = 5,
+                order_product_quantity = 1,
+                order_product_totalPrice = 650
+
+            }
+
+        );
+        #endregion
+        #region OrderStatus
+
+        modelBuilder.Entity<OrderStatus>().HasData(
+            new OrderStatus
+            {
+                orderStatusId = 1,
+                orderStatusName = "Sipariş Aktif",
+            },
+            new OrderStatus
+            {
+                orderStatusId = 2,
+                orderStatusName = "Sipariş İptal",
+            },
+            new OrderStatus
+            {
+                orderStatusId = 3,
+                orderStatusName = "Sipariş Tamamlandı",
+            }
+        );
         #endregion
 
         #region Product
@@ -232,7 +339,8 @@ public static class SeedDataCreator
                 productName = "Playstation 5",
                 productDescription = "Ps5 Oyun Konsolu",
                 productUnitPrice = 10000,
-                subCategoryId = 5
+                subCategoryId = 5,
+                isProductActive = true
             },
             new Product
             {
@@ -240,7 +348,8 @@ public static class SeedDataCreator
                 productName = "Xbox",
                 productDescription = "Xbox Oyun Konsolu",
                 productUnitPrice = 12000,
-                subCategoryId = 5
+                subCategoryId = 5,
+                isProductActive = true
             },
             new Product
             {
@@ -248,7 +357,8 @@ public static class SeedDataCreator
                 productName = "Bot",
                 productDescription = "Kışlık Su Geçirmez Bot",
                 productUnitPrice = 2000,
-                subCategoryId = 1
+                subCategoryId = 1,
+                isProductActive = true
             },
             new Product
             {
@@ -256,7 +366,8 @@ public static class SeedDataCreator
                 productName = "Çizme",
                 productDescription = "Suya dayanıklı Çizme",
                 productUnitPrice = 4500,
-                subCategoryId = 1
+                subCategoryId = 1,
+                isProductActive = true
             },
             new Product
             {
@@ -264,7 +375,8 @@ public static class SeedDataCreator
                 productName = "Gömlek",
                 productDescription = "Ekoseli Gömlek",
                 productUnitPrice = 600,
-                subCategoryId = 2
+                subCategoryId = 2,
+                isProductActive = true
             },
             new Product
             {
@@ -272,7 +384,8 @@ public static class SeedDataCreator
                 productName = "Kazak",
                 productDescription = "Boğazlı Kazak",
                 productUnitPrice = 670,
-                subCategoryId = 2
+                subCategoryId = 2,
+                isProductActive = true
             }
         );
 

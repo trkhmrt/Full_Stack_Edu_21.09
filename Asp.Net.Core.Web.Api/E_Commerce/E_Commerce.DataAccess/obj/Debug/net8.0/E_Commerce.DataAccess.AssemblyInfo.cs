@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("E_Commerce.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c7e77072e8b98bd2144af875a8940b0cf281fe2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94363887ab994236e212277175f7cde08f05f6b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("E_Commerce.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("E_Commerce.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
