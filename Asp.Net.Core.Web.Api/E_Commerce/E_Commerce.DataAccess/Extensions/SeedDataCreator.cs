@@ -166,6 +166,11 @@ public static class SeedDataCreator
             new BasketStatus
             {
                 basketStatusId = 3,
+                basketStatusName = "Sepet Ödemeye Hazır"
+            },
+            new BasketStatus
+            {
+                basketStatusId = 4,
                 basketStatusName = "Sepet Siparişe İletildi"
             }
         );
@@ -325,6 +330,11 @@ public static class SeedDataCreator
             new OrderStatus
             {
                 orderStatusId = 3,
+                orderStatusName = "Sipariş Kargoya Verildi",
+            },
+            new OrderStatus
+            {
+                orderStatusId = 4,
                 orderStatusName = "Sipariş Tamamlandı",
             }
         );
@@ -386,6 +396,16 @@ public static class SeedDataCreator
                 productUnitPrice = 670,
                 subCategoryId = 2,
                 isProductActive = true
+            }
+        );
+
+        #endregion
+        #region PaymentStatus
+
+        modelBuilder.Entity<PaymentStatus>().HasData(
+            new PaymentStatus
+            {
+                
             }
         );
 

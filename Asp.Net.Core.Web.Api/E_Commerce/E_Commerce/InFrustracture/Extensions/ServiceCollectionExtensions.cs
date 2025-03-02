@@ -11,6 +11,7 @@ public static class ServiceCollectionExtensions
         serviceCollection.AddScoped<IProductService, ProductService>();
         serviceCollection.AddScoped<IProductService, ProductService>();
         serviceCollection.AddScoped<IBasketService, BasketService>();
+        serviceCollection.AddScoped<IOrderService, OrderService>();
 
 
 

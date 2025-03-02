@@ -8,5 +8,6 @@ public interface IBasketService
     ICollection<BasketResponseDto> getAllBaskets();
     BasketResponseDto getBasketByBasketId(int basketId);
     ICollection<BasketResponseDto> getBasketByBasketStatusId(int basketStatusId);
-    
+    BasketResponseDto getBasketByUserId(int userId);
+   
 }

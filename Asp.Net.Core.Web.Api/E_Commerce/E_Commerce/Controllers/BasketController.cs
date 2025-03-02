@@ -28,11 +28,18 @@ namespace E_Commerce.Controllers
             return Ok(_basketService.getBasketByBasketId(basketId));
         }
         
+        [HttpGet("getBasketByUserId/{userId}")]
+        public IActionResult getBasketByUserId(int userId)
+        {
+            return Ok(_basketService.getBasketByUserId(userId));
+        }
+        
         [HttpGet("getBasketByBasketStatusId/{basketStatusId}")]
         public IActionResult getBasketByBasketStatusId(int basketStatusId)
         {
             return Ok(_basketService.getBasketByBasketStatusId(basketStatusId));
         }
+        
         
         
         

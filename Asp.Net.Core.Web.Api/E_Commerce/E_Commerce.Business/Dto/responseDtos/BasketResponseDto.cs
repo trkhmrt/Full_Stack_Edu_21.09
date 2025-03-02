@@ -12,4 +12,5 @@ public class BasketResponseDto
     
     public string basketUserName { get; set; }
     
+    public ICollection<BasketDetailsResponseDto> basketDetails { get; set; }
 }

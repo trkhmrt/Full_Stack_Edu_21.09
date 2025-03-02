@@ -14,6 +14,7 @@ public class Basket
     
     public Order Order { get; set; }
     public ICollection<BasketDetail> BasketDetails { get; set; }
+    public ICollection<Payment> Payments { get; set; }
     
     
     
