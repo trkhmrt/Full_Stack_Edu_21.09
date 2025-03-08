@@ -19,5 +19,11 @@ public class PaymentConfiguration:IEntityTypeConfiguration<Payment>
             .WithMany(p => p.Payments)
             .HasForeignKey(p => p.paymentStatusId)
             .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasOne(p => p.User)
+            .WithMany(p => p.Payments)
+            .HasForeignKey(p => p.userId)
+            .OnDelete(DeleteBehavior.Restrict);
+        
     }
 }

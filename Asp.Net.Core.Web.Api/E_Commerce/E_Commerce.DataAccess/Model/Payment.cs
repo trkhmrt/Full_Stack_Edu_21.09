@@ -3,6 +3,9 @@ namespace E_Commerce.DataAccess.Model;
 public class Payment
 {
     public int paymentId { get; set; }
+
+    public int userId { get; set; }
+    public User User { get; set; }
     
     public int basketId { get; set; }
     public Basket Basket { get; set; }
@@ -14,6 +17,6 @@ public class Payment
     public PaymentStatus PaymentStatus { get; set; }
     
     
-           
+         
            
 }

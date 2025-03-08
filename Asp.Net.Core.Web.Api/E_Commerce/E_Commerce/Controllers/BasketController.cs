@@ -41,6 +41,21 @@ namespace E_Commerce.Controllers
         }
         
         
+        [HttpGet("approveBasket/{basketId}")]
+        public IActionResult approveBasket(int basketId)
+        {
+            _basketService.approveBasket(basketId);
+            return Ok("Basket approved");
+        }
+        
+        [HttpGet("continueShopping/{basketId}")]
+        public IActionResult continueShopping(int basketId)
+        {
+            _basketService.continueShopping(basketId);
+            return Ok("You can continue to shopping");
+        }
+        
+        
         
         
     }

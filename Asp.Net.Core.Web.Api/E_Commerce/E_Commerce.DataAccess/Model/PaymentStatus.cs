@@ -5,7 +5,7 @@ public class PaymentStatus
     
     public int paymentStatusId { get; set; }
     
-    public int paymentStatusName { get; set; }
+    public string paymentStatusName { get; set; }
     
     public ICollection<Payment> Payments { get; set; }
 }

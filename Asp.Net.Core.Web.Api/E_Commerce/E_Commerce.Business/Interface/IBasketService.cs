@@ -9,5 +9,10 @@ public interface IBasketService
     BasketResponseDto getBasketByBasketId(int basketId);
     ICollection<BasketResponseDto> getBasketByBasketStatusId(int basketStatusId);
     BasketResponseDto getBasketByUserId(int userId);
-   
+
+    void approveBasket(int basketId);
+
+    void continueShopping(int basketId);
+    
+    bool statusBasketToOrder(int basketId);
 }

@@ -405,7 +405,18 @@ public static class SeedDataCreator
         modelBuilder.Entity<PaymentStatus>().HasData(
             new PaymentStatus
             {
-                
+                paymentStatusId = 1,
+                paymentStatusName = "Ödendi",
+            },
+            new PaymentStatus
+            {
+                paymentStatusId = 2,
+                paymentStatusName = "İade edildi",
+            },
+            new PaymentStatus
+            {
+                paymentStatusId = 3,
+                paymentStatusName = "İptal edildi"
             }
         );
 

@@ -151,6 +151,11 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             basketStatusId = 3,
+                            basketStatusName = "Sepet Ödemeye Hazır"
+                        },
+                        new
+                        {
+                            basketStatusId = 4,
                             basketStatusName = "Sepet Siparişe İletildi"
                         });
                 });
@@ -235,7 +240,7 @@ namespace E_Commerce.DataAccess.Migrations
                         {
                             orderId = 1,
                             basketId = 1,
-                            orderDate = new DateTime(2025, 3, 1, 12, 22, 31, 426, DateTimeKind.Local).AddTicks(7920),
+                            orderDate = new DateTime(2025, 3, 8, 11, 38, 22, 200, DateTimeKind.Local).AddTicks(9590),
                             orderStatusId = 3,
                             totalAmount = 400,
                             userId = 2
@@ -244,7 +249,7 @@ namespace E_Commerce.DataAccess.Migrations
                         {
                             orderId = 2,
                             basketId = 2,
-                            orderDate = new DateTime(2025, 3, 1, 12, 22, 31, 426, DateTimeKind.Local).AddTicks(7960),
+                            orderDate = new DateTime(2025, 3, 8, 11, 38, 22, 200, DateTimeKind.Local).AddTicks(9630),
                             orderStatusId = 3,
                             totalAmount = 850,
                             userId = 4
@@ -344,7 +349,80 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             orderStatusId = 3,
+                            orderStatusName = "Sipariş Kargoya Verildi"
+                        },
+                        new
+                        {
+                            orderStatusId = 4,
                             orderStatusName = "Sipariş Tamamlandı"
+                        });
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.Payment", b =>
+                {
+                    b.Property<int>("paymentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("paymentId"));
+
+                    b.Property<int>("basketId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("paymentStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("totalAmount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("totalQuantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("userId")
+                        .HasColumnType("int");
+
+                    b.HasKey("paymentId");
+
+                    b.HasIndex("basketId");
+
+                    b.HasIndex("paymentStatusId");
+
+                    b.HasIndex("userId");
+
+                    b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.PaymentStatus", b =>
+                {
+                    b.Property<int>("paymentStatusId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("paymentStatusId"));
+
+                    b.Property<string>("paymentStatusName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("paymentStatusId");
+
+                    b.ToTable("PaymentStatuses");
+
+                    b.HasData(
+                        new
+                        {
+                            paymentStatusId = 1,
+                            paymentStatusName = "Ödendi"
+                        },
+                        new
+                        {
+                            paymentStatusId = 2,
+                            paymentStatusName = "İade edildi"
+                        },
+                        new
+                        {
+                            paymentStatusId = 3,
+                            paymentStatusName = "İptal edildi"
                         });
                 });
 
@@ -724,6 +802,33 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.Payment", b =>
+                {
+                    b.HasOne("E_Commerce.DataAccess.Model.Basket", "Basket")
+                        .WithMany("Payments")
+                        .HasForeignKey("basketId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("E_Commerce.DataAccess.Model.PaymentStatus", "PaymentStatus")
+                        .WithMany("Payments")
+                        .HasForeignKey("paymentStatusId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("E_Commerce.DataAccess.Model.User", "User")
+                        .WithMany("Payments")
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Basket");
+
+                    b.Navigation("PaymentStatus");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Product", b =>
                 {
                     b.HasOne("E_Commerce.DataAccess.Model.SubCategory", "SubCategory")
@@ -771,6 +876,8 @@ namespace E_Commerce.DataAccess.Migrations
 
                     b.Navigation("Order")
                         .IsRequired();
+
+                    b.Navigation("Payments");
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.BasketStatus", b =>
@@ -793,6 +900,11 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Navigation("orders");
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.PaymentStatus", b =>
+                {
+                    b.Navigation("Payments");
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Product", b =>
                 {
                     b.Navigation("BasketDetails");
@@ -812,6 +924,8 @@ namespace E_Commerce.DataAccess.Migrations
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.User", b =>
                 {
+                    b.Navigation("Payments");
+
                     b.Navigation("UserRoles");
 
                     b.Navigation("baskets");

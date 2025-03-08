@@ -17,4 +17,6 @@ public class User
     //[JsonIgnore]
     public ICollection<Basket> baskets { get; set; }
     
+    public ICollection<Payment> Payments { get; set; }
+    
 }

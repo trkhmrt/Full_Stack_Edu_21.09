@@ -59,8 +59,10 @@ public class BasketService: IBasketService
                 basketStatusName = b.BasketStatus.basketStatusName,
                 basketDetails = b.BasketDetails.Select(b=> new BasketDetailsResponseDto
                 {
+                    productId = b.productId,
                     productDescription = b.Product.productDescription,
                     productName = b.Product.productName,
+                    productPrice = b.Product.productUnitPrice,
                     basketQuantity = b.basket_quantity,
                     subCategoryName = b.Product.SubCategory.subCategoryName
                 }).ToList()
@@ -109,5 +111,66 @@ public class BasketService: IBasketService
             }).FirstOrDefault();
     }
 
-    
+    public void approveBasket(int basketId)
+    {
+        /*
+         Basket Statuses
+         Basket onaylandığında -> id 3 Sepet Ödemeye Hazır
+         */
+        Basket basket = _context.Baskets.Find(basketId);
+
+        if (basket == null)
+        {
+            throw new Exception("Basket not found");
+        }
+        else
+        {
+            basket.basketStatusId = 3;
+
+            _context.Update(basket);
+            _context.SaveChanges();
+
+        }
+       
+    }
+
+    public void continueShopping(int basketId)
+    {
+        /*
+         Basket Statuses
+         Basket onaylandığında -> id 1 Sepet Aktif
+         */
+        Basket basket = _context.Baskets.Find(basketId);
+        if (basket == null)
+        {
+            throw new Exception("Basket not found");
+        }
+        else
+        {
+            basket.basketStatusId = 1;
+
+            _context.Update(basket);
+            _context.SaveChanges();
+
+        }
+    }
+
+    public bool statusBasketToOrder(int basketId)
+    {
+        Basket basket = _context.Baskets.Find(basketId);
+        if (basket == null)
+        {
+            throw new Exception("Basket not found");
+        }
+        else
+        {
+            basket.basketStatusId = 4;
+
+            _context.Update(basket);
+            _context.SaveChanges();
+            
+        }
+
+        return true;
+    }
 }
