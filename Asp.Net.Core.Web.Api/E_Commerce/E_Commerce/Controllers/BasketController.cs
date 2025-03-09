@@ -1,3 +1,4 @@
+using E_Commerce.Business.Dto.requestDtos;
 using E_Commerce.Business.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -54,7 +55,20 @@ namespace E_Commerce.Controllers
             _basketService.continueShopping(basketId);
             return Ok("You can continue to shopping");
         }
+
+        [HttpPost("addProductToBasket")]
+        public IActionResult addProductToBasket(AddProductToBasketRequestDto addProductToBasketRequestDto)
+        {
+            
+            return Ok(_basketService.addProductToBasket(addProductToBasketRequestDto));
+        }
         
+        [HttpPost("removeBasket")]
+        public IActionResult removeBasket(RemoveProductToBasketDto removeProductToBasketDto)
+        {
+            
+            return Ok(_basketService.removeProductToBasket(removeProductToBasketDto));
+        }
         
         
         
