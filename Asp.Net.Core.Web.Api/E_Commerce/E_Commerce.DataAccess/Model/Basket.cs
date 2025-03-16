@@ -4,9 +4,9 @@ public class Basket
 {
     public int basketId { get; set; }
     
-    public int userId { get; set; }
+    public int customerId { get; set; }
     
-    public User User { get; set; }
+    public Customer Customer { get; set; }
 
     public int basketStatusId { get; set; }
     

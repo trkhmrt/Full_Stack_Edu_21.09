@@ -4,9 +4,9 @@ public class Order
 {
     public int orderId { get; set; }
     
-    public int userId { get; set; }
+    public int customerId { get; set; }
     
-    public User User { get; set; }
+    public Customer Customer { get; set; }
 
     public DateTime orderDate { get; set; }
 

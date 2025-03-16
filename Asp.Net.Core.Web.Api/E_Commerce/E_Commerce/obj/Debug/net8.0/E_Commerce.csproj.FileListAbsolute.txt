@@ -262,3 +262,4 @@
 /Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce/obj/Debug/net8.0/E_Commerce.pdb
 /Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce/obj/Debug/net8.0/E_Commerce.genruntimeconfig.cache
 /Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce/obj/Debug/net8.0/ref/E_Commerce.dll
+/Users/egitim/Documents/GitHub/Full_Stack_Edu_21.09/Asp.Net.Core.Web.Api/E_Commerce/E_Commerce/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

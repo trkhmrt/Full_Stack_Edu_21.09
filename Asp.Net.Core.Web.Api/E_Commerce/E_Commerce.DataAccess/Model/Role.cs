@@ -9,6 +9,9 @@ public class Role
     
     //[JsonIgnore]
     public  ICollection<UserRole> UserRoles { get; set; }
+
+    public ICollection<Customer> Customers { get; set; }
+    
 }
 
 

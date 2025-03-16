@@ -10,9 +10,9 @@ public class BasketConfiguration:IEntityTypeConfiguration<Basket>
     {
         builder.HasKey(b => b.basketId);
 
-        builder.HasOne(b => b.User)
+        builder.HasOne(b => b.Customer)
             .WithMany(u => u.baskets)
-            .HasForeignKey(u => u.userId)
+            .HasForeignKey(u => u.customerId)
             .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasOne(b => b.BasketStatus)

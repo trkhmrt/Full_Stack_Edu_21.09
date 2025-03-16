@@ -12,11 +12,5 @@ public class User
     
     public  ICollection<UserRole> UserRoles { get; set; }
 
-    //[JsonIgnore]
-    public ICollection<Order> orders { get; set; }
-    //[JsonIgnore]
-    public ICollection<Basket> baskets { get; set; }
-    
-    public ICollection<Payment> Payments { get; set; }
-    
+  
 }

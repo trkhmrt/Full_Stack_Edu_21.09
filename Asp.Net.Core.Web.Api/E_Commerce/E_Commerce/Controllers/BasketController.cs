@@ -1,5 +1,6 @@
 using E_Commerce.Business.Dto.requestDtos;
 using E_Commerce.Business.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace E_Commerce.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class BasketController : ControllerBase
     {
         IBasketService _basketService;
@@ -29,10 +31,10 @@ namespace E_Commerce.Controllers
             return Ok(_basketService.getBasketByBasketId(basketId));
         }
         
-        [HttpGet("getBasketByUserId/{userId}")]
-        public IActionResult getBasketByUserId(int userId)
+        [HttpGet("getBasketByCustomerId/{customerId}")]
+        public IActionResult getBasketByCustomerId(int customerId)
         {
-            return Ok(_basketService.getBasketByUserId(userId));
+            return Ok(_basketService.getBasketByCustomerId(customerId));
         }
         
         [HttpGet("getBasketByBasketStatusId/{basketStatusId}")]

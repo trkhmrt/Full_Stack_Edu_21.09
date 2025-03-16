@@ -29,7 +29,7 @@ public class PaymentService : IPaymentService
                     Payment payment = new Payment
                     {
                         basketId = basketResponse.basketId,
-                        userId = basketResponse.baskeUserId,
+                        customerId = basketResponse.basketCustomerId,
                         totalQuantity = basketResponse.basketDetails.Sum(bd => bd.basketQuantity),
                         totalAmount = basketResponse.basketDetails.Sum(bd => bd.productPrice * bd.basketQuantity),
                         paymentStatusId = 1
@@ -42,7 +42,7 @@ public class PaymentService : IPaymentService
                     Order order = new Order
                     {
                         basketId = basketResponse.basketId,
-                        userId = basketResponse.baskeUserId,
+                        customerId = basketResponse.basketCustomerId,
                         orderDate = DateTime.Now,
                         totalAmount = payment.totalAmount,
                         orderStatusId = 1,

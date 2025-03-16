@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace E_Commerce.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class Payment_PaymentStatusAdded : Migration
+    public partial class NewRelation : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -117,29 +117,29 @@ namespace E_Commerce.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Baskets",
+                name: "Customers",
                 columns: table => new
                 {
-                    basketId = table.Column<int>(type: "int", nullable: false)
+                    customerId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    userId = table.Column<int>(type: "int", nullable: false),
-                    basketStatusId = table.Column<int>(type: "int", nullable: false)
+                    customerUserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    customerPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    customerFirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    customerLastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    customerAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    customerPhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    customerEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    roleId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Baskets", x => x.basketId);
+                    table.PrimaryKey("PK_Customers", x => x.customerId);
                     table.ForeignKey(
-                        name: "FK_Baskets_BasketStatuses_basketStatusId",
-                        column: x => x.basketStatusId,
-                        principalTable: "BasketStatuses",
-                        principalColumn: "basketStatusId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Baskets_Users_userId",
-                        column: x => x.userId,
-                        principalTable: "Users",
-                        principalColumn: "userId",
-                        onDelete: ReferentialAction.Restrict);
+                        name: "FK_Customers_Roles_roleId",
+                        column: x => x.roleId,
+                        principalTable: "Roles",
+                        principalColumn: "roleId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -190,65 +190,28 @@ namespace E_Commerce.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Orders",
+                name: "Baskets",
                 columns: table => new
                 {
-                    orderId = table.Column<int>(type: "int", nullable: false)
+                    basketId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    userId = table.Column<int>(type: "int", nullable: false),
-                    orderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    totalAmount = table.Column<int>(type: "int", nullable: false),
-                    basketId = table.Column<int>(type: "int", nullable: false),
-                    orderStatusId = table.Column<int>(type: "int", nullable: false)
+                    customerId = table.Column<int>(type: "int", nullable: false),
+                    basketStatusId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Orders", x => x.orderId);
+                    table.PrimaryKey("PK_Baskets", x => x.basketId);
                     table.ForeignKey(
-                        name: "FK_Orders_Baskets_basketId",
-                        column: x => x.basketId,
-                        principalTable: "Baskets",
-                        principalColumn: "basketId",
+                        name: "FK_Baskets_BasketStatuses_basketStatusId",
+                        column: x => x.basketStatusId,
+                        principalTable: "BasketStatuses",
+                        principalColumn: "basketStatusId",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Orders_OrderStatuses_orderStatusId",
-                        column: x => x.orderStatusId,
-                        principalTable: "OrderStatuses",
-                        principalColumn: "orderStatusId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Orders_Users_userId",
-                        column: x => x.userId,
-                        principalTable: "Users",
-                        principalColumn: "userId",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Payments",
-                columns: table => new
-                {
-                    paymentId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    basketId = table.Column<int>(type: "int", nullable: false),
-                    totalQuantity = table.Column<int>(type: "int", nullable: false),
-                    totalAmount = table.Column<int>(type: "int", nullable: false),
-                    paymentStatusId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Payments", x => x.paymentId);
-                    table.ForeignKey(
-                        name: "FK_Payments_Baskets_basketId",
-                        column: x => x.basketId,
-                        principalTable: "Baskets",
-                        principalColumn: "basketId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Payments_PaymentStatuses_paymentStatusId",
-                        column: x => x.paymentStatusId,
-                        principalTable: "PaymentStatuses",
-                        principalColumn: "paymentStatusId",
+                        name: "FK_Baskets_Customers_customerId",
+                        column: x => x.customerId,
+                        principalTable: "Customers",
+                        principalColumn: "customerId",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -277,6 +240,76 @@ namespace E_Commerce.DataAccess.Migrations
                         principalTable: "Products",
                         principalColumn: "productId",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    orderId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    customerId = table.Column<int>(type: "int", nullable: false),
+                    orderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    totalAmount = table.Column<int>(type: "int", nullable: false),
+                    basketId = table.Column<int>(type: "int", nullable: false),
+                    orderStatusId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.orderId);
+                    table.ForeignKey(
+                        name: "FK_Orders_Baskets_basketId",
+                        column: x => x.basketId,
+                        principalTable: "Baskets",
+                        principalColumn: "basketId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Orders_Customers_customerId",
+                        column: x => x.customerId,
+                        principalTable: "Customers",
+                        principalColumn: "customerId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Orders_OrderStatuses_orderStatusId",
+                        column: x => x.orderStatusId,
+                        principalTable: "OrderStatuses",
+                        principalColumn: "orderStatusId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Payments",
+                columns: table => new
+                {
+                    paymentId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    customerId = table.Column<int>(type: "int", nullable: false),
+                    basketId = table.Column<int>(type: "int", nullable: false),
+                    totalQuantity = table.Column<int>(type: "int", nullable: false),
+                    totalAmount = table.Column<int>(type: "int", nullable: false),
+                    paymentStatusId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Payments", x => x.paymentId);
+                    table.ForeignKey(
+                        name: "FK_Payments_Baskets_basketId",
+                        column: x => x.basketId,
+                        principalTable: "Baskets",
+                        principalColumn: "basketId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Payments_Customers_customerId",
+                        column: x => x.customerId,
+                        principalTable: "Customers",
+                        principalColumn: "customerId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Payments_PaymentStatuses_paymentStatusId",
+                        column: x => x.paymentStatusId,
+                        principalTable: "PaymentStatuses",
+                        principalColumn: "paymentStatusId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -371,13 +404,15 @@ namespace E_Commerce.DataAccess.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Baskets",
-                columns: new[] { "basketId", "basketStatusId", "userId" },
+                table: "Customers",
+                columns: new[] { "customerId", "customerAddress", "customerEmail", "customerFirstName", "customerLastName", "customerPassword", "customerPhoneNumber", "customerUserName", "roleId" },
                 values: new object[,]
                 {
-                    { 1, 1, 1 },
-                    { 2, 3, 2 },
-                    { 3, 3, 4 }
+                    { 1, "123 Main Street", "trk@gmail.com", "tarik", "hamarat", "123456", "05537696362", "trkhmrt", 2 },
+                    { 2, "123 Main Street", "ysf@gmail.com", "yusuf", "ergin", "123456", "05537696362", "yusufergin", 2 },
+                    { 3, "123 Main Street", "duhan@gmail.com", "duhan", "duhan", "123456", "05537696362", "duhanduhan", 2 },
+                    { 4, "123 Main Street", "tuna@gmail.com", "tuna", "genç", "123456", "05537696362", "tunagenc", 2 },
+                    { 5, "123 Main Street", "alper@gmail.com", "alper", "alpertyus", "123456", "05537696362", "alpertyus", 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -405,12 +440,13 @@ namespace E_Commerce.DataAccess.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Orders",
-                columns: new[] { "orderId", "basketId", "orderDate", "orderStatusId", "totalAmount", "userId" },
+                table: "Baskets",
+                columns: new[] { "basketId", "basketStatusId", "customerId" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2025, 3, 8, 9, 55, 52, 613, DateTimeKind.Local).AddTicks(2760), 3, 400, 2 },
-                    { 2, 2, new DateTime(2025, 3, 8, 9, 55, 52, 613, DateTimeKind.Local).AddTicks(2810), 3, 850, 4 }
+                    { 1, 1, 1 },
+                    { 2, 3, 2 },
+                    { 3, 3, 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -435,6 +471,15 @@ namespace E_Commerce.DataAccess.Migrations
                     { 2, 1, 1, 2 },
                     { 3, 2, 1, 3 },
                     { 4, 2, 1, 4 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Orders",
+                columns: new[] { "orderId", "basketId", "customerId", "orderDate", "orderStatusId", "totalAmount" },
+                values: new object[,]
+                {
+                    { 1, 1, 2, new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4720), 3, 400 },
+                    { 2, 2, 4, new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4750), 3, 850 }
                 });
 
             migrationBuilder.InsertData(
@@ -464,9 +509,14 @@ namespace E_Commerce.DataAccess.Migrations
                 column: "basketStatusId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Baskets_userId",
+                name: "IX_Baskets_customerId",
                 table: "Baskets",
-                column: "userId");
+                column: "customerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Customers_roleId",
+                table: "Customers",
+                column: "roleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderDetails_orderId",
@@ -485,19 +535,24 @@ namespace E_Commerce.DataAccess.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_Orders_customerId",
+                table: "Orders",
+                column: "customerId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Orders_orderStatusId",
                 table: "Orders",
                 column: "orderStatusId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Orders_userId",
-                table: "Orders",
-                column: "userId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Payments_basketId",
                 table: "Payments",
                 column: "basketId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Payments_customerId",
+                table: "Payments",
+                column: "customerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Payments_paymentStatusId",
@@ -545,7 +600,7 @@ namespace E_Commerce.DataAccess.Migrations
                 name: "PaymentStatuses");
 
             migrationBuilder.DropTable(
-                name: "Roles");
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Baskets");
@@ -560,10 +615,13 @@ namespace E_Commerce.DataAccess.Migrations
                 name: "BasketStatuses");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "Customers");
 
             migrationBuilder.DropTable(
                 name: "Categories");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
         }
     }
 }

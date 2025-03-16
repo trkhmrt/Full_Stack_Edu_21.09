@@ -20,7 +20,7 @@ public class BasketService: IBasketService
   
     public BasketResponseDto addProductToBasket(AddProductToBasketRequestDto addProductToBasketRequestDto)
     {
-        Basket basket = _context.Baskets.FirstOrDefault(b=>(b.userId == addProductToBasketRequestDto.userId) && (b.basketStatusId == 1 || b.basketStatusId == 3));
+        Basket basket = _context.Baskets.FirstOrDefault(b=>(b.customerId == addProductToBasketRequestDto.customerId) && (b.basketStatusId == 1 || b.basketStatusId == 3));
 
         if (basket != null)
         {
@@ -65,7 +65,7 @@ public class BasketService: IBasketService
             Basket new_basket = new Basket
             {
                 basketStatusId = 1,
-                userId = addProductToBasketRequestDto.userId,
+                customerId = addProductToBasketRequestDto.customerId,
                 BasketDetails = new List<BasketDetail>
                 {
                     new BasketDetail
@@ -89,14 +89,14 @@ public class BasketService: IBasketService
     public ICollection<BasketResponseDto> getAllBaskets()
     {
         return _context.Baskets
-            .Include(b => b.User)
+            .Include(b => b.Customer)
             .Include(b => b.BasketStatus)
             .Include(b => b.BasketDetails)
             .Select(b => new BasketResponseDto
             {
                 basketId = b.basketId,
-                baskeUserId = b.User.userId,
-                basketUserName = b.User.userName,
+                basketCustomerId = b.Customer.customerId,
+                basketUserName = b.Customer.customerUserName,
                 basketStatusId = b.basketStatusId,
                 basketStatusName = b.BasketStatus.basketStatusName,
                 basketDetails = b.BasketDetails.Select(b=> new BasketDetailsResponseDto
@@ -116,15 +116,15 @@ public class BasketService: IBasketService
     public BasketResponseDto getBasketByBasketId(int basketId)
     {
         return _context.Baskets
-            .Include(b => b.User)
+            .Include(b => b.Customer)
             .Include(b => b.BasketStatus)
             .Include(b => b.BasketDetails)
             .Where(b => b.basketId == basketId)
             .Select(b => new BasketResponseDto
             {
                 basketId = b.basketId,
-                baskeUserId = b.User.userId,
-                basketUserName = b.User.userName,
+                basketCustomerId = b.Customer.customerId,
+                basketUserName = b.Customer.customerUserName,
                 basketStatusId = b.basketStatusId,
                 basketStatusName = b.BasketStatus.basketStatusName,
                 basketDetails = b.BasketDetails.Select(b=> new BasketDetailsResponseDto
@@ -142,33 +142,33 @@ public class BasketService: IBasketService
     public ICollection<BasketResponseDto> getBasketByBasketStatusId(int basketStatusId)
     {
         return _context.Baskets
-            .Include(b => b.User)
+            .Include(b => b.Customer)
             .Include(b => b.BasketStatus)
             .Include(b => b.BasketDetails)
             .Where(b => b.basketStatusId == basketStatusId)
             .Select(b => new BasketResponseDto
             {
                 basketId = b.basketId,
-                baskeUserId = b.User.userId,
-                basketUserName = b.User.userName,
+                basketCustomerId = b.Customer.customerId,
+                basketUserName = b.Customer.customerUserName,
                 basketStatusId = b.basketStatusId,
                 basketStatusName = b.BasketStatus.basketStatusName
 
             }).ToList();
     }
 
-    public BasketResponseDto getBasketByUserId(int userId)
+    public BasketResponseDto getBasketByCustomerId(int basketCustomerId)
     {
         return _context.Baskets
-            .Include(b => b.User)
+            .Include(b => b.Customer)
             .Include(b => b.BasketStatus)
             .Include(b => b.BasketDetails)
-            .Where(b => b.userId == userId)
+            .Where(b => b.customerId == basketCustomerId)
             .Select(b => new BasketResponseDto
             {
                 basketId = b.basketId,
-                baskeUserId = b.User.userId,
-                basketUserName = b.User.userName,
+                basketCustomerId = b.Customer.customerId,
+                basketUserName = b.Customer.customerUserName,
                 basketStatusId = b.basketStatusId,
                 basketStatusName = b.BasketStatus.basketStatusName,
                 basketDetails = b.BasketDetails.Select(b => new BasketDetailsResponseDto

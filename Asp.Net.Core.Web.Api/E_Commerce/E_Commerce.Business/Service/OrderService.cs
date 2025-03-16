@@ -20,7 +20,7 @@ public class OrderService:IOrderService
     public ICollection<OrderResponseDto> getAllOrders()
     {
         return _context.Orders
-            .Include(o=>o.User)
+            .Include(o=>o.Customer)
             .Include(o=>o.OrderDetails)
             .ThenInclude(o=>o.Product)
             .Include(o=>o.OrderStatus).ToList()
@@ -29,7 +29,7 @@ public class OrderService:IOrderService
                 orderId = o.orderId,
                 orderDate = o.orderDate,
                 totalAmount = o.totalAmount,
-                userName = o.User.userName,
+                customerUserName = o.Customer.customerUserName,
                 orderStatusName = o.OrderStatus.orderStatusName,
                 orderDetails = o.OrderDetails.Select(o=> new OrderDetailsResponseDto
                 {
@@ -41,20 +41,20 @@ public class OrderService:IOrderService
             }).ToList();
     }
 
-    public ICollection<OrderResponseDto> getAllOrdersByUserId(int userId)
+    public ICollection<OrderResponseDto> getAllOrdersByCustomerId(int customerId)
     {
         return _context.Orders
-            .Include(o=>o.User)
+            .Include(o=>o.Customer)
             .Include(o=>o.OrderDetails)
             .ThenInclude(o=>o.Product)
             .Include(o=>o.OrderStatus).ToList()
-            .Where(o=>o.User.userId == userId)
+            .Where(o=>o.Customer.customerId == customerId)
             .Select(o=> new OrderResponseDto
             {
                 orderId = o.orderId,
                 orderDate = o.orderDate,
                 totalAmount = o.totalAmount,
-                userName = o.User.userName,
+                customerUserName = o.Customer.customerUserName,
                 orderStatusName = o.OrderStatus.orderStatusName,
                 orderDetails = o.OrderDetails.Select(o=> new OrderDetailsResponseDto
                 {
@@ -69,7 +69,7 @@ public class OrderService:IOrderService
     public OrderResponseDto getOrderByOrderId(int orderId)
     {
         return _context.Orders
-            .Include(o=>o.User)
+            .Include(o=>o.Customer)
             .Include(o=>o.OrderDetails)
             .ThenInclude(o=>o.Product)
             .Include(o=>o.OrderStatus).ToList()
@@ -79,7 +79,7 @@ public class OrderService:IOrderService
                 orderId = o.orderId,
                 orderDate = o.orderDate,
                 totalAmount = o.totalAmount,
-                userName = o.User.userName,
+                customerUserName = o.Customer.customerUserName,
                 orderStatusName = o.OrderStatus.orderStatusName,
                 orderDetails = o.OrderDetails.Select(o=> new OrderDetailsResponseDto
                 {

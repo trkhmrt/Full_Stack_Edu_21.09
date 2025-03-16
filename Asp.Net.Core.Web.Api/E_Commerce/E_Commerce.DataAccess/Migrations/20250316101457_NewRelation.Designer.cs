@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.DataAccess.Migrations
 {
     [DbContext(typeof(ProjectContext))]
-    [Migration("20250308065552_Payment_PaymentStatusAdded")]
-    partial class Payment_PaymentStatusAdded
+    [Migration("20250316101457_NewRelation")]
+    partial class NewRelation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,14 +36,14 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<int>("basketStatusId")
                         .HasColumnType("int");
 
-                    b.Property<int>("userId")
+                    b.Property<int>("customerId")
                         .HasColumnType("int");
 
                     b.HasKey("basketId");
 
                     b.HasIndex("basketStatusId");
 
-                    b.HasIndex("userId");
+                    b.HasIndex("customerId");
 
                     b.ToTable("Baskets");
 
@@ -52,19 +52,19 @@ namespace E_Commerce.DataAccess.Migrations
                         {
                             basketId = 1,
                             basketStatusId = 1,
-                            userId = 1
+                            customerId = 1
                         },
                         new
                         {
                             basketId = 2,
                             basketStatusId = 3,
-                            userId = 2
+                            customerId = 2
                         },
                         new
                         {
                             basketId = 3,
                             basketStatusId = 3,
-                            userId = 4
+                            customerId = 4
                         });
                 });
 
@@ -204,6 +204,114 @@ namespace E_Commerce.DataAccess.Migrations
                         });
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.Customer", b =>
+                {
+                    b.Property<int>("customerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("customerId"));
+
+                    b.Property<string>("customerAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("customerEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("customerFirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("customerLastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("customerPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("customerPhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("customerUserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("roleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("customerId");
+
+                    b.HasIndex("roleId");
+
+                    b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            customerId = 1,
+                            customerAddress = "123 Main Street",
+                            customerEmail = "trk@gmail.com",
+                            customerFirstName = "tarik",
+                            customerLastName = "hamarat",
+                            customerPassword = "123456",
+                            customerPhoneNumber = "05537696362",
+                            customerUserName = "trkhmrt",
+                            roleId = 2
+                        },
+                        new
+                        {
+                            customerId = 2,
+                            customerAddress = "123 Main Street",
+                            customerEmail = "ysf@gmail.com",
+                            customerFirstName = "yusuf",
+                            customerLastName = "ergin",
+                            customerPassword = "123456",
+                            customerPhoneNumber = "05537696362",
+                            customerUserName = "yusufergin",
+                            roleId = 2
+                        },
+                        new
+                        {
+                            customerId = 3,
+                            customerAddress = "123 Main Street",
+                            customerEmail = "duhan@gmail.com",
+                            customerFirstName = "duhan",
+                            customerLastName = "duhan",
+                            customerPassword = "123456",
+                            customerPhoneNumber = "05537696362",
+                            customerUserName = "duhanduhan",
+                            roleId = 2
+                        },
+                        new
+                        {
+                            customerId = 4,
+                            customerAddress = "123 Main Street",
+                            customerEmail = "tuna@gmail.com",
+                            customerFirstName = "tuna",
+                            customerLastName = "genç",
+                            customerPassword = "123456",
+                            customerPhoneNumber = "05537696362",
+                            customerUserName = "tunagenc",
+                            roleId = 2
+                        },
+                        new
+                        {
+                            customerId = 5,
+                            customerAddress = "123 Main Street",
+                            customerEmail = "alper@gmail.com",
+                            customerFirstName = "alper",
+                            customerLastName = "alpertyus",
+                            customerPassword = "123456",
+                            customerPhoneNumber = "05537696362",
+                            customerUserName = "alpertyus",
+                            roleId = 2
+                        });
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Order", b =>
                 {
                     b.Property<int>("orderId")
@@ -215,6 +323,9 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<int>("basketId")
                         .HasColumnType("int");
 
+                    b.Property<int>("customerId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("orderDate")
                         .HasColumnType("datetime2");
 
@@ -224,17 +335,14 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<int>("totalAmount")
                         .HasColumnType("int");
 
-                    b.Property<int>("userId")
-                        .HasColumnType("int");
-
                     b.HasKey("orderId");
 
                     b.HasIndex("basketId")
                         .IsUnique();
 
-                    b.HasIndex("orderStatusId");
+                    b.HasIndex("customerId");
 
-                    b.HasIndex("userId");
+                    b.HasIndex("orderStatusId");
 
                     b.ToTable("Orders");
 
@@ -243,19 +351,19 @@ namespace E_Commerce.DataAccess.Migrations
                         {
                             orderId = 1,
                             basketId = 1,
-                            orderDate = new DateTime(2025, 3, 8, 9, 55, 52, 613, DateTimeKind.Local).AddTicks(2760),
+                            customerId = 2,
+                            orderDate = new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4720),
                             orderStatusId = 3,
-                            totalAmount = 400,
-                            userId = 2
+                            totalAmount = 400
                         },
                         new
                         {
                             orderId = 2,
                             basketId = 2,
-                            orderDate = new DateTime(2025, 3, 8, 9, 55, 52, 613, DateTimeKind.Local).AddTicks(2810),
+                            customerId = 4,
+                            orderDate = new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4750),
                             orderStatusId = 3,
-                            totalAmount = 850,
-                            userId = 4
+                            totalAmount = 850
                         });
                 });
 
@@ -372,6 +480,9 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<int>("basketId")
                         .HasColumnType("int");
 
+                    b.Property<int>("customerId")
+                        .HasColumnType("int");
+
                     b.Property<int>("paymentStatusId")
                         .HasColumnType("int");
 
@@ -384,6 +495,8 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasKey("paymentId");
 
                     b.HasIndex("basketId");
+
+                    b.HasIndex("customerId");
 
                     b.HasIndex("paymentStatusId");
 
@@ -724,15 +837,15 @@ namespace E_Commerce.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("E_Commerce.DataAccess.Model.User", "User")
+                    b.HasOne("E_Commerce.DataAccess.Model.Customer", "Customer")
                         .WithMany("baskets")
-                        .HasForeignKey("userId")
+                        .HasForeignKey("customerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("BasketStatus");
 
-                    b.Navigation("User");
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.BasketDetail", b =>
@@ -754,11 +867,28 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.Customer", b =>
+                {
+                    b.HasOne("E_Commerce.DataAccess.Model.Role", "Role")
+                        .WithMany("Customers")
+                        .HasForeignKey("roleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Order", b =>
                 {
                     b.HasOne("E_Commerce.DataAccess.Model.Basket", "Basket")
                         .WithOne("Order")
                         .HasForeignKey("E_Commerce.DataAccess.Model.Order", "basketId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("E_Commerce.DataAccess.Model.Customer", "Customer")
+                        .WithMany("orders")
+                        .HasForeignKey("customerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -768,17 +898,11 @@ namespace E_Commerce.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("E_Commerce.DataAccess.Model.User", "User")
-                        .WithMany("orders")
-                        .HasForeignKey("userId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.Navigation("Basket");
 
-                    b.Navigation("OrderStatus");
+                    b.Navigation("Customer");
 
-                    b.Navigation("User");
+                    b.Navigation("OrderStatus");
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.OrderDetail", b =>
@@ -808,6 +932,12 @@ namespace E_Commerce.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("E_Commerce.DataAccess.Model.Customer", "Customer")
+                        .WithMany("Payments")
+                        .HasForeignKey("customerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("E_Commerce.DataAccess.Model.PaymentStatus", "PaymentStatus")
                         .WithMany("Payments")
                         .HasForeignKey("paymentStatusId")
@@ -815,6 +945,8 @@ namespace E_Commerce.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Basket");
+
+                    b.Navigation("Customer");
 
                     b.Navigation("PaymentStatus");
                 });
@@ -880,6 +1012,15 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Navigation("subCategories");
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.Customer", b =>
+                {
+                    b.Navigation("Payments");
+
+                    b.Navigation("baskets");
+
+                    b.Navigation("orders");
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Order", b =>
                 {
                     b.Navigation("OrderDetails");
@@ -904,6 +1045,8 @@ namespace E_Commerce.DataAccess.Migrations
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Role", b =>
                 {
+                    b.Navigation("Customers");
+
                     b.Navigation("UserRoles");
                 });
 
@@ -915,10 +1058,6 @@ namespace E_Commerce.DataAccess.Migrations
             modelBuilder.Entity("E_Commerce.DataAccess.Model.User", b =>
                 {
                     b.Navigation("UserRoles");
-
-                    b.Navigation("baskets");
-
-                    b.Navigation("orders");
                 });
 #pragma warning restore 612, 618
         }

@@ -13,6 +13,9 @@ public static class ServiceCollectionExtensions
         serviceCollection.AddScoped<IBasketService, BasketService>();
         serviceCollection.AddScoped<IOrderService, OrderService>();
         serviceCollection.AddScoped<IPaymentService, PaymentService>();
+        serviceCollection.AddScoped<IJwtGenerator, JwtGeneratorService>();
+        serviceCollection.AddScoped<IAuthService, AuthService>();
+        serviceCollection.AddScoped<ICustomerService, CustomerService>();
 
 
 

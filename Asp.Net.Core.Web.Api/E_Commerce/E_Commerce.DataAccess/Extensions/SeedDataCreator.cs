@@ -44,6 +44,70 @@ public static class SeedDataCreator
 
         );
         #endregion
+        #region Customer
+        modelBuilder.Entity<Customer>().HasData(
+            new Customer
+            {
+                customerId = 1,
+                customerEmail = "trk@gmail.com",
+                customerPassword = "123456",
+                customerFirstName = "tarik",
+                customerLastName = "hamarat",
+                customerAddress = "123 Main Street",
+                customerPhoneNumber = "05537696362",
+                customerUserName = "trkhmrt",
+                roleId = 2
+            },
+            new Customer
+            {
+                customerId = 2,
+                customerEmail = "ysf@gmail.com",
+                customerPassword = "123456",
+                customerFirstName = "yusuf",
+                customerLastName = "ergin",
+                customerAddress = "123 Main Street",
+                customerPhoneNumber = "05537696362",
+                customerUserName = "yusufergin",
+                roleId = 2
+            },
+            new Customer
+            {
+                customerId = 3,
+                customerEmail = "duhan@gmail.com",
+                customerPassword = "123456",
+                customerFirstName = "duhan",
+                customerLastName = "duhan",
+                customerAddress = "123 Main Street",
+                customerPhoneNumber = "05537696362",
+                customerUserName = "duhanduhan",
+                roleId = 2
+            },
+            new Customer
+            {
+                customerId = 4,
+                customerEmail = "tuna@gmail.com",
+                customerPassword = "123456",
+                customerFirstName = "tuna",
+                customerLastName = "genç",
+                customerAddress = "123 Main Street",
+                customerPhoneNumber = "05537696362",
+                customerUserName = "tunagenc",
+                roleId = 2
+            },
+            new Customer
+            {
+                customerId = 5,
+                customerEmail = "alper@gmail.com",
+                customerPassword = "123456",
+                customerFirstName = "alper",
+                customerLastName = "alpertyus",
+                customerAddress = "123 Main Street",
+                customerPhoneNumber = "05537696362",
+                customerUserName = "alpertyus",
+                roleId = 2
+            }
+        );
+        #endregion
         #region Role
         modelBuilder.Entity<Role>().HasData(
             new Role
@@ -98,19 +162,19 @@ public static class SeedDataCreator
             new Basket
             {
                 basketId = 1,
-                userId = 1,
+                customerId = 1,
                 basketStatusId = 1
             },
             new Basket
             {
                 basketId = 2,
-                userId = 2,
+                customerId = 2,
                 basketStatusId = 3
             },
             new Basket
             {
                 basketId = 3,
-                userId = 4,
+                customerId = 4,
                 basketStatusId = 3
             }
         );
@@ -255,7 +319,7 @@ public static class SeedDataCreator
             new Order
             {
                 orderId = 1,
-                userId = 2,
+                customerId = 2,
                 basketId = 1,
                 orderDate = DateTime.Now,
                 totalAmount = 400,
@@ -264,7 +328,7 @@ public static class SeedDataCreator
             new Order
             {
                 orderId = 2,
-                userId = 4,
+                customerId = 4,
                 basketId = 2,
                 orderDate = DateTime.Now,
                 totalAmount = 850,

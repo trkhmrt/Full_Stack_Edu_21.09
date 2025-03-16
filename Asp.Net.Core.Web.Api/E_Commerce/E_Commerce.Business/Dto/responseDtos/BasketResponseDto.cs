@@ -8,7 +8,7 @@ public class BasketResponseDto
     
     public string basketStatusName { get; set; }
 
-    public int baskeUserId { get; set; }
+    public int basketCustomerId { get; set; }
     
     public string basketUserName { get; set; }
     

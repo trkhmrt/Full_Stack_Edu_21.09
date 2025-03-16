@@ -7,7 +7,7 @@ public interface IOrderService
 {
     ICollection<OrderResponseDto> getAllOrders();
     
-    ICollection<OrderResponseDto> getAllOrdersByUserId(int userId);
+    ICollection<OrderResponseDto> getAllOrdersByCustomerId(int customerId);
     
     OrderResponseDto getOrderByOrderId(int orderId);
     

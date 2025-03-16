@@ -10,9 +10,9 @@ public class OrderConfiguration:IEntityTypeConfiguration<Order>
     {
         builder.HasKey(o => o.orderId);
 
-        builder.HasOne(o => o.User)
+        builder.HasOne(o => o.Customer)
             .WithMany(u => u.orders)
-            .HasForeignKey(o => o.userId)
+            .HasForeignKey(o => o.customerId)
             .OnDelete(DeleteBehavior.Restrict);
         
         builder.HasOne(o=>o.Basket)

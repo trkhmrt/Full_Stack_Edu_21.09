@@ -1,4 +1,5 @@
 using E_Commerce.Business.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,6 +7,7 @@ namespace E_Commerce.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin,IT")]
     public class OrderController : ControllerBase
     {
         private IOrderService _orderService;
@@ -22,10 +24,11 @@ namespace E_Commerce.Controllers
             return Ok(_orderService.getAllOrders());
         }
         
-        [HttpGet("getAllOrdersByUserId/{userId}")]
-        public IActionResult getAllOrdersByUserId(int userId)
+        [AllowAnonymous]
+        [HttpGet("getAllOrdersByCustomerId/{customerId}")]
+        public IActionResult getAllOrdersByCustomerId(int customerId)
         {
-            return Ok(_orderService.getAllOrdersByUserId(userId));
+            return Ok(_orderService.getAllOrdersByCustomerId(customerId));
         }
 
         [HttpGet("getOrderByOrderId/{orderId}")]

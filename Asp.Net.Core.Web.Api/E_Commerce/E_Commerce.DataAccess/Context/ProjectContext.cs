@@ -9,7 +9,7 @@ public class ProjectContext:DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=EcommerceDB3;User Id=sa;Password=StrongPassword123!;Encrypt=False;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=EcommerceDB4;User Id=sa;Password=StrongPassword123!;Encrypt=False;TrustServerCertificate=True;");
         base.OnConfiguring(optionsBuilder);
     }
 
@@ -25,6 +25,7 @@ public class ProjectContext:DbContext
         modelBuilder.ApplyConfiguration(new UserConfiguration());
         modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
         modelBuilder.ApplyConfiguration(new PaymentConfiguration());
+        modelBuilder.ApplyConfiguration(new CustomerConfiguration());
         modelBuilder.SeedDataCreate();
         //SeedDataCreator.SeedDataCreate(modelBuilder);
         base.OnModelCreating(modelBuilder);
@@ -44,5 +45,7 @@ public class ProjectContext:DbContext
     public DbSet<PaymentStatus> PaymentStatuses { get; set; }
     public DbSet<BasketStatus> BasketStatuses { get; set; }
     public DbSet<OrderStatus> OrderStatuses { get; set; }
+
+    public DbSet<Customer> Customers { get; set; }
     
 }
