@@ -1,4 +1,7 @@
 using System.Collections;
+using System.Net;
+using System.Text.Json;
+using Azure.Core;
 using E_Commerce.Business.Dto;
 using E_Commerce.Business.Dto.requestDtos;
 using E_Commerce.Business.Interface;
@@ -139,6 +142,32 @@ public class BasketService: IBasketService
             }).FirstOrDefault();
     }
 
+    public BasketResponseDto getActiveBasketByCustomerId(int customerId)
+    {
+        return _context.Baskets
+            .Include(b => b.Customer)
+            .Include(b => b.BasketStatus)
+            .Include(b => b.BasketDetails)
+            .Where(b => b.customerId == customerId && b.basketStatusId == 1)
+            .Select(b => new BasketResponseDto
+            {
+                basketId = b.basketId,
+                basketCustomerId = b.Customer.customerId,
+                basketUserName = b.Customer.customerUserName,
+                basketStatusId = b.basketStatusId,
+                basketStatusName = b.BasketStatus.basketStatusName,
+                basketDetails = b.BasketDetails.Select(b=> new BasketDetailsResponseDto
+                {
+                    productId = b.productId,
+                    productDescription = b.Product.productDescription,
+                    productName = b.Product.productName,
+                    productPrice = b.Product.productUnitPrice,
+                    basketQuantity = b.basket_quantity,
+                    subCategoryName = b.Product.SubCategory.subCategoryName
+                }).ToList()
+            }).FirstOrDefault();
+    }
+
     public ICollection<BasketResponseDto> getBasketByBasketStatusId(int basketStatusId)
     {
         return _context.Baskets
@@ -157,7 +186,7 @@ public class BasketService: IBasketService
             }).ToList();
     }
 
-    public BasketResponseDto getBasketByCustomerId(int basketCustomerId)
+    public ICollection<BasketResponseDto> getBasketByCustomerId(int basketCustomerId)
     {
         return _context.Baskets
             .Include(b => b.Customer)
@@ -178,7 +207,7 @@ public class BasketService: IBasketService
                     basketQuantity = b.basket_quantity,
                     subCategoryName = b.Product.SubCategory.subCategoryName
                 }).ToList()
-            }).FirstOrDefault();
+            }).ToList();
     }
 
     public void approveBasket(int basketId)
@@ -189,9 +218,9 @@ public class BasketService: IBasketService
          */
         Basket basket = _context.Baskets.Find(basketId);
 
-        if (basket == null)
+        if (basket == null || basket.basketStatusId != 1)
         {
-            throw new Exception("Basket not found");
+            throw new Exception("Sepet bulunamadı veya hatalı sepet üzerinde işlem yapıyorsunuz.");
         }
         else
         {
@@ -211,9 +240,9 @@ public class BasketService: IBasketService
          Basket onaylandığında -> id 1 Sepet Aktif
          */
         Basket basket = _context.Baskets.Find(basketId);
-        if (basket == null)
+        if (basket == null || basket.basketStatusId == 4 || basket.basketStatusId == 2)
         {
-            throw new Exception("Basket not found");
+            throw new Exception("Sepet bulunamadı veya hatalı sepet üzerinde işlem yapıyorsunuz.");
         }
         else
         {

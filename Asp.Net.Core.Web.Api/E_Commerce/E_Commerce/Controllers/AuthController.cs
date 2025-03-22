@@ -35,5 +35,20 @@ namespace E_Commerce.Controllers
             }
         }
         
+        [HttpPost("customerLogin")]
+        public IActionResult customerLogin(AuthLoginRequest authLoginRequest)
+        { 
+            try
+            {
+                var responseLogin = _authService.customerLogin(authLoginRequest);
+                return Ok(responseLogin);
+                
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        
     }
 }

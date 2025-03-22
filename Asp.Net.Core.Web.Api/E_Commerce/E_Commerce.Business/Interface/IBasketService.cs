@@ -9,8 +9,9 @@ public interface IBasketService
     BasketResponseDto addProductToBasket(AddProductToBasketRequestDto addProductToBasketRequestDto);
     ICollection<BasketResponseDto> getAllBaskets();
     BasketResponseDto getBasketByBasketId(int basketId);
+    BasketResponseDto getActiveBasketByCustomerId(int customerId);
     ICollection<BasketResponseDto> getBasketByBasketStatusId(int basketStatusId);
-    BasketResponseDto getBasketByCustomerId(int customerId);
+    ICollection<BasketResponseDto> getBasketByCustomerId(int customerId);
 
     void approveBasket(int basketId);
 

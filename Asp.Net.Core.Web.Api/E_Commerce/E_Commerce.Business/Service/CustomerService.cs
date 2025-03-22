@@ -3,6 +3,7 @@ using E_Commerce.Business.Dto.requestDtos;
 using E_Commerce.Business.Interface;
 using E_Commerce.DataAccess.Context;
 using E_Commerce.DataAccess.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce.Business.Service;
 
@@ -63,5 +64,27 @@ public class CustomerService:ICustomerService
            return true;
        }
        return false;
+    }
+
+    public CustomerResponse GetCustomerByUsernameAndPassword(AuthLoginRequest authLoginRequest)
+    {
+        var customer =  _context.Customers
+            .Include(c=>c.Role)
+            .ThenInclude(ur=>ur.Customers)
+            .Where(c=>c.customerUserName == authLoginRequest.username && c.customerPassword == authLoginRequest.password)
+            .Select(c=> new CustomerResponse
+            {
+                customerId = c.customerId,
+                customerUserName = c.customerUserName,
+                customerMail = c.customerEmail,
+                customerFirstname = c.customerFirstName,
+                customerRolu = new CustomerRoleDto
+                {
+                    customerRoleName = c.Role.roleName
+                }
+            }).FirstOrDefault();
+
+        
+        return customer; 
     }
 }

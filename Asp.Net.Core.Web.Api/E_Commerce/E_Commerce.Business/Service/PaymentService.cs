@@ -18,13 +18,16 @@ public class PaymentService : IPaymentService
 
     public PaymentResponseDto createPayment(int basketId)
     {
-        
-        using (var transaction = _context.Database.BeginTransaction())
+        BasketResponseDto basketResponse = _basketService.getBasketByBasketId(basketId);
+        if (basketResponse == null || basketResponse.basketStatusId != 3)
         {
-            try
-            {
-                BasketResponseDto basketResponse = _basketService.getBasketByBasketId(basketId);
-                if (basketResponse != null)
+            throw new Exception("Hatalı basket");
+        }
+        else
+        {
+            using (var transaction = _context.Database.BeginTransaction())
+            { 
+                try
                 {
                     Payment payment = new Payment
                     {
@@ -34,8 +37,7 @@ public class PaymentService : IPaymentService
                         totalAmount = basketResponse.basketDetails.Sum(bd => bd.productPrice * bd.basketQuantity),
                         paymentStatusId = 1
                     };
-
-
+                    
                     _context.Payments.Add(payment);
                     _context.SaveChanges();
                     
@@ -47,8 +49,7 @@ public class PaymentService : IPaymentService
                         totalAmount = payment.totalAmount,
                         orderStatusId = 1,
                     };
-
-
+                    
                     _context.Orders.Add(order);
                     _context.SaveChanges();
                     
@@ -64,9 +65,7 @@ public class PaymentService : IPaymentService
                         };
                         orderDetails_list.Add(orderDetail);
                     }
-
-
-
+                    
                     _basketService.statusBasketToOrder(basketId);
                     _context.OrderDetails.AddRange(orderDetails_list);
                     _context.SaveChanges();
@@ -78,18 +77,14 @@ public class PaymentService : IPaymentService
                         orderId = order.orderId,
                         paymentMessage = "Success"
                     };
-
-
-
                 }
-            }
-            catch (Exception e)
-            {
-                transaction.Rollback();
-                Console.WriteLine("Transaction failed" + e.Message);
+                  catch (Exception e)
+                  {
+                      transaction.Rollback();
+                      Console.WriteLine("Transaction failed" + e.Message);
+                  }
             }
         }
-
         return new PaymentResponseDto
         {
             paymentMessage = "Failed"

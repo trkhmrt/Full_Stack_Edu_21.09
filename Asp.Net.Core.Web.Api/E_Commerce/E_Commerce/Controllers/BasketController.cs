@@ -8,7 +8,7 @@ namespace E_Commerce.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    [Authorize]
+    
     public class BasketController : ControllerBase
     {
         IBasketService _basketService;
@@ -35,6 +35,12 @@ namespace E_Commerce.Controllers
         public IActionResult getBasketByCustomerId(int customerId)
         {
             return Ok(_basketService.getBasketByCustomerId(customerId));
+        }
+        
+        [HttpGet("getActiveBasketByCustomerId/{customerId}")]
+        public IActionResult getActiveBasketByCustomerId(int customerId)
+        {
+            return Ok(_basketService.getActiveBasketByCustomerId(customerId));
         }
         
         [HttpGet("getBasketByBasketStatusId/{basketStatusId}")]

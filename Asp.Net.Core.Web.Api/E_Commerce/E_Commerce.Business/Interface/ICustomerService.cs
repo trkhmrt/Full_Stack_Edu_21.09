@@ -7,4 +7,5 @@ public interface ICustomerService
 {
     GeneralResponse createCustomer(CreateCustomerRequest request);
     bool getCustomerByEmailPhoneUsername(string email,string phone,string username);
+    CustomerResponse GetCustomerByUsernameAndPassword(AuthLoginRequest authLoginRequest);
 }

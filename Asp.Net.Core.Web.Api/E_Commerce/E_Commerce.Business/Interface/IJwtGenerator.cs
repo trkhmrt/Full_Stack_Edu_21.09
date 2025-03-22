@@ -7,4 +7,5 @@ namespace E_Commerce.Business.Interface;
 public interface IJwtGenerator
 {
     public string GenerateToken(UserDto userDto);
+    public string GenerateCustomerToken(CustomerResponse customerResponse);
 }

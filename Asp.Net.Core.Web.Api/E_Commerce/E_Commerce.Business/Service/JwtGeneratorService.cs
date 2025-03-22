@@ -62,4 +62,34 @@ public class JwtGeneratorService:IJwtGenerator
          return new JwtSecurityTokenHandler().WriteToken(token);
          
     }
+
+    public string GenerateCustomerToken(CustomerResponse customerResponse)
+    {
+        //Claims
+        var claims = new List<Claim>
+        {
+            new Claim(JwtRegisteredClaimNames.Sub, customerResponse.customerUserName),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(JwtRegisteredClaimNames.Email, customerResponse.customerMail),
+            new Claim(JwtRegisteredClaimNames.UniqueName, customerResponse.customerUserName),
+            new Claim(ClaimTypes.Role,customerResponse.customerRolu.customerRoleName)
+            //new Claim(JwtRegisteredClaimNames.Exp,_expireMinutes.ToString())
+        };
+
+         
+        
+        
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_key));
+        var credentials = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
+
+        var token = new JwtSecurityToken(
+            _issuer,
+            _audience,
+            claims,
+            expires: DateTime.UtcNow.AddMinutes(_expireMinutes),
+            signingCredentials: credentials
+        );
+         
+        return new JwtSecurityTokenHandler().WriteToken(token);
+    }
 }

@@ -8,6 +8,7 @@ public class BasketConfiguration:IEntityTypeConfiguration<Basket>
 {
     public void Configure(EntityTypeBuilder<Basket> builder)
     {
+        
         builder.HasKey(b => b.basketId);
 
         builder.HasOne(b => b.Customer)

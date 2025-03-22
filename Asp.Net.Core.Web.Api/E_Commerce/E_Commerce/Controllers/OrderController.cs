@@ -7,7 +7,7 @@ namespace E_Commerce.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin,IT")]
+    
     public class OrderController : ControllerBase
     {
         private IOrderService _orderService;
