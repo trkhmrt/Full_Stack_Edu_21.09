@@ -399,6 +399,16 @@ public static class SeedDataCreator
             new OrderStatus
             {
                 orderStatusId = 4,
+                orderStatusName = "Sipariş Onaylandı",
+            },
+            new OrderStatus
+            {
+                orderStatusId = 5,
+                orderStatusName = "Sipariş Teslim Edildi",
+            },
+            new OrderStatus
+            {
+                orderStatusId = 6,
                 orderStatusName = "Sipariş Tamamlandı",
             }
         );

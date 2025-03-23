@@ -37,8 +37,76 @@ namespace E_Commerce.Controllers
             return Ok(_orderService.getOrderByOrderId(orderId));
         }
         
+        [HttpGet("cancelOrderByOrderId/{orderId}")]
+        public IActionResult cancelOrderByOrderId(int orderId)
+        {
+            try
+            {
+                _orderService.cancelOrderByOrderId(orderId);
+                return Ok("Sipariş iptal edildi.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+           
+        }
         
+        [HttpGet("completeOrderByOrderId/{orderId}")]
+        public IActionResult completeOrderByOrderId(int orderId)
+        {
+            try
+            {
+                _orderService.completeOrderByOrderId(orderId);
+                return Ok("Sipariş iptal edildi.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         
+        [HttpGet("toCargoOrderByOrderId/{orderId}")]
+        public IActionResult toCargoOrderByOrderId(int orderId)
+        {
+            try
+            {
+                _orderService.toCargoOrderByOrderId(orderId);
+                return Ok("Sipariş kargoya verildi.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        
+        [HttpGet("approveOrderByOrderId/{orderId}")]
+        public IActionResult approveOrderByOrderId(int orderId)
+        {
+            try
+            {
+                _orderService.approveOrderByOrderId(orderId);
+                return Ok("Sipariş onaylandı.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        
+        [HttpGet("deliveredOrderByOrderId/{orderId}")]
+        public IActionResult deliveredOrderByOrderId(int orderId)
+        {
+            try
+            {
+                _orderService.deliveredOrderByOrderId(orderId);
+                return Ok("Sipariş Teslim edildi.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         
     }
 }

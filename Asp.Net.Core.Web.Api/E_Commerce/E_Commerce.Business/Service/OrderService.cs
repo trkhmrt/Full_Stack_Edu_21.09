@@ -90,4 +90,81 @@ public class OrderService:IOrderService
                 }).ToList()
             }).FirstOrDefault();
     }
+
+    public void cancelOrderByOrderId(int orderId)
+    {
+        var foundedOrder = _context.Orders.FirstOrDefault(o => o.orderId == orderId);
+
+        if (foundedOrder != null)
+        {
+            foundedOrder.orderStatusId = 2;
+            _context.SaveChanges();
+        }
+        else
+        {
+             throw new Exception($"Order with id {orderId} not found"); 
+        }
+        
+    }
+   
+    public void completeOrderByOrderId(int orderId)
+    {
+        var foundedOrder = _context.Orders.FirstOrDefault(o => o.orderId == orderId);
+
+        if (foundedOrder != null)
+        {
+            foundedOrder.orderStatusId = 6;
+            _context.SaveChanges();
+        }
+        else
+        {
+            throw new Exception($"Order with id {orderId} not found"); 
+        }
+        
+    }
+
+    public void toCargoOrderByOrderId(int orderId)
+    {
+        var foundedOrder = _context.Orders.FirstOrDefault(o => o.orderId == orderId);
+
+        if (foundedOrder != null)
+        {
+            foundedOrder.orderStatusId = 3;
+            _context.SaveChanges();
+        }
+        else
+        {
+            throw new Exception($"Order with id {orderId} not found"); 
+        }
+    }
+
+    public void approveOrderByOrderId(int orderId)
+    {
+        var foundedOrder = _context.Orders.FirstOrDefault(o => o.orderId == orderId);
+
+        if (foundedOrder != null)
+        {
+            foundedOrder.orderStatusId = 4;
+            _context.SaveChanges();
+        }
+        else
+        {
+            throw new Exception($"Order with id {orderId} not found"); 
+        }
+    }
+
+    public void deliveredOrderByOrderId(int orderId)
+    {
+        var foundedOrder = _context.Orders.FirstOrDefault(o => o.orderId == orderId);
+
+        if (foundedOrder != null)
+        {
+            foundedOrder.orderStatusId = 5;
+            _context.SaveChanges();
+        }
+        else
+        {
+            throw new Exception($"Order with id {orderId} not found"); 
+        }
+    }
 }

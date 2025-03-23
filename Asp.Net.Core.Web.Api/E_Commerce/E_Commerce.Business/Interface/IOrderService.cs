@@ -11,6 +11,14 @@ public interface IOrderService
     
     OrderResponseDto getOrderByOrderId(int orderId);
     
+    void cancelOrderByOrderId(int orderId);
+    
+    void completeOrderByOrderId(int orderId);
+    void toCargoOrderByOrderId(int orderId);
+    void approveOrderByOrderId(int orderId);
+    void deliveredOrderByOrderId(int orderId);
+    
+    
     
     
 }
