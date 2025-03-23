@@ -1,0 +1,716 @@
+{
+	"info": {
+		"_postman_id": "a2906e3a-c907-472f-8dc3-b31da21c823f",
+		"name": "E_Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38497630",
+		"_collection_link": "https://restless-firefly-565050.postman.co/workspace/New-Team-Workspace~dcdf79fc-c6e9-4859-8aa9-f6db03fa0129/collection/38497630-a2906e3a-c907-472f-8dc3-b31da21c823f?action=share&source=collection_link&creator=38497630"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "getCustomers",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomerById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "createCustomer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"customerUserName\": \"testcustomer\",\n  \"customerPassword\": \"Abc@123!\",\n  \"confirmCustomerPassword\": \"Abc@123!\",\n  \"customerFirstName\": \"Yusuf\",\n  \"customerLastName\": \"Ergin\",\n  \"customerAddress\": \"123 Main Street, City, Country\",\n  \"customerPhoneNumber\": \"+2234567890\",\n  \"customerEmail\": \"tunagenç@example.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5264/Customer/createCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Customer",
+								"createCustomer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basket",
+			"item": [
+				{
+					"name": "getBaskets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0Y3VzdG9tZXIiLCJqdGkiOiIzMWQ2ODgyYy01ZTE1LTRlMjEtODhiNS05NmUyNDQzZmE3MjEiLCJlbWFpbCI6InR1bmFnZW7Dp0BleGFtcGxlLmNvbSIsInVuaXF1ZV9uYW1lIjoidGVzdGN1c3RvbWVyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiY3VzdG9tZXIiLCJleHAiOjE3NDI2MzA3MDcsImlzcyI6Ik96ekFjYWRlbXlGdWxsU3RhY2siLCJhdWQiOiJFX0NvbW1lcmNlIn0.NT8nuVFwyChiDuasr5XDsAkPL7YKG8_GKyX6zD_pqbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Basket/getAllBaskets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"getAllBaskets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBasketByBasketId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Basket/getBasketByBasketId/1002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"getBasketByBasketId",
+								"1002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBasketByBasketStatusId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Basket/getBasketByBasketStatusId/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"getBasketByBasketStatusId",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBasketByCustomerId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0Y3VzdG9tZXIiLCJqdGkiOiIzMWQ2ODgyYy01ZTE1LTRlMjEtODhiNS05NmUyNDQzZmE3MjEiLCJlbWFpbCI6InR1bmFnZW7Dp0BleGFtcGxlLmNvbSIsInVuaXF1ZV9uYW1lIjoidGVzdGN1c3RvbWVyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiY3VzdG9tZXIiLCJleHAiOjE3NDI2MzA3MDcsImlzcyI6Ik96ekFjYWRlbXlGdWxsU3RhY2siLCJhdWQiOiJFX0NvbW1lcmNlIn0.NT8nuVFwyChiDuasr5XDsAkPL7YKG8_GKyX6zD_pqbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Basket/getBasketByCustomerId/1002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"getBasketByCustomerId",
+								"1002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addProductToBasket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0Y3VzdG9tZXIiLCJqdGkiOiIzMWQ2ODgyYy01ZTE1LTRlMjEtODhiNS05NmUyNDQzZmE3MjEiLCJlbWFpbCI6InR1bmFnZW7Dp0BleGFtcGxlLmNvbSIsInVuaXF1ZV9uYW1lIjoidGVzdGN1c3RvbWVyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiY3VzdG9tZXIiLCJleHAiOjE3NDI2MzA3MDcsImlzcyI6Ik96ekFjYWRlbXlGdWxsU3RhY2siLCJhdWQiOiJFX0NvbW1lcmNlIn0.NT8nuVFwyChiDuasr5XDsAkPL7YKG8_GKyX6zD_pqbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerId\":1002,\n    \"quantity\":1,\n    \"productId\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5264/Basket/addProductToBasket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"addProductToBasket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approveBasket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Basket/approveBasket/1004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"approveBasket",
+								"1004"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "continueShopping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Basket/continueShopping/1003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"continueShopping",
+								"1003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeProductToBasket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\":2,\n    \"basketId\":1001\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5264/Basket/removeProductToBasket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"removeProductToBasket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getActiveBasketByCustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Basket/getActiveBasketByCustomerId/1002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Basket",
+								"getActiveBasketByCustomerId",
+								"1002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "createPayment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Payment/createPayment/1004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Payment",
+								"createPayment",
+								"1004"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "getAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Product/getAllProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Product",
+								"getAllProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productName\": \"Tshirt\",\n    \"productDescription\": \"Ferah Yazlık Tshirt\",\n    \"productUnitPrice\": 250,\n    \"subCategoryId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5264/Product/createNewProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Product",
+								"createNewProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Product/getProductDetails/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Product",
+								"getProductDetails",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Product/deleteProduct/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Product",
+								"deleteProduct",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5264/Order/createOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"createOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllOrders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0Y3VzdG9tZXIiLCJqdGkiOiIzMWQ2ODgyYy01ZTE1LTRlMjEtODhiNS05NmUyNDQzZmE3MjEiLCJlbWFpbCI6InR1bmFnZW7Dp0BleGFtcGxlLmNvbSIsInVuaXF1ZV9uYW1lIjoidGVzdGN1c3RvbWVyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiY3VzdG9tZXIiLCJleHAiOjE3NDI2MzA3MDcsImlzcyI6Ik96ekFjYWRlbXlGdWxsU3RhY2siLCJhdWQiOiJFX0NvbW1lcmNlIn0.NT8nuVFwyChiDuasr5XDsAkPL7YKG8_GKyX6zD_pqbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/getAllOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"getAllOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllOrdersByCustomerId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0cmsiLCJqdGkiOiIyNTJkYzVjOS0zOTk3LTQyYTYtODc4ZS04MmZiZWU3YjE4ZmQiLCJlbWFpbCI6InRya0B0cmsuY29tIiwidW5pcXVlX25hbWUiOiJ0cmsiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTc0MjEyMDI0MSwiaXNzIjoiT3p6QWNhZGVteUZ1bGxTdGFjayIsImF1ZCI6IkVfQ29tbWVyY2UifQ.ea2njwfJRIWZPWv5GLloXImyc44rZvC4HZfKu4z8kNE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/getAllOrdersByCustomerId/1002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"getAllOrdersByCustomerId",
+								"1002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllOrdersByOrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/getOrderByOrderId/1001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"getOrderByOrderId",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelOrderByOrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/cancelOrderByOrderId/101000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"cancelOrderByOrderId",
+								"101000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "completeOrderByOrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/completeOrderByOrderId/101000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"completeOrderByOrderId",
+								"101000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toCargoOrderByOrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/toCargoOrderByOrderId/101000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"toCargoOrderByOrderId",
+								"101000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approveOrderByOrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/approveOrderByOrderId/101000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"approveOrderByOrderId",
+								"101000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deliveredOrderByOrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5264/Order/deliveredOrderByOrderId/101000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Order",
+								"deliveredOrderByOrderId",
+								"101000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"testcustomer\",\n    \"password\":\"Abc@123!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5264/Auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customerLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"testcustomer\",\n    \"password\":\"Abc@123!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5264/Auth/customerLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5264",
+							"path": [
+								"Auth",
+								"customerLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
