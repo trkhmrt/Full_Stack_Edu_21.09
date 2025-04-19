@@ -11,8 +11,14 @@ const Calculator = () => {
     const [sonuc, setSonuc] = useState(0);
 
     const dortIslem = (islem) => {
+        {/*const n1 = +s1
+        const n2 = +s2
+        işlemlerde n1 ve n2 kullanılacak.
+        */}
+
+
         switch (islem) {
-            case "+": setSonuc(parseInt(s1)+parseInt(s2));    break;
+            case "+": setSonuc( Number(s1)+Number(s2));    break;
             case "-": setSonuc(s1-s2);    break;
             case "*": setSonuc(s1*s2);    break;
             case "/": setSonuc(s1/s2);    break;
@@ -23,8 +29,8 @@ const Calculator = () => {
 
     return (
         <div>
-                <input onChange={(e)=>setS1(e.target.value)} placeholder="1.Sayı"/>
-                <input onChange={(e)=>setS2(e.target.value)} placeholder="2.Sayı"/>
+                <input type="number" onChange={(e)=>setS1(e.target.value)} placeholder="1.Sayı"/>
+                <input type="number" onChange={(e)=>setS2(e.target.value)} placeholder="2.Sayı"/>
                 <input value={sonuc} readOnly={true} placeholder="sonuc"/>
                 <button onClick={()=>dortIslem("+")}>+</button>
                 <button onClick={()=>dortIslem("-")}>-</button>
