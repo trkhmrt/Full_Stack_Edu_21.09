@@ -20,6 +20,17 @@ function App() {
 
     }
 
+    const deleteTodoFromList = (id) => {
+       const filteredList = todos.filter(todo=>todo.id !== id)
+        setTodos(filteredList)
+    }
+
+    const updateTodo = (id) => {
+
+
+     const updatedTodo = todos.map(todo => todo.id === id ? {...todo,gorev:text} : todo)
+        setTodos(updatedTodo)
+    }
 
 
   return (
@@ -36,7 +47,11 @@ function App() {
         <button onClick={addTodoList}>Görev Ekle</button>
         <ul>
         {todos.map((todo)=>(
-            <li key={todo.id}>{todo.gorev}-{todo.id}</li>
+            <div key={todo.id}>
+            <li >{todo.gorev}-{todo.id}</li>
+            <button style={{backgroundColor:"red"}} onClick={()=>deleteTodoFromList(todo.id)}>SİL</button>
+                <button style={{backgroundColor:"orange"}} onClick={()=>updateTodo(todo.id)}>ID İLE GÜNCELLE</button>
+            </div>
         ))}
         </ul>
     </>
