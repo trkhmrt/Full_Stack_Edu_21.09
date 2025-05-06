@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.DataAccess.Migrations
 {
     [DbContext(typeof(ProjectContext))]
-    [Migration("20250316101457_NewRelation")]
-    partial class NewRelation
+    [Migration("20250504081048_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -352,7 +352,7 @@ namespace E_Commerce.DataAccess.Migrations
                             orderId = 1,
                             basketId = 1,
                             customerId = 2,
-                            orderDate = new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4720),
+                            orderDate = new DateTime(2025, 5, 4, 11, 10, 48, 201, DateTimeKind.Local).AddTicks(5550),
                             orderStatusId = 3,
                             totalAmount = 400
                         },
@@ -361,7 +361,7 @@ namespace E_Commerce.DataAccess.Migrations
                             orderId = 2,
                             basketId = 2,
                             customerId = 4,
-                            orderDate = new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4750),
+                            orderDate = new DateTime(2025, 5, 4, 11, 10, 48, 201, DateTimeKind.Local).AddTicks(5600),
                             orderStatusId = 3,
                             totalAmount = 850
                         });
@@ -465,6 +465,16 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             orderStatusId = 4,
+                            orderStatusName = "Sipariş Onaylandı"
+                        },
+                        new
+                        {
+                            orderStatusId = 5,
+                            orderStatusName = "Sipariş Teslim Edildi"
+                        },
+                        new
+                        {
+                            orderStatusId = 6,
                             orderStatusName = "Sipariş Tamamlandı"
                         });
                 });

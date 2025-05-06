@@ -9,7 +9,7 @@ public class ProjectContext:DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=EcommerceDB4;User Id=sa;Password=StrongPassword123!;Encrypt=False;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=EcommerceDB4;User Id=sa;Password=yourStrong123;Encrypt=False;TrustServerCertificate=True;");
         base.OnConfiguring(optionsBuilder);
     }
 

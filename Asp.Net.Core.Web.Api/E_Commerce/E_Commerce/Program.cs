@@ -14,7 +14,13 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowFrontEnd", policy =>
+            {
+                policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+            });
+        });
         // Add services to the container.
         builder.Services.AddInFrustracture();
         builder.Services.AddDbContext<ProjectContext>();
@@ -45,7 +51,7 @@ public class Program
         builder.Services.AddSingleton<JwtGeneratorService>();
             
         var app = builder.Build();
-
+        app.UseCors("AllowFrontEnd");
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {

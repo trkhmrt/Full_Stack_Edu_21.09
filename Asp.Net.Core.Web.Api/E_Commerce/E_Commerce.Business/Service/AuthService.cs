@@ -51,13 +51,13 @@ public class AuthService:IAuthService
                 {
                     message = "Login Sucess",
                     accessToken = jwtResponse,
+                    customerId = customerResponse.customerId,
+                    customerMail = customerResponse.customerMail,
                     username = customerResponse.customerUserName
                 };
             }
         }
-        return new AuthLoginResponse
-        {
-            message = "Password or username incorrect",
-        };
+
+        throw new UnauthorizedAccessException("Kullanıcı adı veya şifre hatalıdır.");
     }
 }

@@ -3,6 +3,7 @@ using E_Commerce.Business.Interface;
 using E_Commerce.DataAccess.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using BadHttpRequestException = Microsoft.AspNetCore.Http.BadHttpRequestException;
 
 namespace E_Commerce.Controllers
 {
@@ -37,18 +38,24 @@ namespace E_Commerce.Controllers
         
         [HttpPost("customerLogin")]
         public IActionResult customerLogin(AuthLoginRequest authLoginRequest)
-        { 
+        {
             try
             {
                 var responseLogin = _authService.customerLogin(authLoginRequest);
                 return Ok(responseLogin);
-                
+
             }
-            catch (Exception e)
+            catch (UnauthorizedAccessException e)
+            {
+                return Unauthorized(e.Message);
+            }
+            catch (BadHttpRequestException e)
             {
                 return BadRequest(e.Message);
             }
+            
         }
+        
         
     }
 }

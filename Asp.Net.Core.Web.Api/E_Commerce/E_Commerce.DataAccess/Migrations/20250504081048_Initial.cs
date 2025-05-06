@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace E_Commerce.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class NewRelation : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -369,7 +369,9 @@ namespace E_Commerce.DataAccess.Migrations
                     { 1, "Sipariş Aktif" },
                     { 2, "Sipariş İptal" },
                     { 3, "Sipariş Kargoya Verildi" },
-                    { 4, "Sipariş Tamamlandı" }
+                    { 4, "Sipariş Onaylandı" },
+                    { 5, "Sipariş Teslim Edildi" },
+                    { 6, "Sipariş Tamamlandı" }
                 });
 
             migrationBuilder.InsertData(
@@ -478,8 +480,8 @@ namespace E_Commerce.DataAccess.Migrations
                 columns: new[] { "orderId", "basketId", "customerId", "orderDate", "orderStatusId", "totalAmount" },
                 values: new object[,]
                 {
-                    { 1, 1, 2, new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4720), 3, 400 },
-                    { 2, 2, 4, new DateTime(2025, 3, 16, 13, 14, 57, 308, DateTimeKind.Local).AddTicks(4750), 3, 850 }
+                    { 1, 1, 2, new DateTime(2025, 5, 4, 11, 10, 48, 201, DateTimeKind.Local).AddTicks(5550), 3, 400 },
+                    { 2, 2, 4, new DateTime(2025, 5, 4, 11, 10, 48, 201, DateTimeKind.Local).AddTicks(5600), 3, 850 }
                 });
 
             migrationBuilder.InsertData(
