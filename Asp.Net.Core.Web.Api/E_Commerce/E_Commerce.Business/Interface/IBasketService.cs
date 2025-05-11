@@ -13,6 +13,7 @@ public interface IBasketService
     ICollection<BasketResponseDto> getBasketByBasketStatusId(int basketStatusId);
     ICollection<BasketResponseDto> getBasketByCustomerId(int customerId);
 
+    BasketCheckOutResponse checkoutBasket(int customerId);
     void approveBasket(int basketId);
 
     void continueShopping(int basketId);

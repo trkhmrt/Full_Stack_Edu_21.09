@@ -77,6 +77,12 @@ namespace E_Commerce.Controllers
             
             return Ok(_basketService.removeProductToBasket(removeProductToBasketDto));
         }
+
+        [HttpGet("checkoutBasket/{customerId}")]
+        public IActionResult checkoutBasket(int customerId)
+        {
+            return Ok(_basketService.checkoutBasket(customerId));
+        }
         
         
         

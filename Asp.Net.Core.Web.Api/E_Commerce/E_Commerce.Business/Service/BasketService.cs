@@ -167,7 +167,31 @@ public class BasketService: IBasketService
                 }).ToList()
             }).FirstOrDefault();
     }
-
+    public BasketResponseDto getReadyForPaymentBasketByCustomerId(int customerId)
+    {
+        return _context.Baskets
+            .Include(b => b.Customer)
+            .Include(b => b.BasketStatus)
+            .Include(b => b.BasketDetails)
+            .Where(b => b.customerId == customerId && b.basketStatusId == 3)
+            .Select(b => new BasketResponseDto
+            {
+                basketId = b.basketId,
+                basketCustomerId = b.Customer.customerId,
+                basketUserName = b.Customer.customerUserName,
+                basketStatusId = b.basketStatusId,
+                basketStatusName = b.BasketStatus.basketStatusName,
+                basketDetails = b.BasketDetails.Select(b=> new BasketDetailsResponseDto
+                {
+                    productId = b.productId,
+                    productDescription = b.Product.productDescription,
+                    productName = b.Product.productName,
+                    productPrice = b.Product.productUnitPrice,
+                    basketQuantity = b.basket_quantity,
+                    subCategoryName = b.Product.SubCategory.subCategoryName
+                }).ToList()
+            }).FirstOrDefault();
+    }
     public ICollection<BasketResponseDto> getBasketByBasketStatusId(int basketStatusId)
     {
         return _context.Baskets
@@ -208,6 +232,24 @@ public class BasketService: IBasketService
                     subCategoryName = b.Product.SubCategory.subCategoryName
                 }).ToList()
             }).ToList();
+    }
+
+    public BasketCheckOutResponse checkoutBasket(int customerId)
+    {
+        BasketResponseDto basketResponseDto = getReadyForPaymentBasketByCustomerId(customerId);
+        CustomerCheckOutInfo customerCheckOutInfo = new CustomerCheckOutInfo
+        {
+            customerAddress = new List<string>{ "Sefaköy/Küçükçekmece", "Halkalı/Meydan" },
+            customerCreditCards = new List<string>{ "5890040000000016", "5526080000000006" }
+        };
+
+        BasketCheckOutResponse basketCheckOutResponse = new BasketCheckOutResponse
+        {
+            basketResponseDto = basketResponseDto,
+            customerCheckOutInfo = customerCheckOutInfo
+        };
+        
+        return basketCheckOutResponse;
     }
 
     public void approveBasket(int basketId)
