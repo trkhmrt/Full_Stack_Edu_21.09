@@ -19,5 +19,8 @@ public interface IBasketService
     void continueShopping(int basketId);
     
     bool statusBasketToOrder(int basketId);
-    BasketResponseDto removeProductToBasket(RemoveProductToBasketDto removeProductToBasketDto);
+    void removeProductToBasket(RemoveProductToBasketDto removeProductToBasketDto);
+    
+    void increaseQuantity(int basketDetailId);
+    void decreaseQuantity(int basketDetailId);
 }

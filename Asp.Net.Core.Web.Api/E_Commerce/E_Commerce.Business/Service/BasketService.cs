@@ -158,6 +158,7 @@ public class BasketService: IBasketService
                 basketStatusName = b.BasketStatus.basketStatusName,
                 basketDetails = b.BasketDetails.Select(b=> new BasketDetailsResponseDto
                 {
+                    basketDetailId = b.basketDetailId, 
                     productId = b.productId,
                     productDescription = b.Product.productDescription,
                     productName = b.Product.productName,
@@ -315,19 +316,32 @@ public class BasketService: IBasketService
         return true;
     }
 
-    public BasketResponseDto removeProductToBasket(RemoveProductToBasketDto removeProductToBasketDto)
+    public void removeProductToBasket(RemoveProductToBasketDto removeProductToBasketDto)
     {
-        Basket basket = _context.Baskets.FirstOrDefault(b=>b.basketId == removeProductToBasketDto.basketId);
-        if (basket != null)
+        BasketDetail basketDetail = _context.BasketDetails.FirstOrDefault(bd=>bd.basketDetailId == removeProductToBasketDto.basketDetailId);
+        _context.BasketDetails.Remove(basketDetail);
+        _context.SaveChanges();
+    }
+
+    public void increaseQuantity(int basketDetailId)
+    {
+        BasketDetail basketDetail = _context.BasketDetails.FirstOrDefault(bd=>bd.basketDetailId == basketDetailId);
+        basketDetail.basket_quantity += 1;
+        _context.SaveChanges();
+    }
+
+    public void decreaseQuantity(int basketDetailId)
+    {
+        BasketDetail basketDetail = _context.BasketDetails.FirstOrDefault(bd=>bd.basketDetailId == basketDetailId);
+        if (basketDetail.basket_quantity < 2)
         {
-            ICollection<BasketDetail> basketDetails = _context.BasketDetails.Where(b => b.basketId == removeProductToBasketDto.basketId).ToList();
-            _context.BasketDetails.Remove(basketDetails.FirstOrDefault(b => b.productId == removeProductToBasketDto.productId && b.basketId == removeProductToBasketDto.basketId));
-            _context.SaveChanges();
+            _context.BasketDetails.Remove(basketDetail);
         }
         else
         {
-            throw new Exception("Basket not found");
+            basketDetail.basket_quantity -= 1;
+           
         }
-        return getBasketByBasketId(removeProductToBasketDto.basketId);
+        _context.SaveChanges();
     }
 }

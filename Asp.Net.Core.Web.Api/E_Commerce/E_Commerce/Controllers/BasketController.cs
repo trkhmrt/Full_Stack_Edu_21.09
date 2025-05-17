@@ -74,14 +74,28 @@ namespace E_Commerce.Controllers
         [HttpPost("removeBasket")]
         public IActionResult removeBasket(RemoveProductToBasketDto removeProductToBasketDto)
         {
-            
-            return Ok(_basketService.removeProductToBasket(removeProductToBasketDto));
+            _basketService.removeProductToBasket(removeProductToBasketDto);
+            return Ok("Product removed");
         }
-
+    
         [HttpGet("checkoutBasket/{customerId}")]
         public IActionResult checkoutBasket(int customerId)
         {
             return Ok(_basketService.checkoutBasket(customerId));
+        }
+
+        [HttpGet("increaseQuantity/{basketDetailId}")]
+        public IActionResult increaseQuantity(int basketDetailId)
+        {
+            _basketService.increaseQuantity(basketDetailId);
+            return Ok("Quantity increased");
+        }
+        
+        [HttpGet("decreaseQuantity/{basketDetailId}")]
+        public IActionResult decreaseQuantity(int basketDetailId)
+        {
+            _basketService.decreaseQuantity(basketDetailId);
+            return Ok("Quantity decreased");
         }
         
         
