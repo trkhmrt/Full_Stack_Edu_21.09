@@ -5,6 +5,8 @@ public class BasketDetailsResponseDto
     public int basketDetailId { get; set; }
     public int basketQuantity { get; set; }
     public string productName { get; set; }
+    
+    public string productImageUrl { get; set; }
     public string productDescription { get; set; }
     public string subCategoryName { get; set; }
 

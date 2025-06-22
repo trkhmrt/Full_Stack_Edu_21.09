@@ -162,6 +162,7 @@ public class BasketService: IBasketService
                     productId = b.productId,
                     productDescription = b.Product.productDescription,
                     productName = b.Product.productName,
+                    productImageUrl = b.Product.productImageUrl,
                     productPrice = b.Product.productUnitPrice,
                     basketQuantity = b.basket_quantity,
                     subCategoryName = b.Product.SubCategory.subCategoryName
@@ -229,6 +230,7 @@ public class BasketService: IBasketService
                 {
                     productDescription = b.Product.productDescription,
                     productName = b.Product.productName,
+                    productImageUrl = b.Product.productImageUrl,
                     basketQuantity = b.basket_quantity,
                     subCategoryName = b.Product.SubCategory.subCategoryName
                 }).ToList()

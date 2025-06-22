@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {ProductService} from "../services/ProductService.js";
 import {BasketService} from "../services/BasketService.js";
+import {Link} from "react-router-dom";
 const Products = () => {
 
     const [products, setProducts] = useState([]);
@@ -34,11 +35,11 @@ const Products = () => {
                     <p>{product.subcategoryName}</p>
                     <p>{product.productUnitPrice}</p>
                     <div className="flex space-x-4">
-                        <button onClick={()=>handleAddProductToBasket(product.productId)} className="cursor-pointer"> Sepete Ekle</button>
-                        <button>Favorilere Ekle</button>
-                        <button>Ürünü İncele</button>
-                    </div>
 
+                        <button>Favorilere Ekle</button>
+                        <Link to={`/productDetail/${product.productId}`}>Ürünü incele</Link>
+                    </div>
+                    <button onClick={()=>handleAddProductToBasket(product.productId)} className="cursor-pointer"> Sepete Ekle</button>
                 </div>
             ))}
             </div>

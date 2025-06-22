@@ -28,6 +28,7 @@ public class ProductService:IProductService
                 productName = p.productName,
                 productDescription = p.productDescription,
                 subcategoryId = p.subCategoryId,
+                productImageUrl = p.productImageUrl,
                 subcategoryName = p.SubCategory.subCategoryName,
                 categoryId = p.SubCategory.categoryId,
                 categoryName = p.SubCategory.Category.categoryName,
@@ -53,6 +54,7 @@ public class ProductService:IProductService
                 categoryName = p.SubCategory.Category.categoryName,
                 productUnitPrice = p.productUnitPrice,
                 isProductActive = p.isProductActive,
+                imageUrls = p.ProductImages.Select(piu=>piu.productImageUrl).ToList(),
             }).FirstOrDefault();
 
         return productDto;

@@ -1,8 +1,9 @@
 using E_Commerce.Business.Dto;
+using E_Commerce.Business.Dto.requestDtos;
 
 namespace E_Commerce.Business.Interface;
 
 public interface IPaymentService
 {
-    PaymentResponseDto createPayment(int basketId);
+    PaymentResponseDto createPayment(CheckoutRequest checkoutRequest);
 }

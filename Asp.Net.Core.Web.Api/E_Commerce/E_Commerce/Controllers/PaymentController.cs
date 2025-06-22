@@ -1,4 +1,5 @@
 using E_Commerce.Business.Dto;
+using E_Commerce.Business.Dto.requestDtos;
 using E_Commerce.Business.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,10 +18,10 @@ namespace E_Commerce.Controllers
             _paymentService = paymentService;
         }
 
-        [HttpGet("createPayment/{basketId}")]
-        public IActionResult createPayment(int basketId)
+        [HttpPost("createPayment")]
+        public IActionResult createPayment(CheckoutRequest checkoutRequest)
         {
-            PaymentResponseDto responseDto = _paymentService.createPayment(basketId);
+            PaymentResponseDto responseDto = _paymentService.createPayment(checkoutRequest);
             return Ok(responseDto);
         }
         

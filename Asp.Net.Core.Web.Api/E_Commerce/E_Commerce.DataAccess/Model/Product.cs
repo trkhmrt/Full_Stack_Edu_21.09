@@ -6,6 +6,8 @@ public class Product
     
     public string productName { get; set; }
     
+    public string? productImageUrl { get; set; }
+    
     public string productDescription { get; set; }
     
     public int productUnitPrice { get; set; }
@@ -16,5 +18,7 @@ public class Product
     public SubCategory SubCategory { get; set; }
 
     public ICollection<OrderDetail> OrderDetails { get; set; }
+    
+    public ICollection<ProductImage> ProductImages { get; set; }
     public ICollection<BasketDetail> BasketDetails { get; set; }
 }

@@ -1,4 +1,5 @@
 using E_Commerce.Business.Dto;
+using E_Commerce.Business.Dto.requestDtos;
 using E_Commerce.Business.Interface;
 using E_Commerce.DataAccess.Context;
 using E_Commerce.DataAccess.Model;
@@ -16,10 +17,10 @@ public class PaymentService : IPaymentService
         _basketService = basketService;
     }
 
-    public PaymentResponseDto createPayment(int basketId)
+    public PaymentResponseDto createPayment(CheckoutRequest checkoutRequest)
     {
-        BasketResponseDto basketResponse = _basketService.getBasketByBasketId(basketId);
-        if (basketResponse == null || basketResponse.basketStatusId != 3)
+        BasketResponseDto basketResponse = _basketService.getBasketByBasketId(checkoutRequest.basketId);
+        if (basketResponse == null || basketResponse.basketStatusId != 1)
         {
             throw new Exception("Hatalı basket");
         }
@@ -32,9 +33,9 @@ public class PaymentService : IPaymentService
                     Payment payment = new Payment
                     {
                         basketId = basketResponse.basketId,
-                        customerId = basketResponse.basketCustomerId,
+                        customerId = checkoutRequest.customerId,
                         totalQuantity = basketResponse.basketDetails.Sum(bd => bd.basketQuantity),
-                        totalAmount = basketResponse.basketDetails.Sum(bd => bd.productPrice * bd.basketQuantity),
+                        totalAmount = checkoutRequest.amount,
                         paymentStatusId = 1
                     };
                     
@@ -66,7 +67,7 @@ public class PaymentService : IPaymentService
                         orderDetails_list.Add(orderDetail);
                     }
                     
-                    _basketService.statusBasketToOrder(basketId);
+                    _basketService.statusBasketToOrder(checkoutRequest.basketId);
                     _context.OrderDetails.AddRange(orderDetails_list);
                     _context.SaveChanges();
 

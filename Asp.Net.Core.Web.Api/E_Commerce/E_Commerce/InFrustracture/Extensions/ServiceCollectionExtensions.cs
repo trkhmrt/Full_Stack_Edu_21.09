@@ -16,12 +16,8 @@ public static class ServiceCollectionExtensions
         serviceCollection.AddScoped<IJwtGenerator, JwtGeneratorService>();
         serviceCollection.AddScoped<IAuthService, AuthService>();
         serviceCollection.AddScoped<ICustomerService, CustomerService>();
-
-
-
-
-
-
+        serviceCollection.AddScoped<ICategoryService, CategoryService>();
+        
         return serviceCollection;
     }
     

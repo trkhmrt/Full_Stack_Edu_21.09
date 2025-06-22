@@ -18,6 +18,7 @@ public class ProjectContext:DbContext
         modelBuilder.ApplyConfiguration(new BasketDetailConfiguration());
         modelBuilder.ApplyConfiguration(new BasketConfiguration());
         modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+        modelBuilder.ApplyConfiguration(new ProductConfiguration());
         modelBuilder.ApplyConfiguration(new OrderConfiguration());
         modelBuilder.ApplyConfiguration(new OrderDetailConfiguration());
         modelBuilder.ApplyConfiguration(new RoleConfiguration());
@@ -45,6 +46,7 @@ public class ProjectContext:DbContext
     public DbSet<PaymentStatus> PaymentStatuses { get; set; }
     public DbSet<BasketStatus> BasketStatuses { get; set; }
     public DbSet<OrderStatus> OrderStatuses { get; set; }
+    public DbSet<ProductImage> ProductImages { get; set; }
 
     public DbSet<Customer> Customers { get; set; }
     

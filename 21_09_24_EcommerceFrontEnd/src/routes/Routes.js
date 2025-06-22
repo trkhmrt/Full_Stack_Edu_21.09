@@ -6,5 +6,7 @@ export const RouteAddress = {
     Products: '/Products',
     MyProfile: '/MyProfile',
     Orders: '/Orders',
-    CheckOut: '/CheckOut'
+    CheckOut: '/CheckOut',
+    SuccessPaymentPage: '/SuccessPaymentPage',
+    FailedPaymentPage: '/FailedPaymentPage',
 }

@@ -1,6 +1,6 @@
 
 
 export const taxes = {
-    KDV:20
+    KDV:200
 
 }

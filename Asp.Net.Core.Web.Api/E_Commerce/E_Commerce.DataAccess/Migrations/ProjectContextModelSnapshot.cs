@@ -349,7 +349,7 @@ namespace E_Commerce.DataAccess.Migrations
                             orderId = 1,
                             basketId = 1,
                             customerId = 2,
-                            orderDate = new DateTime(2025, 5, 4, 11, 10, 48, 201, DateTimeKind.Local).AddTicks(5550),
+                            orderDate = new DateTime(2025, 6, 1, 9, 35, 25, 706, DateTimeKind.Local).AddTicks(190),
                             orderStatusId = 3,
                             totalAmount = 400
                         },
@@ -358,7 +358,7 @@ namespace E_Commerce.DataAccess.Migrations
                             orderId = 2,
                             basketId = 2,
                             customerId = 4,
-                            orderDate = new DateTime(2025, 5, 4, 11, 10, 48, 201, DateTimeKind.Local).AddTicks(5600),
+                            orderDate = new DateTime(2025, 6, 1, 9, 35, 25, 706, DateTimeKind.Local).AddTicks(240),
                             orderStatusId = 3,
                             totalAmount = 850
                         });
@@ -559,6 +559,9 @@ namespace E_Commerce.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("productImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("productName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -630,6 +633,28 @@ namespace E_Commerce.DataAccess.Migrations
                             productUnitPrice = 670,
                             subCategoryId = 2
                         });
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.ProductImage", b =>
+                {
+                    b.Property<int>("productImageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("productImageId"));
+
+                    b.Property<int>("productId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("productImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("productImageId");
+
+                    b.HasIndex("productId");
+
+                    b.ToTable("ProductImages");
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Role", b =>
@@ -969,6 +994,17 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Navigation("SubCategory");
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Model.ProductImage", b =>
+                {
+                    b.HasOne("E_Commerce.DataAccess.Model.Product", "Product")
+                        .WithMany("ProductImages")
+                        .HasForeignKey("productId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Model.SubCategory", b =>
                 {
                     b.HasOne("E_Commerce.DataAccess.Model.Category", "Category")
@@ -1048,6 +1084,8 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Navigation("BasketDetails");
 
                     b.Navigation("OrderDetails");
+
+                    b.Navigation("ProductImages");
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Model.Role", b =>

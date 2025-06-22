@@ -8,6 +8,10 @@ import Products from "./pages/Products.jsx";
 import MyProfile from "./pages/MyProfile.jsx";
 import Orders from "./pages/Orders.jsx";
 import CheckOut from "./pages/CheckOut.jsx";
+import ProductDetail from "./pages/ProductDetail.jsx";
+import Layout from "./layout/Layout.jsx";
+import SuccessPaymentPage from "./pages/SuccessPaymentPage.jsx";
+import FailedPaymentPage from "./pages/FailedPaymentPage.jsx";
 function App() {
 
 
@@ -15,13 +19,19 @@ function App() {
     <>
       <BrowserRouter>
           <Routes>
-              <Route path={RouteAddress.HomePage}  element={<HomePage/>}></Route>
               <Route path={RouteAddress.Login}  element={<Login/>}></Route>
-              <Route path={RouteAddress.Basket}  element={<Basket/>}></Route>
-              <Route path={RouteAddress.Products}  element={<Products/>}></Route>
-              <Route path={RouteAddress.MyProfile}  element={<MyProfile/>}></Route>
-              <Route path={RouteAddress.Orders}  element={<Orders/>}></Route>
-              <Route path={RouteAddress.CheckOut}  element={<CheckOut/>}></Route>
+              <Route element={<Layout/>}>
+                  <Route path={RouteAddress.HomePage}  element={<HomePage/>}></Route>
+                  <Route path={RouteAddress.Basket}  element={<Basket/>}></Route>
+                  <Route path={RouteAddress.Products}  element={<Products/>}></Route>
+                  <Route path={RouteAddress.MyProfile}  element={<MyProfile/>}></Route>
+                  <Route path={RouteAddress.Orders}  element={<Orders/>}></Route>
+                  <Route path={RouteAddress.CheckOut}  element={<CheckOut/>}></Route>
+                  <Route path={RouteAddress.SuccessPaymentPage}  element={<SuccessPaymentPage/>}></Route>
+                  <Route path={RouteAddress.FailedPaymentPage}  element={<FailedPaymentPage/>}></Route>
+                  <Route path="productDetail/:productId" element={<ProductDetail/>}></Route>
+              </Route>
+
           </Routes>
       </BrowserRouter>
     </>

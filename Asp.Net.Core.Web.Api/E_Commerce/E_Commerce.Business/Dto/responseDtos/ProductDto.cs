@@ -7,9 +7,13 @@ public class ProductDto
     public string productDescription { get; set; }
     public int subcategoryId { get; set; }
     public string subcategoryName { get; set; }
+    
+    public string productImageUrl { get; set; }
     public int categoryId { get; set; }
     public string categoryName { get; set; }
     public int productUnitPrice { get; set; }
     
     public bool isProductActive { get; set; }
+
+    public ICollection<String> imageUrls { get; set; }
 }
